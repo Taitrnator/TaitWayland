@@ -16,7 +16,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "config.codekit"
   ],
   "dependencies": {
     "angular-route": "~1.5.7",
