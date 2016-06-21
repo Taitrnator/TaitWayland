@@ -1,7 +1,7 @@
 {
   "name": "taitwayland",
   "version": "1.0.0",
-  "description": "",
+  "description": "my portfolio site",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,14 @@
     "babelify": "^7.3.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taitrnator/TaitWayland.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Taitrnator/TaitWayland/issues"
+  },
+  "homepage": "https://github.com/Taitrnator/TaitWayland#readme"
 }
