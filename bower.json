@@ -1,0 +1,26 @@
+{
+  "name": "TaitWayland",
+  "homepage": "https://github.com/Taitrnator/TaitWayland",
+  "authors": [
+    "Tait <Taitwayland@gmail.com>"
+  ],
+  "description": "portfolio site",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.5.7",
+    "angular": "~1.5.7",
+    "jquery": "~3.0.0"
+  }
+}
