@@ -1,0 +1,1 @@
+TaitWayland.controller("NavCtrl",function(a,l){var o=l.path();console.log(o)});

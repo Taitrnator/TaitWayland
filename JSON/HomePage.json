@@ -1,0 +1,51 @@
+{
+  "WhatIDoTitle": "What I Do",
+  "WhatIDo": [
+    {
+      "title": "User Research",
+      "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+      "img": "images/rapidprototyping.png"
+    },
+    {
+      "title": "Mobile Design",
+      "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
+      "img": "images/appdesign.png"
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Responsive sites, built with atomic design principles. Living style guides and all that jazz.",
+      "img": "images/responsivedesign.png"
+    },
+    {
+      "title": "Graphic Design",
+      "description": "Start with solid user research. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+      "img": "images/graphicdesign.png"
+    },
+    {
+      "title": "Front End Development",
+      "description": "HTML, CSS, SASS, Javascript, Jquery, AngularJS, ASPNET",
+      "img": "images/frontenddevelopment.png"
+    },
+    {
+      "title": "UX Specialties",
+      "description": "E-Commerce Design. Marketing Design. Accessibility Design",
+      "img": "images/uxspecialties.png"
+    }
+  ],
+  "PortfolioTitle": "Portfolio",
+  "Portfolio": [
+    {
+      "title": "North Carolina Transportation Museum",
+      "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+      "img": "images/rapidprototyping.png",
+      "url": "#NCTrans"
+    },
+    {
+      "title": "Share and Tear",
+      "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
+      "img": "images/appdesign.png",
+      "url": "#ShareAndTear"
+    }
+  ]
+
+}

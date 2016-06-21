@@ -1,0 +1,17 @@
+{
+  "title": "Work",
+  "sections": [
+    {
+      "title": "North Carolina Transportation Museum",
+      "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+      "img": "images/rapidprototyping.png",
+      "url": "#NCTrans"
+    },
+    {
+      "title": "Share and Tear",
+      "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
+      "img": "images/appdesign.png",
+      "url": "#ShareAndTear"
+    }
+  ]
+}

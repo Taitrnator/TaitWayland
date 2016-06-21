@@ -1,0 +1,101 @@
+<script type="text/javascript" src="scripts/html2canvas.js"></script>
+<script type="text/javascript" src="scripts/glitch.js"></script>
+<script type="text/javascript" src="scripts/jquery.shuffleLetters/assets/js/jquery.shuffleLetters.js"></script>
+<script type="text/javascript" src="scripts/homepage.js"></script>
+
+<nav class="top-nav">
+  <ul class="responsive-menu">
+    <li>
+      <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    </li>
+  </ul>
+</nav>
+<section class="main-menu">
+    <ul>
+      <li>
+        <a href="" onClick="scrollTo(WhatIDo)">What I Do</a>
+      </li>
+      <li>
+        <a href="">Work</a>
+      </li>
+      <li>
+        <a href="">About</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+    </ul>
+</section>
+
+<header role="banner">
+  <h1 class="header-1">{{header.header1}}</h1>
+  <h3 class="header-2">{{header.header2}}</h3>
+  <h5 class="header-3">{{header.header3}}</h5>
+  <canvas id="portrait">
+
+  </canvas>
+  <!-- <img class="portrait" src="images/portrait.png" / /> -->
+</header>
+<div class="clearfix"></div>
+<main>
+ <article id="WhatIDo">
+   <header class="main-header"><h2>{{WhatIDo}}</h2></header>
+   <section class="content">
+     <article ng-repeat="section in WhatIDoSections">
+       <header class="sub-header">
+         <div class="img-container">
+           <img src="{{section.img}}" />
+         </div>
+         <div class="header-container">
+           <h3>{{section.title}}</h3>
+         </div>
+       </header>
+       <p>
+         {{section.description}}
+       </p>
+     </article>
+   </section>
+ </article>
+ <article id="Work">
+   <header class="main-header"><h2>{{Portfolio}}</h2></header>
+   <section class="content">
+     <article ng-repeat="key in PortfolioSections">
+        <header class="sub-header">
+          <h3><a href="{{key.url}}">{{key.title}}</a></h3>
+        </header>
+     </article>
+   </section>
+ </article>
+ <article id="About">
+   <header class="main-header"><h2>About</h2></header>
+   <section class="content">
+     <article class="aboutimg">
+       <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1>
+           <img src="images/TaitWayland.png" alt="AboutMe"/>
+           <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
+     </article>
+     <article class="aboutcontent">
+       <p>
+         Hello I'm Tait Wayland. I've been doing UI design and development for about 3 years. I'm a product designer at TicketBiscuit. I formerly captained a Code for America brigade, <a href="//codeforbirmingham.org" target="_blank">Code for Birmingham</a>. I also occassionally <a href="//practicaldream.net" target="_blank">draw stuff</a>.
+       </p>
+     </article>
+   </section>
+ </article>
+ <article id="Contact">
+   <header class="main-header"><h2>Contact</h2></header>
+   <section class="content">
+     <article>
+       <h3>
+         Drop me a line
+       </h3>
+       <!-- Change the width and height values to suit you best -->
+      <div class="typeform-widget" data-url="https://tait4.typeform.com/to/bpM8Bc" data-text="Contact Form" style="width: auto;height:500px;"></div>
+      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+     </article>
+   </section>
+ </article>
+</main>

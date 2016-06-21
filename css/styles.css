@@ -1,0 +1,248 @@
+body {
+  background-color: #3A3A3A;
+  color: #F2EDC4;
+  font-family: "niveau-grotesk", Helvetica, sans-serif; }
+
+a {
+  color: #F2EDC4;
+  text-decoration: none; }
+  a:hover {
+    color: #e4da85;
+    text-decoration: underline; }
+
+article {
+  margin: 10rem auto;
+  z-index: 1;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row; }
+  article .main-header {
+    align-self: flex-start;
+    text-align: center;
+    padding: 15px;
+    width: 20%; }
+    article .main-header h2 {
+      margin: auto;
+      padding: 20px;
+      color: #3A3A3A;
+      background-color: #F2EDC4; }
+  article .content {
+    display: flex;
+    width: 80%;
+    flex-flow: row wrap;
+    justify-content: center; }
+    article .content article {
+      margin: 1rem;
+      width: 350px;
+      align-self: baseline;
+      flex-flow: column wrap;
+      padding: 1%; }
+      article .content article .sub-header {
+        display: flex;
+        justify-content: flex-start;
+        color: #F2EDC4;
+        background-color: none;
+        border-bottom: 4px solid #F2EDC4; }
+        article .content article .sub-header .img-container {
+          width: 20%; }
+        article .content article .sub-header .header-container {
+          width: 80%; }
+        article .content article .sub-header div {
+          display: flex;
+          align-content: baseline; }
+          article .content article .sub-header div img {
+            padding: 5px; }
+          article .content article .sub-header div h3 {
+            font-size: 20px;
+            align-self: center;
+            margin: 5px 15px;
+            display: inline; }
+      article .content article p {
+        text-align: left; }
+        article .content article p a {
+          text-decoration: underline;
+          color: #e0d470; }
+          article .content article p a:hover {
+            color: #c0b02a; }
+  article .masker {
+    overflow-x: hidden;
+    margin: 0;
+    color: #3A3A3A;
+    background-color: #F2EDC4;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0.4rem;
+    position: relative; }
+  article .masker1 {
+    top: 10px;
+    left: 100px; }
+  article .masker2 {
+    bottom: 10px;
+    right: 200px; }
+
+#About .sub-header img {
+  width: 100%;
+  height: auto; }
+#About .content article {
+  align-self: center; }
+  #About .content article p {
+    font-size: 1.4rem; }
+
+#Contact .content article {
+  width: 100%; }
+  #Contact .content article h3 {
+    text-align: center; }
+
+button:focus {
+  outline: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
+.header-1, .header-2, .header-3, .masker1, .masker2 {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.header-3 {
+  transition: all 0.5s ease-out; }
+
+main {
+  margin-top: 50px; }
+
+.top-nav {
+  z-index: 15;
+  width: 100%;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  height: 78px;
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(60, 60, 60, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
+  background: linear-gradient(to bottom, rgba(60, 60, 60, 0.8) 70%, rgba(255, 255, 255, 0) 0%); }
+  .top-nav ul {
+    position: relative;
+    margin: 5px; }
+    .top-nav ul li {
+      display: inline;
+      list-style-type: none;
+      font-size: 20px;
+      font-weight: normal;
+      margin-left: 15px;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+    .top-nav ul li.scrolled {
+      margin-left: 40px; }
+
+.main-menu {
+  display: none;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  margin: auto;
+  z-index: 9;
+  background: transparent;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .main-menu ul {
+    display: table-cell;
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+    vertical-align: middle; }
+    .main-menu ul li {
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 2rem;
+      text-align: center;
+      list-style-type: none; }
+
+.responsive-menu {
+  position: relative;
+  float: right;
+  padding-left: 0px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+.antispam {
+  display: none; }
+
+.clearfix {
+  clear: both; }
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1; }
+
+.showIn {
+  display: table;
+  background: rgba(60, 60, 60, 0.8); }
+
+.left {
+  float: left; }
+
+.hamburger {
+  padding: 10px;
+  background-color: #F2EDC4;
+  transition: all 0.4s ease-out; }
+  .hamburger:hover {
+    background-color: #e4da85;
+    opacity: 1; }
+
+.hamburger-box {
+  width: 30px; }
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  width: 30px;
+  background-color: #3A3A3A; }
+
+.portrait, canvas {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  top: 80px;
+  opacity: 0.3; }
+
+header[role="banner"] {
+  height: 200px;
+  margin-top: 5rem; }
+
+@media screen and (max-width: 1040px) {
+  article .main-header {
+    width: 25%; }
+  article .content {
+    width: 75%; } }
+@media screen and (max-width: 530px) {
+  .responsive-menu {
+    padding-left: 0px;
+    display: block; }
+
+  article {
+    overflow-x: hidden;
+    margin: 2rem auto;
+    flex-flow: row wrap; }
+    article .main-header {
+      width: 80%;
+      padding: 5px; }
+    article .content {
+      width: 100%; }
+      article .content article {
+        margin: 0.5rem auto; }
+    article .sub-header img {
+      height: 50px; }
+
+  #About .sub-header img {
+    width: 100%;
+    height: auto; } }
