@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "portfolio",
   "main": "app.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Taitrnator/TaitWayland.git"
@@ -21,6 +20,7 @@
   "dependencies": {
     "angular": "^1.5.7",
     "angular-route": "^1.5.7",
+    "express": "^4.14.0",
     "jquery": "^3.0.0"
   }
 }
