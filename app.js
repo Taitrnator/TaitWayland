@@ -12,13 +12,13 @@ $routeProvider
 // Pages
 .when('/NCTrans', {
   templateUrl: 'Partials/NCTrans.html',
-  controller: 'ChildViewCtrl',
-  controllerAs: 'ChildViewCtrl'
+  controller: 'NCTransCtrl',
+  controllerAs: 'NCTransCtrl'
 })
 .when('/ShareAndTear', {
   templateUrl: "Partials/ShareAndTear.html",
-  controller: 'ChildViewCtrl',
-  controllerAs: 'ChildViewCtrl'
+  controller: 'ShareAndTearCtrl',
+  controllerAs: 'ShareAndTearCtrl'
 })
 // else home
 .otherwise({ redirectTo: '/'});

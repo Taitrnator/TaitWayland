@@ -38,6 +38,8 @@ article {
       align-self: baseline;
       flex-flow: column wrap;
       padding: 1%; }
+      article .content article img {
+        max-width: 100%; }
       article .content article .sub-header {
         display: flex;
         justify-content: flex-start;
@@ -193,18 +195,13 @@ main {
   float: left; }
 
 .hamburger {
-  padding: 10px;
   background-color: #F2EDC4;
   transition: all 0.4s ease-out; }
   .hamburger:hover {
     background-color: #e4da85;
     opacity: 1; }
 
-.hamburger-box {
-  width: 30px; }
-
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  width: 30px;
   background-color: #3A3A3A; }
 
 .portrait, canvas {

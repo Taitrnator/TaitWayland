@@ -49,6 +49,9 @@ article {
       align-self:baseline;
       flex-flow: column wrap;
       padding: 1%;
+      img {
+        max-width: 100%;
+      }
       .sub-header {
         display: flex;
         justify-content: flex-start;
@@ -241,7 +244,6 @@ main {
 }
 
 .hamburger {
-  padding: 10px;
   background-color: $maskingtape;
   transition: all 0.4s ease-out;
   &:hover {
@@ -249,11 +251,7 @@ main {
     opacity: 1;
   }
 }
-.hamburger-box {
-  width: 30px;
-}
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  width: 30px;
   background-color: $charcoal;
 }
 

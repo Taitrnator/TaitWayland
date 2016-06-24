@@ -1,4 +1,8 @@
-TaitWayland.controller("ChildViewCtrl", function($scope) {
+TaitWayland.controller("NCTransCtrl", function($scope, $http) {
+
+  $http.get('JSON/NCTrans.json').then(function (res) {
+    $scope.NCTrans = res.data;
+  });
 
   $(document).ready(function() {
     // menu functionality
