@@ -1,1 +1,1 @@
-TaitWayland.controller("HomeCtrl",function(a,e){a.header={header1:"my name is tait",header2:"i’m a ui designer and developer living in birmingham, alabama.",header3:"i like masking tape."},e.get("JSON/HomePage.json").then(function(e){a.WhatIDo=e.data.WhatIDoTitle,a.WhatIDoSections=e.data.WhatIDo,a.Portfolio=e.data.PortfolioTitle,a.PortfolioSections=e.data.Portfolio})});
+TaitWayland.controller("HomeCtrl",function(t,a){a.get("JSON/HomePage.json").then(function(a){t.data=a.data})});

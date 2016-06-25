@@ -1,4 +1,10 @@
 {
+  "name": "Tait Wayland",
+  "header": [{
+    "header1": "my name is tait",
+    "header2": "i’m a ui designer and developer living in birmingham, alabama.",
+    "header3": "i like masking tape."
+    }],
   "WhatIDoTitle": "What I Do",
   "WhatIDo": [
     {
@@ -46,6 +52,14 @@
       "img": "images/appdesign.png",
       "url": "#ShareAndTear"
     }
-  ]
+  ],
+  "About": "About",
+  "AboutSection": [{
+    "image": "images/TaitWayland.png",
+    "PracticalDreamUrl": "//www.practicaldream.net",
+    "CodeforBhamUrl": "//www.CodeforBirmingham.org",
+    "CodeForBham": "Code for Birmingham",
+    "Section1": " Hello I'm Tait Wayland. I've been doing UI design and development for about 3 years. I'm a product designer at TicketBiscuit. I formerly captained a Code for America brigade,"
+  }]
 
 }

@@ -32,9 +32,9 @@
 </section>
 
 <header role="banner">
-  <h1 class="header-1">{{header.header1}}</h1>
-  <h3 class="header-2">{{header.header2}}</h3>
-  <h5 class="header-3">{{header.header3}}</h5>
+  <h1 class="header-1">{{data.header[0].header1}}</h1>
+  <h3 class="header-2">{{data.header[0].header2}}</h3>
+  <h5 class="header-3">{{data.header[0].header3}}</h5>
   <canvas id="portrait">
 
   </canvas>
@@ -43,27 +43,27 @@
 <div class="clearfix"></div>
 <main>
  <article id="WhatIDo">
-   <header class="main-header"><h2>{{WhatIDo}}</h2></header>
+   <header class="main-header"><h2>{{data.WhatIDoTitle}}</h2></header>
    <section class="content">
-     <article ng-repeat="section in WhatIDoSections">
+     <article ng-repeat="section in data.WhatIDo">
        <header class="sub-header">
          <div class="img-container">
-           <img src="{{section.img}}" />
+           <img ng-src="{{ section.img }}" />
          </div>
          <div class="header-container">
-           <h3>{{section.title}}</h3>
+           <h3>{{ section.title}}</h3>
          </div>
        </header>
        <p>
-         {{section.description}}
+         {{ section.description}}
        </p>
      </article>
    </section>
  </article>
  <article id="Work">
-   <header class="main-header"><h2>{{Portfolio}}</h2></header>
+   <header class="main-header"><h2>{{data.PortfolioTitle}}</h2></header>
    <section class="content">
-     <article ng-repeat="key in PortfolioSections">
+     <article ng-repeat="key in data.Portfolio">
         <header class="sub-header">
           <h3><a href="{{key.url}}">{{key.title}}</a></h3>
         </header>
@@ -71,16 +71,16 @@
    </section>
  </article>
  <article id="About">
-   <header class="main-header"><h2>About</h2></header>
+   <header class="main-header"><h2>{{data.About}}</h2></header>
    <section class="content">
      <article class="aboutimg">
        <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1>
-           <img src="images/TaitWayland.png" alt="AboutMe"/>
+           <img src="{{data.AboutSection[0].image}}" alt="AboutMe"/>
            <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
      </article>
      <article class="aboutcontent">
        <p>
-         Hello I'm Tait Wayland. I've been doing UI design and development for about 3 years. I'm a product designer at TicketBiscuit. I formerly captained a Code for America brigade, <a href="//codeforbirmingham.org" target="_blank">Code for Birmingham</a>. I also occassionally <a href="//practicaldream.net" target="_blank">draw stuff</a>.
+         {{data.AboutSection[0].Section1}} <a href="{{data.AboutSection[0].CodeforBhamUrl}}" target="_blank">{{data.AboutSection[0].CodeForBham}}</a>. I also occassionally <a href="{{data.AboutSection[0].PracticalDreamUrl}}" target="_blank">draw stuff</a>.
        </p>
      </article>
    </section>
@@ -99,3 +99,11 @@
    </section>
  </article>
 </main>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "{{name}}"
+  }
+</script>
