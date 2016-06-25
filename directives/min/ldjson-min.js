@@ -1,0 +1,1 @@
+TaitWayland.directive("ldjson",function(n,t){return{restrict:"E",template:function(){return'<script type="application/ld+json" ng-bind-html="onGetJson()"></script>'},scope:{json:"=json"},link:function(o){o.onGetJson=function(){return t.trustAsHtml(n("json")(o.json))}},replace:!0}});
