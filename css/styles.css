@@ -38,7 +38,7 @@ article {
       flex-flow: column wrap;
       padding: 1%; }
       article .content article img {
-        max-width: 100%; }
+        max-width: 60px; }
       article .content article .sub-header {
         display: flex;
         justify-content: flex-start;
@@ -87,6 +87,8 @@ article {
   height: auto; }
 #About .content article {
   align-self: center; }
+  #About .content article img {
+    max-width: 100%; }
   #About .content article p {
     font-size: 1.4rem; }
 

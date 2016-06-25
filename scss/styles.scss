@@ -46,7 +46,7 @@ article {
       flex-flow: column wrap;
       padding: 1%;
       img {
-        max-width: 100%;
+        max-width: 60px;
       }
       .sub-header {
         display: flex;
@@ -115,6 +115,9 @@ article {
   .content {
     article {
       align-self: center;
+      img {
+        max-width: 100%;
+      }
       p {
         font-size: 1.4rem;
       }
