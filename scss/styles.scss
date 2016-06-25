@@ -134,6 +134,23 @@ article {
     }
   }
 }
+#Work {
+  .content {
+    article {
+      position: relative;     /* establish nearest positioned ancestor for abs.positioning */
+      height: 250px;
+      align-items: center;
+        img {
+          max-width: 100%;
+        }
+        h3{
+          position: absolute;
+          top: 50%;
+          text-align: center;
+        }
+    }
+  }
+}
 
 button:focus {outline:0;}
 

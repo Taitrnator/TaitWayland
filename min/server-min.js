@@ -1,1 +1,1 @@
-var express=require("express"),app=express();app.use(express["static"](__dirname+"/")),app.listen(process.env.PORT||3e3);
+var express=require("express"),app=express();app.use(express["static"](__dirname+"/")),app.use(express.compress()),app.listen(process.env.PORT||3e3);

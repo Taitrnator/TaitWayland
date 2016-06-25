@@ -18,13 +18,13 @@
     "description": "i’m a ui designer and developer living in birmingham, alabama.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Portfolio",
+      "name": "Work",
       "itemListElement": [
         {
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/rapidprototyping.png",
+            "image" : "images/case_studies/NCTrans_Case/nctrans_preview.png",
             "name": "North Carolina Transportation Museum",
             "url" : "#NCTrans"
           }

@@ -59,9 +59,8 @@
    <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
    <section class="content">
      <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
-        <header class="sub-header">
+          <img class="portfolio-image" src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
           <h3><a href="{{key.itemOffered.url}}">{{key.itemOffered.name}}</a></h3>
-        </header>
      </article>
    </section>
  </article>
