@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+body {
+  background-color: #fff;
+  color: $charcoal;
+  font-family: $main-font;
+}
+
+article {
+  .main-header { 
+    h2 {
+      color: $maskingtape;
+      background-color: $charcoal;
+    }
+  }
+}

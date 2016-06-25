@@ -4,11 +4,10 @@ body {
   font-family: "niveau-grotesk", Helvetica, sans-serif; }
 
 a {
-  color: #F2EDC4;
-  text-decoration: none; }
+  color: #e0d470;
+  text-decoration: underline; }
   a:hover {
-    color: #e4da85;
-    text-decoration: underline; }
+    color: #c0b02a; }
 
 article {
   margin: 10rem auto;
@@ -122,13 +121,12 @@ main {
   top: 0;
   left: 0;
   height: 78px;
-  background: rgba(255, 255, 255, 0);
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(60, 60, 60, 0.8)));
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(60, 60, 60, 0.8) 70%);
-  background: linear-gradient(to bottom, rgba(60, 60, 60, 0.8) 70%, rgba(255, 255, 255, 0) 0%); }
+  background: rgba(60, 60, 60, 0.8);
+  background: -moz-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
+  background: -webkit-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
+  background: -o-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
+  background: -ms-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
+  background: linear-gradient(to bottom, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0)); }
   .top-nav ul {
     position: relative;
     margin: 5px; }
@@ -169,6 +167,12 @@ main {
       padding: 2rem;
       text-align: center;
       list-style-type: none; }
+      .main-menu ul li a {
+        text-decoration: none;
+        color: #F2EDC4; }
+        .main-menu ul li a:hover {
+          color: #e0d470;
+          text-decoration: underline; }
 
 .responsive-menu {
   position: relative;
@@ -195,6 +199,7 @@ main {
   float: left; }
 
 .hamburger {
+  padding: 10px;
   background-color: #F2EDC4;
   transition: all 0.4s ease-out; }
   .hamburger:hover {
@@ -215,6 +220,8 @@ main {
 header[role="banner"] {
   height: 200px;
   margin-top: 5rem; }
+  header[role="banner"] h1 {
+    font-size: 3rem; }
 
 @media screen and (max-width: 1040px) {
   article .main-header {
