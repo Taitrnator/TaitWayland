@@ -2,8 +2,8 @@ var express = require('express');
 var compression = require('compression');
 var app = express();
 
-app.use(express.static(__dirname + '/'));
 app.use(compression());
+app.use(express.static(__dirname + '/'));
 
 // server-sent event stream
 app.get('/events', function (req, res) {
