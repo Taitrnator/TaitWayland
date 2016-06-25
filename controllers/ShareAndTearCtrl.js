@@ -1,4 +1,8 @@
-TaitWayland.controller("ShareAndTearCtrl", function($scope) {
+TaitWayland.controller("ShareAndTearCtrl", function($scope, $http) {
+
+  $http.get('JSON/ShareAndTear.json').then(function (res) {
+    $scope.data = res.data;
+  });
 
   $(document).ready(function() {
     // menu functionality

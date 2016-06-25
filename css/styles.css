@@ -195,6 +195,7 @@ main {
   float: left; }
 
 .hamburger {
+  padding: 10px;
   background-color: #F2EDC4;
   transition: all 0.4s ease-out; }
   .hamburger:hover {
