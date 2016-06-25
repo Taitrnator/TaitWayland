@@ -8,17 +8,23 @@
 
   "objective": "Part of our services at TicketBiscuit involves website design for some of our bigger clients. The North Carolina Transportation Museum was assigned to me early into my career at TicketBiscuit. At that point I was aware that many of our clients were similar. We served many other railroad museums across the country. My personal object was to make a custom theme we could reuse for similar clients.",
 
-  "clientMeeting": [
+  "challenge": [
     {
-      "section1": "The first stage of the process was teaming up with Marketing to meet with our client.",
-      "section2": "Marketing sealed the deal with the client, so they had a good grasp on how to communicate with the client, as well as how our product served their needs.",
-      "section3": "The client did what many clients do: they briefed us. They provided us with their branding material. They gave us sketches of how they wanted the site to look. They gave us information architecture, and a whole list of other suggestions. They predesigned the project in many aspects.",
-      "section4": "So I asked the client, “What are your goals?” This caught them a bit off guard and allowed us to work with them from a more flexible approach that satisfied both parties in the end.",
-      "section5": "We converged on a major need of the client: a refreshing, unified identity. We converged on some useful information. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a design that could produce an emotional impact with their audience, and one that didn’t suck."
+      "title": "Client Meeting",
+      "section1": "The first stage of the process was teaming up with Marketing to meet with our client. They sealed the deal with the client, so they had a good grasp on how to communicate with the client, as well as how our product served their needs.",
+      "section2": "The client did what many clients do: they briefed us. They provided us with their branding material. They gave us sketches of how they wanted the site to look. They gave us information architecture, and a whole list of other suggestions. They predesigned the project in many aspects.",
+      "section3": "I asked the client, “What are your goals?” This caught them a bit off guard and allowed us to work with them from a more flexible approach that satisfied both parties in the end.",
+      "section4": "We converged on a major need of the client: a refreshing, unified identity. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a design that could produce an emotional impact with their audience, and one that didn’t suck."
     }
   ],
+  "research": [{
+      "title": "Research",
+      "VulcanUrl": "//visitvulcan.com",
+      "VulcanPark": "Vulcan Park,",
+      "section1": "I realized the biggest problem was information architecture. Museums simply have a ton of content. While many museums today still use mega menus, there are better alternatives to sort this information out. I had previous experience collaborating with BIG Communications in Birmingham on their rebrand of ",
+      "section2": "so I remember their website handling information architecture well. When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options."
+    }],
   "images": "images/case_studies/NCTrans_Case",
-  "wireframing": "I realized the biggest problem was information architecture. Museums simply have a ton of content. While many museums today still use mega menus, there are better alternatives to sort this information out. I had previous experience collaborating with BIG Communications in Birmingham on their rebrand of Vulcan Park, so I remember their website handling information architecture well. (http://visitvulcan.com) When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options.",
 
   "technologies": [{
     "section1": "Our clients need a CMS to update their content. This project employed Wordpress. There we’re several factors behind this decision. Its the most common CMS. It was conventionally used for clients in the past at TicketBiscuit. However, Wordpress has its pitfalls, mainly the fact that most Wordpress sites look the same. In addition, plugins can get clunky and reusing too many parts from separate places compromises the scalability, which is one of the main points of a CMS. A custom theme with as many custom plugins as possible helps to overcome this. It keeps things simple, and fits the direct needs of the client.",

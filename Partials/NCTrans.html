@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/portfolio.css" />
+<!-- <link rel="stylesheet" href="css/portfolio.css" /> -->
 <nav class="top-nav">
       <ul class="responsive-menu">
         <li>
@@ -30,7 +30,7 @@
      </section>
   </article>
   <article>
-    <header class="main-header"><h2>Client Meeting</h2></header>
+    <header class="main-header"><h2>{{data.challenge[0].title}}</h2></header>
     <section class="content">
       <p>
         {{data.challenge[0].section1}}
@@ -41,6 +41,16 @@
         <br />
         {{data.challenge[0].section4}}
       </p>
+    </section>
+  </article>
+  <article>
+    <header class="main-header">
+      <h2>{{data.research[0].title}}</h2>
+    </header>
+    <section class="content">
+        <p>
+          {{data.research[0].section1}}<a href="{{data.research[0].VulcanUrl}}">{{data.research[0].VulcanPark}}</a> {{data.research[0].section2}}
+        </p>
     </section>
   </article>
   <article>
