@@ -1,1 +1,1 @@
-var express=require("express"),compress=require("compression"),app=express();app.use(express["static"](__dirname+"/")),app.use(compress()),app.listen(process.env.PORT||3e3);
+var express=require("express"),compression=require("compression"),app=express();app.use(express["static"](__dirname+"/")),app.use(compression()),app.get("/events",function(e,s){s.setHeader("Content-Type","text/event-stream"),s.setHeader("Cache-Control","no-cache");var n=setInterval(function(){s.write("data: ping\n\n"),s.flush()},2e3);s.on("close",function(){clearInterval(n)})});
