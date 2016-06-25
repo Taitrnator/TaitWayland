@@ -1,5 +1,3 @@
 *.codekit
 scss/.sass-cache
-*min.js
-*min.css
 README.html
