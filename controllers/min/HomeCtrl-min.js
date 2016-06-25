@@ -1,1 +1,1 @@
-TaitWayland.controller("HomeCtrl",function(t,a){a.get("JSON/HomePage.json").then(function(a){t.data=a.data})});
+TaitWayland.controller("HomeCtrl",function(a,n){n.get("JSON/HomePage.json").then(function(n){a.data=n.data,a.ldjson=a.data.ldjson})});

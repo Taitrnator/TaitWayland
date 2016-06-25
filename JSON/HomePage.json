@@ -1,65 +1,85 @@
 {
-  "name": "Tait Wayland",
-  "header": [{
-    "header1": "my name is tait",
-    "header2": "i’m a ui designer and developer living in birmingham, alabama.",
-    "header3": "i like masking tape."
-    }],
-  "WhatIDoTitle": "What I Do",
-  "WhatIDo": [
-    {
-      "title": "User Research",
-      "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
-      "img": "images/rapidprototyping.png"
-    },
-    {
-      "title": "Mobile Design",
-      "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
-      "img": "images/appdesign.png"
-    },
-    {
-      "title": "Responsive Design",
-      "description": "Responsive sites, built with atomic design principles. Living style guides and all that jazz.",
-      "img": "images/responsivedesign.png"
-    },
-    {
-      "title": "Graphic Design",
-      "description": "Start with solid user research. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
-      "img": "images/graphicdesign.png"
-    },
-    {
-      "title": "Front End Development",
-      "description": "HTML, CSS, SASS, Javascript, Jquery, AngularJS, ASPNET",
-      "img": "images/frontenddevelopment.png"
-    },
-    {
-      "title": "UX Specialties",
-      "description": "E-Commerce Design. Marketing Design. Accessibility Design",
-      "img": "images/uxspecialties.png"
-    }
-  ],
-  "PortfolioTitle": "Portfolio",
-  "Portfolio": [
-    {
-      "title": "North Carolina Transportation Museum",
-      "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
-      "img": "images/rapidprototyping.png",
-      "url": "#NCTrans"
-    },
-    {
-      "title": "Share and Tear",
-      "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
-      "img": "images/appdesign.png",
-      "url": "#ShareAndTear"
-    }
-  ],
   "About": "About",
   "AboutSection": [{
-    "image": "images/TaitWayland.png",
     "PracticalDreamUrl": "//www.practicaldream.net",
     "CodeforBhamUrl": "//www.CodeforBirmingham.org",
     "CodeForBham": "Code for Birmingham",
     "Section1": " Hello I'm Tait Wayland. I've been doing UI design and development for about 3 years. I'm a product designer at TicketBiscuit. I formerly captained a Code for America brigade,"
-  }]
+  }],
 
+  "header": [{
+    "header1": "my name is tait",
+    "header2": "i like masking tape."
+  }],
+  "ldjson": [{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "affiliation": "Code for Birmingham",
+    "brand": "TaitWayland.com",
+    "description": "i’m a ui designer and developer living in birmingham, alabama.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Portfolio",
+      "itemListElement": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "CreativeWork",
+            "image" : "images/rapidprototyping.png",
+            "name": "North Carolina Transportation Museum",
+            "url" : "#NCTrans"
+          }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "CreativeWork",
+            "image" : "images/rapidprototyping.png",
+            "name": "Share and Tear",
+            "url": "#ShareAndTear"
+          }
+        }
+      ]
+    },
+    "image": "images/TaitWayland.png",
+    "jobTitle": "Product Designer",
+    "name": "Tait Wayland",
+    "url": "//taitwayland.com",
+    "worksFor": "TicketBiscuit"
+  }],
+  "WhatIDo": [{
+    "name": "What I Do",
+    "sections": [
+      {
+        "title": "User Research",
+        "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+        "img": "images/rapidprototyping.png"
+      },
+      {
+        "title": "Mobile Design",
+        "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
+        "img": "images/appdesign.png"
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Responsive sites, built with atomic design principles. Living style guides and all that jazz.",
+        "img": "images/responsivedesign.png"
+      },
+      {
+        "title": "Graphic Design",
+        "description": "Start with solid user research. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+        "img": "images/graphicdesign.png"
+      },
+      {
+        "title": "Front End Development",
+        "description": "HTML, CSS, SASS, Javascript, Jquery, AngularJS, ASPNET",
+        "img": "images/frontenddevelopment.png"
+      },
+      {
+        "title": "UX Specialties",
+        "description": "E-Commerce Design. Marketing Design. Accessibility Design",
+        "img": "images/uxspecialties.png"
+      }
+    ]
+  }]
 }

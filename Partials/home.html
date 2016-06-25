@@ -1,7 +1,3 @@
-<script type="text/javascript" src="scripts/html2canvas.js"></script>
-<script type="text/javascript" src="scripts/glitch.js"></script>
-<script type="text/javascript" src="scripts/jquery.shuffleLetters/assets/js/jquery.shuffleLetters.js"></script>
-<script type="text/javascript" src="scripts/homepage.js"></script>
 
 <nav class="top-nav">
   <ul class="responsive-menu">
@@ -33,8 +29,8 @@
 
 <header role="banner">
   <h1 class="header-1">{{data.header[0].header1}}</h1>
-  <h3 class="header-2">{{data.header[0].header2}}</h3>
-  <h5 class="header-3">{{data.header[0].header3}}</h5>
+  <h3 class="header-2">{{data.ldjson[0].description}}</h3>
+  <h5 class="header-3">{{data.header[0].header2}}</h5>
   <canvas id="portrait">
 
   </canvas>
@@ -43,9 +39,9 @@
 <div class="clearfix"></div>
 <main>
  <article id="WhatIDo">
-   <header class="main-header"><h2>{{data.WhatIDoTitle}}</h2></header>
+   <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
-     <article ng-repeat="section in data.WhatIDo">
+     <article ng-repeat="section in data.WhatIDo[0].sections">
        <header class="sub-header">
          <div class="img-container">
            <img ng-src="{{ section.img }}" />
@@ -61,11 +57,11 @@
    </section>
  </article>
  <article id="Work">
-   <header class="main-header"><h2>{{data.PortfolioTitle}}</h2></header>
+   <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
    <section class="content">
-     <article ng-repeat="key in data.Portfolio">
+     <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
         <header class="sub-header">
-          <h3><a href="{{key.url}}">{{key.title}}</a></h3>
+          <h3><a href="{{key.itemOffered.url}}">{{key.itemOffered.name}}</a></h3>
         </header>
      </article>
    </section>
@@ -75,7 +71,7 @@
    <section class="content">
      <article class="aboutimg">
        <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1>
-           <img src="{{data.AboutSection[0].image}}" alt="AboutMe"/>
+           <img src="{{data.ldjson[0].image}}" alt="AboutMe"/>
            <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
      </article>
      <article class="aboutcontent">
@@ -100,10 +96,8 @@
  </article>
 </main>
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "{{name}}"
-  }
-</script>
+<script type="text/javascript" src="scripts/html2canvas.js"></script>
+<script type="text/javascript" src="scripts/glitch.js"></script>
+<script type="text/javascript" src="scripts/jquery.shuffleLetters/assets/js/jquery.shuffleLetters.js"></script>
+<script type="text/javascript" src="scripts/homepage.js"></script>
+<ldjson data-json="ldjson"></ldjson>
