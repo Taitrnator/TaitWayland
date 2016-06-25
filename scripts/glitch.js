@@ -2,7 +2,7 @@ var canvas = document.getElementById("portrait");
 var context = canvas.getContext("2d"),
 		img = new Image(), w, h, offset, glitchInterval;
 
-img.src = './images/portrait.png';
+img.src = './images/TaitWayland.svg';
 img.onload = function() {
   init();
 	window.onresize = init;
@@ -22,6 +22,7 @@ var init = function() {
 
 var clear = function() {
 	context.rect(0, 0, w, h);
+	context.fillStyle = "#3A3A3A";
 	context.fill();
 };
 
