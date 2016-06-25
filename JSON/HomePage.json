@@ -18,7 +18,7 @@
     "description": "i’m a ui designer and developer living in birmingham, alabama.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Portfolio",
+      "name": "Work",
       "itemListElement": [
         {
             "@type": "Offer",
