@@ -22,6 +22,6 @@ $routeProvider
   controllerAs: 'ShareAndTearCtrl'
 })
 // else home
-.otherwise({ redirectTo: '/#'});
+.otherwise({ redirectTo: '/'});
 
 }]);
