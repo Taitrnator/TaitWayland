@@ -37,13 +37,16 @@
         <br />
         {{data.challenge[0].section2}}
         <br />
+      </p>
+      <img src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
+      <p>
         {{data.challenge[0].section3}}
         <br />
         {{data.challenge[0].section4}}
       </p>
     </section>
   </article>
-  <article>
+  <article class="research">
     <header class="main-header">
       <h2>{{data.research[0].title}}</h2>
     </header>
@@ -51,18 +54,50 @@
         <p>
           {{data.research[0].section1}}<a href="{{data.research[0].VulcanUrl}}">{{data.research[0].VulcanPark}}</a> {{data.research[0].section2}}
         </p>
+        <span>
+          <img src="{{data.images}}/{{data.inspiration[0].image1}}" alt="inspiration1" />
+        </span>
+        <span>
+          <img src="{{data.images}}/{{data.inspiration[0].image2}}" alt="inspiration2" />
+        </span>
+        <span>
+          <img src="{{data.images}}/{{data.inspiration[0].image3}}" alt="inspiration3" />
+        </span>
+    </section>
+  </article>
+  <article id="branding">
+    <header class="main-header"><h2>{{data.branding[0].title}}</h2></header>
+    <section class="content">
+      <article ng-repeat="image in data.branding[0].images[0]">
+        <img src="{{data.images}}/{{image}}" />
+      </article>
+      <article>
+        <img class="final-image" src="{{data.images}}/{{data.branding[0].finalimage}}" />
+      </article>
     </section>
   </article>
   <article>
-    <header class="main-header"><h2>Wireframing</h2></header>
+    <header class="main-header"><h2>{{data.wireframing[0].title}}</h2></header>
     <section class="content">
       <p>
-        {{data.wireframing}}
+        {{data.wireframing[0].section1}}
       </p>
+      <span>
+        <img src="{{data.images}}/{{data.wireframing[0].image1}}" alt="wireframing1" />
+      </span>
+      <span>
+        <img src="{{data.images}}/{{data.wireframing[0].image2}}" alt="wireframing2" />
+      </span>
+      <span>
+        <img src="{{data.images}}/{{data.wireframing[0].image3}}" alt="wireframing3" />
+      </span>
+      <span>
+        <img src="{{data.images}}/{{data.wireframing[0].image3}}" alt="wireframing3" />
+      </span>
     </section>
   </article>
   <article>
-    <header class="main-header"><h2>Technologies</h2></header>
+    <header class="main-header"><h2>{{data.technologies[0].title}}</h2></header>
     <section class="content">
       <p>
         {{data.technologies[0].section1}}
@@ -71,13 +106,11 @@
       </p>
     </section>
   </article>
-  <article>
+  <article id="Final">
+    <header class="main-header"><h2>{{data.final[0].title}}</h2></header>
     <section class="content">
-      <article>
-        <img src="{{data.images}}/home page.png" />
-      </article>
-      <article>
-        <img src="{{data.images}}/visit.png" />
+      <article ng-repeat="image in data.final[0].images[0]">
+        <img src="{{data.images}}/{{image}}" />
       </article>
     </section>
   </article>

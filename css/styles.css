@@ -9,6 +9,9 @@ a {
   a:hover {
     color: #c0b02a; }
 
+img {
+  padding: 10px; }
+
 article {
   margin: 10rem auto;
   z-index: 1;
@@ -31,13 +34,15 @@ article {
     width: 80%;
     flex-flow: row wrap;
     justify-content: center; }
+    article .content img {
+      max-width: 100%; }
     article .content article {
       margin: 1rem;
       width: 350px;
       align-self: baseline;
       flex-flow: column wrap;
       padding: 1%; }
-      article .content article img {
+      article .content article .section-img {
         max-width: 60px; }
       article .content article .sub-header {
         display: flex;
@@ -60,50 +65,71 @@ article {
             margin: 5px 15px;
             display: inline; }
       article .content article p {
+        font-size: 1.4rem;
         text-align: left; }
         article .content article p a {
           text-decoration: underline;
           color: #e0d470; }
           article .content article p a:hover {
             color: #c0b02a; }
-  article .masker {
-    overflow-x: hidden;
-    margin: 0;
-    color: #3A3A3A;
-    background-color: #F2EDC4;
-    font-size: 1.7rem;
-    text-align: center;
-    padding: 0.4rem;
-    position: relative; }
-  article .masker1 {
-    top: 10px;
-    left: 100px; }
-  article .masker2 {
-    bottom: 10px;
-    right: 200px; }
+
+.research section span img {
+  max-height: 150px; }
+
+.masker {
+  overflow-x: hidden;
+  margin: 0;
+  color: #3A3A3A;
+  background-color: #F2EDC4;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 0.4rem;
+  position: relative; }
+
+.masker1 {
+  top: 10px;
+  left: 100px; }
+
+.masker2 {
+  bottom: 10px;
+  right: 200px; }
+
+#WhatIDo .content p {
+  font-size: 1.1rem;
+  padding: 0px; }
 
 #About .sub-header img {
   width: 100%;
   height: auto; }
 #About .content article {
   align-self: center; }
-  #About .content article img {
-    max-width: 100%; }
   #About .content article p {
     font-size: 1.4rem; }
+
+#branding article {
+  width: auto; }
+#branding .content {
+  background-color: #fff; }
+  #branding .content img {
+    max-width: 250px; }
+  #branding .content .final-image {
+    max-width: 100%;
+    width: 100%; }
 
 #Contact .content article {
   width: 100%; }
   #Contact .content article h3 {
     text-align: center; }
 
+#Final article {
+  width: auto;
+  max-width: 450px; }
+
 #Work .content article {
   position: relative;
   /* establish nearest positioned ancestor for abs.positioning */
   height: 250px;
   align-items: center; }
-  #Work .content article img {
-    max-width: 100%; }
   #Work .content article h3 {
     position: absolute;
     top: 50%;
@@ -188,6 +214,10 @@ main {
           color: #e0d470;
           text-decoration: underline; }
 
+p {
+  padding: 15px;
+  font-size: 1.4rem; }
+
 .responsive-menu {
   position: relative;
   float: right;
@@ -258,7 +288,9 @@ header[role="banner"] {
       width: 100%; }
       article .content article {
         margin: 0.5rem auto; }
-    article .sub-header img {
+        article .content article img {
+          max-width: 100%; }
+    article .sub-header .section-img {
       height: 50px; }
 
   #About .sub-header img {

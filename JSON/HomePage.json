@@ -8,7 +8,8 @@
   }],
   "header": [{
     "header1": "my name is tait",
-    "header2": "i like masking tape."
+    "header2": "i’m a ui designer and developer living in birmingham, alabama.",
+    "header3": "i like masking tape."
   }],
   "ldjson": [{
     "@context": "http://schema.org",

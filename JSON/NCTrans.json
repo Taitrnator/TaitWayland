@@ -5,18 +5,48 @@
   "industry": "Museum/Nonprofit",
   "duties": "Rebranding, Information Architecture, Wireframing, Development",
   "technology": "wordpress (Bones theme), SASS",
-
   "objective": "Part of our services at TicketBiscuit involves website design for some of our bigger clients. The North Carolina Transportation Museum was assigned to me early into my career at TicketBiscuit. At that point I was aware that many of our clients were similar. We served many other railroad museums across the country. My personal object was to make a custom theme we could reuse for similar clients.",
-
+  "branding": [{
+    "title": "Branding",
+    "finalimage": "branding/nc_brand.png",
+    "images": [{
+      "image1": "branding/blue.png",
+      "image2": "branding/red.png",
+      "image3": "branding/logo.png",
+      "image4": "branding/paragraph.png"
+      }]
+    }],
   "challenge": [
     {
       "title": "Client Meeting",
+      "image1": "clientmeeting.png",
       "section1": "The first stage of the process was teaming up with Marketing to meet with our client. They sealed the deal with the client, so they had a good grasp on how to communicate with the client, as well as how our product served their needs.",
       "section2": "The client did what many clients do: they briefed us. They provided us with their branding material. They gave us sketches of how they wanted the site to look. They gave us information architecture, and a whole list of other suggestions. They predesigned the project in many aspects.",
       "section3": "I asked the client, “What are your goals?” This caught them a bit off guard and allowed us to work with them from a more flexible approach that satisfied both parties in the end.",
-      "section4": "We converged on a major need of the client: a refreshing, unified identity. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a design that could produce an emotional impact with their audience, and one that didn’t suck."
+      "section4": "We converged on a major need of the client: a refreshing, unified identity. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a fresh design that could produce an emotional impact with their audience."
     }
   ],
+  "final": [{
+    "title": "Final Wireframes",
+    "images": [{
+      "image1": "finals/mobile home.png",
+      "image2": "finals/mobile menu expanded.png",
+      "image3": "finals/mobile scroll.png",
+      "image4": "finals/mobile directions.png",
+      "image5": "finals/mobile visit.png",
+      "image6": "finals/mobile visit scroll.png",
+      "image7": "finals/home page.png",
+      "image8": "finals/visit.png",
+      "image9": "finals/Directions.png"
+      }]
+  }],
+  "images": "images/case_studies/NCTrans_Case",
+  "inspiration": [{
+    "title": "Inspiration",
+    "image1": "inspiration/mosi.png",
+    "image2": "inspiration/vulcan.png",
+    "image3": "inspiration/thisamericanlife.png"
+  }],
   "research": [{
       "title": "Research",
       "VulcanUrl": "//visitvulcan.com",
@@ -24,11 +54,18 @@
       "section1": "I realized the biggest problem was information architecture. Museums simply have a ton of content. While many museums today still use mega menus, there are better alternatives to sort this information out. I had previous experience collaborating with BIG Communications in Birmingham on their rebrand of ",
       "section2": "so I remember their website handling information architecture well. When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options."
     }],
-  "images": "images/case_studies/NCTrans_Case",
-
   "technologies": [{
+    "title": "Technologies",
     "section1": "Our clients need a CMS to update their content. This project employed Wordpress. There we’re several factors behind this decision. Its the most common CMS. It was conventionally used for clients in the past at TicketBiscuit. However, Wordpress has its pitfalls, mainly the fact that most Wordpress sites look the same. In addition, plugins can get clunky and reusing too many parts from separate places compromises the scalability, which is one of the main points of a CMS. A custom theme with as many custom plugins as possible helps to overcome this. It keeps things simple, and fits the direct needs of the client.",
     "section2": "The base theme was Bones, because it offers all the basic things one needs to scale a wordpress theme, with nothing more and nothing less. The theme also comes with SASS. Well, because why would anybody use anything else? Both SASS and the Bones theme offer scalability, which is exactly what we needed in every layer of this project."
+    }],
+  "wireframing": [{
+    "title": "Wireframing",
+    "section1": "The conventional wisdom of mobile-first was employed here. Particuarly due to the challenge of delivering all of this content in a user-friendly way. The client was very particular about what they wanted on the first page, but arranging it in a friendly way was challenging.",
+    "image1": "wireframes/mobile1.png",
+    "image2": "wireframes/mobile2.png",
+    "image3": "wireframes/desktop1.png",
+    "image4": "wireframes/desktop2.png"
     }]
 
 

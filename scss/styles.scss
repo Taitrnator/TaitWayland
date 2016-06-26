@@ -15,6 +15,9 @@ a {
     color: darken($maskingtape, 40%);
   }
 }
+img {
+  padding: 10px;
+}
 
 article {
   margin: 10rem auto;
@@ -39,13 +42,16 @@ article {
     width: 80%;
     flex-flow: row wrap;
     justify-content: center;
+    img {
+      max-width: 100%;
+    }
     article {
       margin: 1rem;
       width: 350px;
       align-self:baseline;
       flex-flow: column wrap;
       padding: 1%;
-      img {
+      .section-img {
         max-width: 60px;
       }
       .sub-header {
@@ -75,6 +81,7 @@ article {
         }
       }
       p {
+        font-size: 1.4rem;
         text-align: left;
         a {
           text-decoration: underline;
@@ -86,6 +93,15 @@ article {
       }
     }
   }
+}
+.research section {
+  span {
+    img {
+      max-height: 150px;
+    }
+  }
+}
+
   .masker {
     overflow-x:hidden;
     margin: 0;
@@ -104,6 +120,13 @@ article {
     bottom: 10px;
     right: 200px;
   }
+#WhatIDo {
+  .content {
+    p {
+      font-size: 1.1rem;
+      padding: 0px;
+    }
+  }
 }
 #About {
   .sub-header {
@@ -115,12 +138,24 @@ article {
   .content {
     article {
       align-self: center;
-      img {
-        max-width: 100%;
-      }
       p {
         font-size: 1.4rem;
       }
+    }
+  }
+}
+#branding {
+  article {
+    width: auto;
+  }
+  .content {
+    background-color: #fff;
+    img {
+      max-width: 250px;
+    }
+    .final-image {
+      max-width: 100%;
+      width: 100%;
     }
   }
 }
@@ -134,15 +169,18 @@ article {
     }
   }
 }
+#Final {
+  article {
+    width: auto;
+    max-width: 450px;
+  }
+}
 #Work {
   .content {
     article {
       position: relative;     /* establish nearest positioned ancestor for abs.positioning */
       height: 250px;
       align-items: center;
-        img {
-          max-width: 100%;
-        }
         h3{
           position: absolute;
           top: 50%;
@@ -239,6 +277,12 @@ main {
       }
     }
 }
+
+p {
+  padding: 15px;
+  font-size: 1.4rem;
+}
+
 .responsive-menu {
   position: relative;
   float: right;
@@ -324,10 +368,13 @@ header[role="banner"] {
       width: 100%;
       article {
         margin: 0.5rem auto;
+        img {
+          max-width: 100%;
+        }
       }
     }
     .sub-header {
-      img {
+      .section-img {
         height: 50px;
       }
     }
