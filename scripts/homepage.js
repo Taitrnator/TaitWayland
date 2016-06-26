@@ -7,7 +7,7 @@ $(document).ready(function() {
        }
   }
 
-  setTimeout(function() { coolText(".header-1", 44); });
+  setTimeout(function() { coolText(".header-1", 44); }, 500);
   setTimeout(function() { coolText(".header-2", 44); }, 700);
   setTimeout(function() { coolText(".header-3"); }, 2500);
 
