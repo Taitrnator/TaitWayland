@@ -126,14 +126,15 @@ article {
   max-width: 450px; }
 
 #Work .content article {
+  display: flex;
+  background-color: #fff;
   position: relative;
   /* establish nearest positioned ancestor for abs.positioning */
   height: 250px;
   align-items: center; }
-  #Work .content article h3 {
-    position: absolute;
-    top: 50%;
-    text-align: center; }
+  #Work .content article a {
+    align-self: center;
+    margin: auto; }
 
 button:focus {
   outline: 0; }

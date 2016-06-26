@@ -16,20 +16,22 @@ $(document).ready(function() {
   // menu functionality
   $(".hamburger").on('click', function() {
     $(this).toggleClass("is-active");
-    var height = $(document).height();
     $(".main-menu").toggleClass("showIn");
     $(".main-menu").children("ul").toggleClass("fadeIn");
+
+    $(".WhatIDo").on('click', scrollTo("WhatIDo"));
 
     function scrollTo(sect) {
       if (sect === "WhatIDo") {
         console.log("what I do");
+        $(".main-menu").toggleClass("showIn");
+        $(".main-menu").children("ul").toggleClass("fadeIn");
       }
-      $(".main-menu").toggleClass("showIn");
     }
+
 });
 
 // stupid unnecessary shit
-
  function coolMaskers(h1, h2) {
    $(window).on('scroll', function() {
      var height = $(document).scrollTop();

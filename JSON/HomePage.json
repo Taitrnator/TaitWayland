@@ -25,18 +25,9 @@
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/case_studies/NCTrans_Case/nctrans_preview.png",
+            "image" : "images/case_studies/NCTrans_Case/branding/logo.png",
             "name": "North Carolina Transportation Museum",
             "url" : "#NCTrans"
-          }
-        },
-        {
-            "@type": "Offer",
-            "itemOffered": {
-            "@type": "CreativeWork",
-            "image" : "images/rapidprototyping.png",
-            "name": "Share and Tear",
-            "url": "#ShareAndTear"
           }
         }
       ]
@@ -62,18 +53,18 @@
       },
       {
         "title": "Responsive Design",
-        "description": "Responsive sites, built with atomic design principles. Living style guides and all that jazz.",
+        "description": "Responsive sites, typically mobile-first.",
         "img": "images/responsivedesign.png"
-      },
-      {
-        "title": "Graphic Design",
-        "description": "Start with solid user research. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
-        "img": "images/graphicdesign.png"
       },
       {
         "title": "Front End Development",
         "description": "HTML, CSS, SASS, Javascript, Jquery, AngularJS, ASPNET",
         "img": "images/frontenddevelopment.png"
+      },
+      {
+        "title": "Process",
+        "description": "Follow atomic design principles, semantic markup, object-oriented css patterns, and respect style guides. Scalability all-the-way.",
+        "img": "images/graphicdesign.png"
       },
       {
         "title": "UX Specialties",

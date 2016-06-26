@@ -82,17 +82,8 @@
       <p>
         {{data.wireframing[0].section1}}
       </p>
-      <span>
-        <img src="{{data.images}}/{{data.wireframing[0].image1}}" alt="wireframing1" />
-      </span>
-      <span>
-        <img src="{{data.images}}/{{data.wireframing[0].image2}}" alt="wireframing2" />
-      </span>
-      <span>
-        <img src="{{data.images}}/{{data.wireframing[0].image3}}" alt="wireframing3" />
-      </span>
-      <span>
-        <img src="{{data.images}}/{{data.wireframing[0].image3}}" alt="wireframing3" />
+      <span ng-repeat="image in data.wireframing[0].images[0]">
+        <img src="{{data.images}}/{{data.wireframing[0].image}}" alt="{{data.wireframing[0].image}}" />
       </span>
     </section>
   </article>

@@ -178,14 +178,15 @@ article {
 #Work {
   .content {
     article {
+      display: flex;
+      background-color: #fff;
       position: relative;     /* establish nearest positioned ancestor for abs.positioning */
       height: 250px;
       align-items: center;
-        h3{
-          position: absolute;
-          top: 50%;
-          text-align: center;
-        }
+      a {
+        align-self: center;
+        margin: auto;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 
-<nav class="top-nav">
+<!-- <nav class="top-nav">
   <ul class="responsive-menu">
     <li>
       <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
@@ -13,19 +13,19 @@
 <section class="main-menu">
     <ul>
       <li>
-        <a href="" onClick="scrollTo(WhatIDo)">What I Do</a>
+        <a class="WhatIDo" href="">What I Do</a>
       </li>
       <li>
-        <a href="">Work</a>
+        <a class="Work" href="">Work</a>
       </li>
       <li>
-        <a href="">About</a>
+        <a class="About" href="">About</a>
       </li>
       <li>
-        <a href="">Contact</a>
+        <a class="contact" href="">Contact</a>
       </li>
     </ul>
-</section>
+</section> -->
 
 <header role="banner">
   <h1 class="header-1">{{data.header[0].header1}}</h1>
@@ -59,8 +59,7 @@
    <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
    <section class="content">
      <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
-          <img class="portfolio-image" src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
-          <h3><a href="{{key.itemOffered.url}}">{{key.itemOffered.name}}</a></h3>
+          <a href="{{key.itemOffered.url}}"><img class="portfolio-image" src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" /></a>
      </article>
    </section>
  </article>
@@ -103,5 +102,5 @@
 <script type="text/javascript">
   !function($){function t(t){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.?/\\(^)![]{}*&^%$#'\"",a=e.split("");return a[Math.floor(Math.random()*a.length)]}$.fn.shuffleLetters=function(e){var a=$.extend({step:8,fps:45,text:"",callback:function(){}},e);return this.each(function(){var e=$(this),n="";if(e.data("animated"))return!0;e.data("animated",!0),n=a.text?a.text.split(""):e.text().split("");for(var i=[],r=[],f=0;f<n.length;f++){var s=n[f];" "!==s?r.push(f):i[f]="space"}e.html(""),function o(i){var f,s=r.length,u=n.slice(0);if(i>s)return e.data("animated",!1),void a.callback(e);for(f=Math.max(i,0);s>f;f++)f<i+a.step?u[r[f]]=t([r[f]]):u[r[f]]="";e.text(u.join("")),setTimeout(function(){o(i+1)},1e3/a.fps)}(-a.step)})}}(jQuery);
 </script>
-<script type="text/javascript" src="scripts/min/homepage-min.js"></script>
+<script type="text/javascript" src="scripts/homepage.js"></script>
 <ldjson data-json="ldjson"></ldjson>
