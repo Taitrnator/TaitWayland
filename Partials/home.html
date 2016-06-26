@@ -93,14 +93,12 @@
  </article>
 </main>
 
-<script type="text/javascript" src="scripts/min/html2canvas-min.js">
-
-</script>
+<script async type="text/javascript" src="scripts/min/html2canvas-min.js"></script>
 <script type="text/javascript">
   var canvas=document.getElementById("portrait"),context=canvas.getContext("2d"),img=new Image,w,h,offset,glitchInterval;img.src="./images/TaitWayland.svg",img.onload=function(){init(),window.onresize=init};var init=function(){clearInterval(glitchInterval),canvas.width=w=200,offset=0,canvas.height=h=543,glitchInterval=setInterval(function(){clear(),context.drawImage(img,0,0,img.width,img.height,offset,0,w-2*offset,h),setTimeout(glitchImg,randInt(250,1e3),500)},500)},clear=function(){context.rect(0,0,w,h),context.fillStyle="#3A3A3A",context.fill()},glitchImg=function(){for(var t=0;t<randInt(1,13);t++){var n=Math.random()*w,a=Math.random()*h,e=w-n,i=randInt(5,h/3);context.drawImage(canvas,0,a,e,i,n,a,e,i),context.drawImage(canvas,e,a,n,i,0,a,n,i)}},randInt=function(t,n){return~~(Math.random()*(n-t)+t)};
 </script>
 <script type="text/javascript">
   !function($){function t(t){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.?/\\(^)![]{}*&^%$#'\"",a=e.split("");return a[Math.floor(Math.random()*a.length)]}$.fn.shuffleLetters=function(e){var a=$.extend({step:8,fps:45,text:"",callback:function(){}},e);return this.each(function(){var e=$(this),n="";if(e.data("animated"))return!0;e.data("animated",!0),n=a.text?a.text.split(""):e.text().split("");for(var i=[],r=[],f=0;f<n.length;f++){var s=n[f];" "!==s?r.push(f):i[f]="space"}e.html(""),function o(i){var f,s=r.length,u=n.slice(0);if(i>s)return e.data("animated",!1),void a.callback(e);for(f=Math.max(i,0);s>f;f++)f<i+a.step?u[r[f]]=t([r[f]]):u[r[f]]="";e.text(u.join("")),setTimeout(function(){o(i+1)},1e3/a.fps)}(-a.step)})}}(jQuery);
 </script>
-<script type="text/javascript" src="scripts/homepage.js"></script>
+<script  async type="text/javascript" src="scripts/homepage.js"></script>
 <ldjson data-json="ldjson"></ldjson>
