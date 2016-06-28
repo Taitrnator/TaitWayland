@@ -1139,12 +1139,16 @@ p {
   clear: both; }
 
 .fadeIn {
-  visibility: visible;
-  opacity: 1; }
+  visibility: visible !important;
+  opacity: 1 !important; }
+
+.fadeInSoft {
+  visibility: visible !important;
+  opacity: 0.6 !important; }
 
 .showIn {
-  display: table;
-  background: rgba(60, 60, 60, 0.8); }
+  display: table !important;
+  background: rgba(60, 60, 60, 0.8) !important; }
 
 .left {
   float: left; }
@@ -1167,6 +1171,11 @@ p {
   width: 200px;
   top: 80px;
   opacity: 0.3; }
+
+.portrait {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out; }
 
 header[role="banner"] {
   height: 200px;
