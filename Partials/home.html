@@ -1,5 +1,5 @@
 
-<!-- <nav class="top-nav">
+<nav class="top-nav">
   <ul class="responsive-menu">
     <li>
       <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
@@ -11,33 +11,41 @@
   </ul>
 </nav>
 <section class="main-menu">
+  <nav>
     <ul>
       <li>
-        <a class="WhatIDo" href="">What I Do</a>
+        <a class="WhatIDo" data-target="WhatIDo">What I Do</a>
       </li>
       <li>
-        <a class="Work" href="">Work</a>
+        <a class="Work" data-target="Work">Work</a>
       </li>
       <li>
-        <a class="About" href="">About</a>
+        <a class="About" data-target="About">About</a>
       </li>
       <li>
-        <a class="contact" href="">Contact</a>
+        <a class="contact" data-target="Contact">Contact</a>
       </li>
     </ul>
-</section> -->
+  </nav>
+</section>
 
-<header class="main-header" role="banner">
-  <h1 class="header-1">{{data.header[0].header1}}</h1>
-  <h3 class="header-2">{{data.header[0].header2}}</h3>
-  <h5 class="header-3">{{data.header[0].header3}}</h5>
+<div class="portrait-container">
   <canvas id="portrait">
 
   </canvas>
   <img class="portrait hidden" src="/images/TaitWayland.svg" width="500" alt="portrait" />
-</header>
-<div class="clearfix"></div>
+  <span>portrait</span>
+</div>
+
+<!-- <div class="backToTop">
+  <a href="#"><i class="fa fa-arrow-up"></i></a>
+</div> -->
 <main>
+  <header class="main-header" role="banner">
+    <h1 class="header-1">{{data.header[0].header1}}</h1>
+    <h3 class="header-2">{{data.header[0].header2}}</h3>
+    <h5 class="header-3">{{data.header[0].header3}}</h5>
+  </header>
  <article id="WhatIDo">
    <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
@@ -99,5 +107,4 @@
 <script type="text/javascript">
   !function($){function t(t){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.?/\\(^)![]{}*&^%$#'\"",a=e.split("");return a[Math.floor(Math.random()*a.length)]}$.fn.shuffleLetters=function(e){var a=$.extend({step:8,fps:45,text:"",callback:function(){}},e);return this.each(function(){var e=$(this),n="";if(e.data("animated"))return!0;e.data("animated",!0),n=a.text?a.text.split(""):e.text().split("");for(var i=[],r=[],f=0;f<n.length;f++){var s=n[f];" "!==s?r.push(f):i[f]="space"}e.html(""),function o(i){var f,s=r.length,u=n.slice(0);if(i>s)return e.data("animated",!1),void a.callback(e);for(f=Math.max(i,0);s>f;f++)f<i+a.step?u[r[f]]=t([r[f]]):u[r[f]]="";e.text(u.join("")),setTimeout(function(){o(i+1)},1e3/a.fps)}(-a.step)})}}(jQuery);
 </script>
-<script  async type="text/javascript" src="scripts/homepage.js"></script>
 <ldjson data-json="ldjson"></ldjson>

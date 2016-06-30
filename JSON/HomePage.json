@@ -25,9 +25,18 @@
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/case_studies/NCTrans_Case/branding/logo.png",
+            "image" : "images/case_studies/NCTrans_Case/nc_preview.png",
             "name": "North Carolina Transportation Museum",
             "url" : "#NCTrans"
+          }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "CreativeWork",
+            "image" : "images/case_studies/ShareandTear_Case/shareandtear_preview.png",
+            "name": "Share and Tear",
+            "url" : "#ShareAndTear"
           }
         }
       ]

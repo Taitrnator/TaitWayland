@@ -17,7 +17,18 @@
       "section5": "We converged on a major need of the client: a refreshing, unified identity. We converged on some useful information. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a design that could produce an emotional impact with their audience, and one that didn’t suck."
     }
   ],
-  "images": "images/case_studies/NCTrans_Case",
+  "final": [{
+    "title": "Final Wireframes",
+    "images": [{
+      "image1": "finals/login copy.png",
+      "image2": "finals/event list.png",
+      "image3": "finals/event list share.png",
+      "image4": "finals/ticket 2 copy.png",
+      "image5": "finals/ticket torn.png",
+      "image6": "finals/ticket 2 copy 2.png"
+      }]
+  }],
+  "images": "images/case_studies/ShareandTear_Case",
   "wireframing": "I realized the biggest problem was information architecture. Museums simply have a ton of content. While many museums today still use mega menus, there are better alternatives to sort this information out. I had previous experience collaborating with BIG Communications in Birmingham on their rebrand of Vulcan Park, so I remember their website handling information architecture well. (http://visitvulcan.com) When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options.",
 
   "technologies": [{

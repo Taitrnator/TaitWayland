@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/portfolio.css" />
 <nav class="top-nav">
       <ul class="responsive-menu">
         <li>
@@ -61,13 +60,11 @@
       </p>
     </section>
   </article>
-  <article>
+  <article id="Final">
+    <header class="main-header"><h2>{{data.final[0].title}}</h2></header>
     <section class="content">
-      <article>
-        <img src="{{data.images}}/home page.png" />
-      </article>
-      <article>
-        <img src="{{data.images}}/visit.png" />
+      <article ng-repeat="image in data.final[0].images[0]">
+        <img src="{{data.images}}/{{image}}" max-width="450px" />
       </article>
     </section>
   </article>

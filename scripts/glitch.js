@@ -4,12 +4,12 @@ var context = canvas.getContext("2d"),
 
 img.src = './images/TaitWayland.svg';
 img.onload = function() {
-  setTimeout(function() { init(); }, 500);
+  setTimeout(function() { init(); }, 1000);
 	window.onresize = init;
-	setTimeout(function() { closeContext(); }, 4000);
+	setTimeout(function() { closeContext(); }, 3000);
 	setTimeout(function() { $(".portrait").addClass("fadeInSoft");
 		$("canvas").hide();
-	}, 5000);
+	}, 3500);
 };
 
 var init = function() {
@@ -50,50 +50,55 @@ var randInt = function(a, b) {
 	return ~~(Math.random() * (b - a) + a);
 };
 
-// makes the parallax elements
-function parallaxIt() {
 
-  // create variables
-  var fwindow = $(window);
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  // on window scroll event
-  fwindow.on('scroll resize', function() {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  });
-
-  // for each of content parallax element
-  $('.portrait').each(function (index, e) {
-    var contentObj = $(this);
-    var fgOffset = parseInt(contentObj.offset().top);
-    var yPos;
-    var speed = (contentObj.data('speed') || 1 );
-
-    	fwindow.on('scroll resize', function (){
-      yPos = fgOffset - scrollTop / speed;
-
-      $contentObj.css('top', yPos);
-    });
-  });
-
-  // for each of background parallax element
-  $('.main-header').each(function(){
-    var backgroundObj = $(this);
-    var bgOffset = parseInt(backgroundObj.offset().top);
-    var yPos;
-    var coords;
-    var speed = ($backgroundObj.data('speed') || 0 );
-
-    	fwindow.on('scroll resize', function() {
-      yPos = - ((scrollTop - bgOffset) / speed);
-      coords = '50% '+ yPos + 'px';
-
-      backgroundObj.css({ backgroundPosition: coords });
-    });
-  });
-
-  // triggers winodw scroll for refresh
-  $fwindow.trigger('scroll');
-};
-
-parallaxIt();
+$(window).on("scroll", function() {
+	
+});
+// // makes the parallax elements
+// function parallaxIt() {
+//
+//   // create variables
+//   var fwindow = $(window);
+//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//
+//   // on window scroll event
+//   fwindow.on('scroll', function() {
+//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   });
+//
+//   // for each of content parallax element
+//   $('body').children().each(function (index, e) {
+//     var contentObj = $(this);
+//     var fgOffset = parseInt(contentObj.offset().top);
+//     var yPos;
+//     var speed = (contentObj.data('speed') || 1 );
+//
+//     	fwindow.on('scroll resize', function (){
+//       yPos = fgOffset - scrollTop / speed;
+//
+//       contentObj.css('top', yPos);
+//     });
+//   });
+//
+//   // for each of background parallax element
+//   $('.portrait').each(function(){
+//     var backgroundObj = $(this);
+//     var bgOffset = parseInt(backgroundObj.offset().top);
+//     var yPos;
+//     var coords;
+//     var speed = (backgroundObj.data('speed') || 0.3);
+//
+//     	fwindow.on('scroll resize', function() {
+//       yPos = - ((scrollTop - bgOffset) / speed);
+//       coords = '50% '+ yPos + 'px';
+//
+//       backgroundObj.css({ backgroundPosition: coords });
+//     });
+//   });
+//
+//   // triggers winodw scroll for refresh
+//   fwindow.trigger('scroll');
+// }
+//
+// parallaxIt();
