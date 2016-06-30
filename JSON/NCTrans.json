@@ -55,7 +55,7 @@
       "section2": "so I remember their website handling information architecture well. When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options."
     }],
   "technologies": [{
-    "title": "Technologies",
+    "title": "Tech",
     "section1": "Our clients need a CMS to update their content. This project employed Wordpress. There we’re several factors behind this decision. Its the most common CMS. It was conventionally used for clients in the past at TicketBiscuit. However, Wordpress has its pitfalls, mainly the fact that most Wordpress sites look the same. In addition, plugins can get clunky and reusing too many parts from separate places compromises the scalability, which is one of the main points of a CMS. A custom theme with as many custom plugins as possible helps to overcome this. It keeps things simple, and fits the direct needs of the client.",
     "section2": "The base theme was Bones, because it offers all the basic things one needs to scale a wordpress theme, with nothing more and nothing less. The theme also comes with SASS. Well, because why would anybody use anything else? Both SASS and the Bones theme offer scalability, which is exactly what we needed in every layer of this project."
     }],

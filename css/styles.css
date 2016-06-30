@@ -1225,7 +1225,7 @@ header[role="banner"] {
     width: 25%; }
   article .content {
     width: 75%; } }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 756px) {
   .responsive-menu {
     padding-left: 0px;
     display: block; }
