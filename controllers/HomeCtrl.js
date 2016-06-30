@@ -50,13 +50,9 @@ TaitWayland.controller("HomeCtrl", function($scope, $http) {
           var showBackTotop = $(window).height();
           backToTop.hide();
           var children = $(".main-menu li").children();
-          var tab = [];
           for (var i=0; i < children.length; i++) {
-            console.log(children[i]);
             var child = children[i];
             var ahref = $(child).attr('href');
-            console.log(ahref);
-            tab.push(ahref);
           }
 
           $(window).scroll( function() {
@@ -69,17 +65,6 @@ TaitWayland.controller("HomeCtrl", function($scope, $http) {
 
             var windowHeight = $(window).height();
             var docHeight = $(document).height();
-
-            for (var i=0; i < tab.length; i++) {
-              var link = tab[i];
-              var divPos = $(link).offset().top;
-              var divHeight = $(link).height();
-              if (windowScrollTop >= divPos && windowScrollTop < (divPos + divHeight)) {
-                    $(".mainMenu a[href='" + link + "']").addClass("active");
-                  } else {
-                    $(".mainMenu a[href='" + link + "']").removeClass("active");
-                  }
-                }
 
               if(windowScrollTop + windowHeight == docHeight) {
                   if (!$(".mainMenu li:last-child a").hasClass("active")) {
