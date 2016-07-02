@@ -1,16 +1,35 @@
 @import 'variables.scss';
+//
+// // body {
+// //   background-color: #fff;
+// //   color: $charcoal;
+// //   font-family: $main-font;
+// // }
+// //
+// // article {
+// //   .main-header {
+// //     h2 {
+// //       color: $maskingtape;
+// //       background-color: $charcoal;
+// //     }
+// //   }
+// // }
 
-body {
-  background-color: #fff;
+header[role="banner"] {
+  height: auto;
+  text-align: center;
   color: $charcoal;
-  font-family: $main-font;
+  background-color: #dfdfdf;
+  padding: 15px;
+}
+article.overview {
+  flex-flow: row nowrap;
 }
 
-article {
-  .main-header { 
-    h2 {
-      color: $maskingtape;
-      background-color: $charcoal;
+@media screen and (max-width: 756px) {
+  article {
+    .main-header {
+      align-self: flex-end;
     }
   }
 }

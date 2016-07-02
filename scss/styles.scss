@@ -5,6 +5,10 @@ body {
   background-color: $charcoal;
   color: $maskingtape;
   font-family: $main-font;
+  margin: 0;
+}
+main {
+  margin: 5px;
 }
 
 
@@ -93,6 +97,10 @@ article {
         }
       }
     }
+    .button-article {
+      width: 250px;
+      align-content: center;
+    }
   }
 }
 .research section {
@@ -102,7 +110,6 @@ article {
     }
   }
 }
-
   .masker {
     overflow-x:hidden;
     margin: 0;
@@ -160,16 +167,6 @@ article {
     }
   }
 }
-#Contact {
-  .content {
-    article {
-      width: 100%;
-      h3 {
-        text-align: center;
-      }
-    }
-  }
-}
 #Final {
   article {
     width: auto;
@@ -191,6 +188,28 @@ article {
         margin: auto;
       }
     }
+  }
+}
+.button {
+  padding: 0.8rem 1.5rem;
+  color: darken($maskingtape, 70%);
+  background-color: $maskingtape;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  &:hover {
+    color: darken($maskingtape, 90%);
+    background-color: darken($maskingtape, 20%);
+  }
+  img {
+    width: 22px;
+  }
+  img, span {
+    vertical-align: middle;
   }
 }
 
@@ -225,19 +244,8 @@ h1, h2, h3, h4, h5, h6 {
   background: -ms-linear-gradient(top, $gradienttop, $gradientbottom);
   background: linear-gradient(to bottom, $gradienttop, $gradientbottom);
   ul {
-    position: relative;
-    margin: 5px;
     li {
-      display: inline;
       list-style-type: none;
-      font-size: 20px;
-      font-weight: normal;
-      margin-left: 15px;
-      -webkit-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out;
-    }
-    li.scrolled {
-      margin-left: 40px;
     }
   }
 }
@@ -313,7 +321,32 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  .social-media-links {
+    ul {
+      display: block;
+      li {
+      display: inline;
+      }
+    }
+  }
 }
+
+.social-media-links {
+  ul {
+    margin: 0.3rem;
+    li {
+      display: inline;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 
 @keyframes fadeInRight {
   0% {

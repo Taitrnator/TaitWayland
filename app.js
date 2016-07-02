@@ -1,6 +1,7 @@
 var TaitWayland = angular.module('TaitWayland', [
 'ngRoute',
-'ngAnimate'
+'ngAnimate',
+'duScroll'
 ]);
 
 TaitWayland.config(['$routeProvider', '$controllerProvider', function ($routeProvider) {

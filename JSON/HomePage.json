@@ -11,6 +11,8 @@
     "header2": "i’m a ui designer and developer living in birmingham, alabama.",
     "header3": "i like masking tape."
   }],
+  "githuburl": "//github.com/taitrnator",
+  "linkedinurl": "//linkedin.com/taitwayland",
   "ldjson": [{
     "@context": "http://schema.org",
     "@type": "Person",

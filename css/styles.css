@@ -907,7 +907,11 @@
 body {
   background-color: #3A3A3A;
   color: #F2EDC4;
-  font-family: "niveau-grotesk", Helvetica, sans-serif; }
+  font-family: "niveau-grotesk", Helvetica, sans-serif;
+  margin: 0; }
+
+main {
+  margin: 5px; }
 
 a {
   color: #e0d470;
@@ -978,6 +982,9 @@ article {
           color: #e0d470; }
           article .content article p a:hover {
             color: #c0b02a; }
+    article .content .button-article {
+      width: 250px;
+      align-content: center; }
 
 .research section span img {
   max-height: 150px; }
@@ -1022,11 +1029,6 @@ article {
     max-width: 100%;
     width: 100%; }
 
-#Contact .content article {
-  width: 100%; }
-  #Contact .content article h3 {
-    text-align: center; }
-
 #Final article {
   width: auto;
   max-width: 450px; }
@@ -1042,6 +1044,25 @@ article {
   #Work .content article a {
     align-self: center;
     margin: auto; }
+
+.button {
+  padding: 0.8rem 1.5rem;
+  color: #423d0f;
+  background-color: #F2EDC4;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out; }
+  .button:hover {
+    color: black;
+    background-color: #e0d470; }
+  .button img {
+    width: 22px; }
+  .button img, .button span {
+    vertical-align: middle; }
 
 button:focus {
   outline: 0; }
@@ -1072,19 +1093,8 @@ h1, h2, h3, h4, h5, h6 {
   background: -o-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
   background: -ms-linear-gradient(top, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0));
   background: linear-gradient(to bottom, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0)); }
-  .top-nav ul {
-    position: relative;
-    margin: 5px; }
-    .top-nav ul li {
-      display: inline;
-      list-style-type: none;
-      font-size: 20px;
-      font-weight: normal;
-      margin-left: 15px;
-      -webkit-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out; }
-    .top-nav ul li.scrolled {
-      margin-left: 40px; }
+  .top-nav ul li {
+    list-style-type: none; }
 
 .main-menu {
   position: fixed;
@@ -1143,6 +1153,20 @@ h1, h2, h3, h4, h5, h6 {
         .main-menu ul li a:hover {
           color: #e0d470;
           text-decoration: underline; }
+  .main-menu .social-media-links ul {
+    display: block; }
+    .main-menu .social-media-links ul li {
+      display: inline; }
+
+.social-media-links ul {
+  margin: 0.3rem; }
+  .social-media-links ul li {
+    display: inline;
+    list-style-type: none; }
+    .social-media-links ul li a {
+      text-decoration: none; }
+      .social-media-links ul li a img {
+        padding: 0; }
 
 @keyframes fadeInRight {
   0% {

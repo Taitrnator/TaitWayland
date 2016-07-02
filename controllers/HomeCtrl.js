@@ -1,4 +1,4 @@
-TaitWayland.controller("HomeCtrl", function($scope, $http) {
+TaitWayland.controller("HomeCtrl", function($scope, $http, $document) {
   $http.get('JSON/HomePage.json').then(function (res) {
     $scope.data = res.data;
     $scope.ldjson = $scope.data.ldjson;
@@ -23,68 +23,24 @@ TaitWayland.controller("HomeCtrl", function($scope, $http) {
        });
        }
 
+       $scope.toSection = function(e) {
+         $scope.menuToggle();
+         var section = angular.element(document.getElementById(e));
+         $document.scrollToElementAnimated(section);
+
+       };
+
+      $scope.menuToggle = function() {
+        $('.hamburger').toggleClass("is-active");
+        $(".main-menu").toggleClass("open");
+      };
+
       setTimeout(function() { coolText(".header-1", 44); }, 100);
       setTimeout(function() { coolText(".header-2", 44); }, 700);
       setTimeout(function() { coolText(".header-3"); }, 2500);
 
       coolMaskers(".masker1", ".masker2");
 
-      // menu functionality
-      $(".hamburger").on('click', function() {
-        $(this).toggleClass("is-active");
-        $(".main-menu").toggleClass("open");
-      });
-
-        function scrollTo () {
-          $('.main-menu a').click(function(e) {
-            $('.hamburger').toggleClass("is-active");
-            $(".main-menu").toggleClass("open");
-            e.preventDefault();
-            var distanceTopToSection = $( '#' +  $(this).data('target')).offset().top;
-    		    $( 'body, html' ).animate({scrollTop:distanceTopToSection }, 'slow');
-            });
-        }
-
-        function scrollToTop () {
-          var backToTop = $('.backToTop');
-          var showBackTotop = $(window).height();
-          backToTop.hide();
-          var children = $(".main-menu li").children();
-          for (var i=0; i < children.length; i++) {
-            var child = children[i];
-            var ahref = $(child).attr('href');
-          }
-
-          $(window).scroll( function() {
-            var windowScrollTop = $(window).scrollTop();
-            if( windowScrollTop > showBackTotop  ) {
-              backToTop.fadeIn('slow');
-            } else {
-              backToTop.fadeOut('slow');
-            }
-
-            var windowHeight = $(window).height();
-            var docHeight = $(document).height();
-
-              if(windowScrollTop + windowHeight == docHeight) {
-                  if (!$(".mainMenu li:last-child a").hasClass("active")) {
-                    var navActive = $(".active").attr("href");
-                    $(".mainMenu a[href='" + navActive + "']").removeClass("active");
-                    $(".mainMenu li:last-child a").addClass("active");
-                }
-              }
-          });
-
-          backToTop.click( function(e) {
-            e.preventDefault();
-            $(' .mainMenu li a ').removeClass( 'active' );
-            $(' .mainMenu li a:first ').addClass( 'active' );
-            $(' body, html ').animate( {scrollTop : 0}, 'slow' );
-          });
-        }
-
-        scrollTo();
-        scrollToTop();
-      });
+    });
   });
 });
