@@ -1,4 +1,4 @@
-TaitWayland.controller("ShareAndTearCtrl", function($scope, $location, $anchorScroll, $http) {
+TaitWayland.controller("ShareAndTearCtrl", function($scope, $location, $http) {
 
   $http.get('JSON/ShareAndTear.json').then(function (res) {
     $scope.data = res.data;
@@ -14,10 +14,5 @@ TaitWayland.controller("ShareAndTearCtrl", function($scope, $location, $anchorSc
     });
   });
 
-
-  $scope.gotoTop = function (){
-    $location.hash('Top');
-    $anchorScroll();
-  };
 
 });

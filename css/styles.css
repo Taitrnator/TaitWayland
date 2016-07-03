@@ -986,9 +986,6 @@ article {
       width: 250px;
       align-content: center; }
 
-.research section span img {
-  max-height: 150px; }
-
 .masker {
   overflow-x: hidden;
   margin: 0;
@@ -1018,14 +1015,6 @@ article {
   align-self: center; }
   #About .content article p {
     font-size: 1.4rem; }
-
-#branding article {
-  width: auto; }
-#branding .content {
-  background-color: #fff; }
-  #branding .content .final-image {
-    max-width: 100%;
-    width: 100%; }
 
 #Final article {
   width: auto;
@@ -1151,13 +1140,12 @@ h1, h2, h3, h4, h5, h6 {
         .main-menu ul li a:hover {
           color: #e0d470;
           text-decoration: underline; }
-  .main-menu .social-media-links ul {
-    display: block; }
-    .main-menu .social-media-links ul li {
-      display: inline; }
 
 .social-media-links ul {
-  margin: 0.3rem; }
+  padding-left: 0px;
+  display: block;
+  margin: 0.3rem;
+  text-align: center; }
   .social-media-links ul li {
     display: inline;
     list-style-type: none; }
@@ -1179,6 +1167,7 @@ p {
 
 .responsive-menu {
   position: relative;
+  margin: 10px;
   float: right;
   padding-left: 0px;
   -webkit-transition: all 1s ease-in-out;
@@ -1248,6 +1237,9 @@ header[role="banner"] {
   article .content {
     width: 75%; } }
 @media screen and (max-width: 756px) {
+  header[role="banner"] {
+    margin-top: 20%; }
+
   .responsive-menu {
     padding-left: 0px;
     display: block; }

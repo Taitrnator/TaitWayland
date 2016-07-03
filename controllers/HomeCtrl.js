@@ -35,8 +35,8 @@ TaitWayland.controller("HomeCtrl", function($scope, $http, $document) {
         $(".main-menu").toggleClass("open");
       };
 
-      setTimeout(function() { coolText(".header-1", 44); }, 100);
-      setTimeout(function() { coolText(".header-2", 44); }, 700);
+      setTimeout(function() { coolText(".header-1", 44); }, 0);
+      setTimeout(function() { coolText(".header-2", 44); }, 800);
       setTimeout(function() { coolText(".header-3"); }, 2500);
 
       coolMaskers(".masker1", ".masker2");

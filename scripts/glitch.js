@@ -4,7 +4,7 @@ var context = canvas.getContext("2d"),
 
 img.src = './images/TaitWayland.svg';
 img.onload = function() {
-  setTimeout(function() { init(); }, 1000);
+  setTimeout(function() { init(); }, 600);
 	window.onresize = init;
 	setTimeout(function() { closeContext(); }, 3000);
 	setTimeout(function() { $(".portrait").addClass("fadeInSoft");
@@ -53,7 +53,7 @@ var randInt = function(a, b) {
 
 
 $(window).on("scroll", function() {
-	
+
 });
 // // makes the parallax elements
 // function parallaxIt() {
