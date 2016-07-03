@@ -1140,13 +1140,12 @@ h1, h2, h3, h4, h5, h6 {
         .main-menu ul li a:hover {
           color: #e0d470;
           text-decoration: underline; }
-  .main-menu .social-media-links ul {
-    display: block; }
-    .main-menu .social-media-links ul li {
-      display: inline; }
 
 .social-media-links ul {
-  margin: 0.3rem; }
+  padding-left: 0px;
+  display: block;
+  margin: 0.3rem;
+  text-align: center; }
   .social-media-links ul li {
     display: inline;
     list-style-type: none; }
@@ -1238,6 +1237,9 @@ header[role="banner"] {
   article .content {
     width: 75%; } }
 @media screen and (max-width: 756px) {
+  header[role="banner"] {
+    margin-top: 20%; }
+
   .responsive-menu {
     padding-left: 0px;
     display: block; }
