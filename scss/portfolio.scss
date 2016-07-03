@@ -22,12 +22,26 @@ header[role="banner"] {
   background-color: #dfdfdf;
   padding: 15px;
 }
+article {
+  width: 80%;
+  .content {
+    img {
+      max-width: 100%;
+    }
+  }
+  span {
+    display: flex;
+    justify-content: center;
+  }
+}
 article.overview {
-  flex-flow: row nowrap;
+  flex-flow: column wrap;
 }
 
 @media screen and (max-width: 756px) {
   article {
+    width: 100%;
+    padding: 15px;
     .main-header {
       align-self: flex-end;
     }

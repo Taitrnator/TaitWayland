@@ -5,9 +5,20 @@ header[role="banner"] {
   background-color: #dfdfdf;
   padding: 15px; }
 
+article {
+  width: 80%; }
+  article .content img {
+    max-width: 100%; }
+  article span {
+    display: flex;
+    justify-content: center; }
+
 article.overview {
-  flex-flow: row nowrap; }
+  flex-flow: column wrap; }
 
 @media screen and (max-width: 756px) {
-  article .main-header {
-    align-self: flex-end; } }
+  article {
+    width: 100%;
+    padding: 15px; }
+    article .main-header {
+      align-self: flex-end; } }

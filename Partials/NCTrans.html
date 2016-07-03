@@ -68,9 +68,9 @@
   <article id="branding">
     <header class="main-header"><h2>{{data.branding[0].title}}</h2></header>
     <section class="content">
-      <article ng-repeat="image in data.branding[0].images[0]">
-        <img ng-src="{{data.images}}/{{image}}" />
-      </article>
+      <span ng-repeat="image in data.branding[0].images[0]">
+        <img ng-src="{{data.images}}/{{image}}" width="50%" />
+      </span>
       <article>
         <img class="final-image" ng-src="{{data.images}}/{{data.branding[0].finalimage}}" />
       </article>
