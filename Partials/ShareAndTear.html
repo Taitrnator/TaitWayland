@@ -12,15 +12,17 @@
         </li>
       </ul>
 </nav>
-<main>
+<main id="Top">
   <header role="banner">
   <h1>{{data.title}}</h1>
+</header>
+<article class="overview">
   <h3>{{data.brief}}</h3>
   <h4>Created: {{data.created}}</h4>
   <h4>Industry: {{data.industry}}</h4>
   <h4>Duties: {{data.duties}}</h4>
   <h4>Technologies: {{data.technology}}</h4>
-  <header>
+</article>
   <article>
      <header class="main-header"><h2>objective</h2></header>
      <section class="content">
@@ -29,48 +31,20 @@
          </p>
      </section>
   </article>
-  <article>
-    <header class="main-header"><h2>Client Meeting</h2></header>
+  <article id="Final">
+    <header class="main-header"><h2>{{data.final[0].title}}</h2></header>
     <section class="content">
-      <p>
-        {{data.challenge[0].section1}}
-        <br />
-        {{data.challenge[0].section2}}
-        <br />
-        {{data.challenge[0].section3}}
-        <br />
-        {{data.challenge[0].section4}}
-      </p>
-    </section>
-  </article>
-  <article>
-    <header class="main-header"><h2>Wireframing</h2></header>
-    <section class="content">
-      <p>
-        {{data.wireframing}}
-      </p>
-    </section>
-  </article>
-  <article>
-    <header class="main-header"><h2>Technologies</h2></header>
-    <section class="content">
-      <p>
-        {{data.technologies[0].section1}}
-        <br /><br />
-        {{data.technologies[0].section2}}
-      </p>
-    </section>
-  </article>
-  <article>
-    <section class="content">
-      <article>
-        <img src="{{data.images}}/home page.png" />
+      <article ng-repeat="image in data.final[0].images[0]">
+        <img ng-src="{{data.images}}/{{image}}" max-width="450px" />
       </article>
-      <article>
-        <img src="{{data.images}}/visit.png" />
-      </article>
+    </section>
+  </article>
+  <article>
+    <section class="content">
+    <a href="#/"><h2>Back Home</h2></a>
     </section>
   </article>
 </main>
+<button class="button" ng-click="gotoTop()">Go to Top</button>
 
 <ldjson data-json="data"></ldjson>

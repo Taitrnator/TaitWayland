@@ -11,6 +11,8 @@
     "header2": "i’m a ui designer and developer living in birmingham, alabama.",
     "header3": "i like masking tape."
   }],
+  "githuburl": "//github.com/taitrnator",
+  "linkedinurl": "//www.linkedin.com/in/tait-wayland-346511a1",
   "ldjson": [{
     "@context": "http://schema.org",
     "@type": "Person",
@@ -25,9 +27,18 @@
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/case_studies/NCTrans_Case/branding/logo.png",
+            "image" : "images/case_studies/NCTrans_Case/nc_preview.png",
             "name": "North Carolina Transportation Museum",
             "url" : "#NCTrans"
+          }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "CreativeWork",
+            "image" : "images/case_studies/ShareandTear_Case/shareandtear_preview.png",
+            "name": "Share and Tear",
+            "url" : "#ShareAndTear"
           }
         }
       ]

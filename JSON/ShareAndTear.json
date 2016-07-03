@@ -5,25 +5,18 @@
   "industry": "Online Ticketing",
   "duties": "Product Design",
   "technology": "iOS",
-
   "objective": "TicketBiscuit recognized a large unserved market for online ticketing: high school sports. The barrier to entry was the complexity of most online ticketing services. While online ticketing is intended to be convenient for users, it creates a lot of hassle for small event organizers, especially in this particular market. We realized this demographic didn’t want to use scanners, for instance. Ultimately, if we could create a product as simple as tearing ticket stubs, we could serve this market. Share and Tear was designed from this idea. The user simply downloads tickets to our app, and literally swipes to “tear” them at the door. The door man confirms the tear. Additionally, the app needed to maintain this minimal functionality offline.",
-
-  "challenge": [
-    {
-      "section1": "The first stage of the process was teaming up with Marketing to meet with our client.",
-      "section2": "Marketing sealed the deal with the client, so they had a good grasp on how to communicate with the client, as well as how our product served their needs.",
-      "section3": "The client did what many clients do: they briefed us. They provided us with their branding material. They gave us sketches of how they wanted the site to look. They gave us information architecture, and a whole list of other suggestions. They predesigned the project in many aspects.",
-      "section4": "So I asked the client, “What are your goals?” This caught them a bit off guard and allowed us to work with them from a more flexible approach that satisfied both parties in the end.",
-      "section5": "We converged on a major need of the client: a refreshing, unified identity. We converged on some useful information. They provided us with two sites they liked. One of which was another competitive railroad that had a decent design. The other was a museum that really had a really fantastic emotional appeal as well as a clean structure. This told me they wanted a design that could produce an emotional impact with their audience, and one that didn’t suck."
-    }
-  ],
-  "images": "images/case_studies/NCTrans_Case",
-  "wireframing": "I realized the biggest problem was information architecture. Museums simply have a ton of content. While many museums today still use mega menus, there are better alternatives to sort this information out. I had previous experience collaborating with BIG Communications in Birmingham on their rebrand of Vulcan Park, so I remember their website handling information architecture well. (http://visitvulcan.com) When clients have tons of content, the solution boils down to nesting the content and providing robust top-level search options.",
-
-  "technologies": [{
-    "section1": "Our clients need a CMS to update their content. This project employed Wordpress. There we’re several factors behind this decision. Its the most common CMS. It was conventionally used for clients in the past at TicketBiscuit. However, Wordpress has its pitfalls, mainly the fact that most Wordpress sites look the same. In addition, plugins can get clunky and reusing too many parts from separate places compromises the scalability, which is one of the main points of a CMS. A custom theme with as many custom plugins as possible helps to overcome this. It keeps things simple, and fits the direct needs of the client.",
-    "section2": "The base theme was Bones, because it offers all the basic things one needs to scale a wordpress theme, with nothing more and nothing less. The theme also comes with SASS. Well, because why would anybody use anything else? Both SASS and the Bones theme offer scalability, which is exactly what we needed in every layer of this project."
-    }]
-
+  "final": [{
+    "title": "Final Wireframes",
+    "images": [{
+      "image1": "finals/login copy.png",
+      "image2": "finals/event list.png",
+      "image3": "finals/event list share.png",
+      "image4": "finals/ticket 2 copy.png",
+      "image5": "finals/ticket torn.png",
+      "image6": "finals/ticket 2 copy 2.png"
+      }]
+  }],
+  "images": "images/case_studies/ShareandTear_Case"
 
 }

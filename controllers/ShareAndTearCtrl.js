@@ -1,4 +1,4 @@
-TaitWayland.controller("ShareAndTearCtrl", function($scope, $http) {
+TaitWayland.controller("ShareAndTearCtrl", function($scope, $location, $anchorScroll, $http) {
 
   $http.get('JSON/ShareAndTear.json').then(function (res) {
     $scope.data = res.data;
@@ -13,5 +13,11 @@ TaitWayland.controller("ShareAndTearCtrl", function($scope, $http) {
       $(".responsive-menu").removeClass("left");
     });
   });
+
+
+  $scope.gotoTop = function (){
+    $location.hash('Top');
+    $anchorScroll();
+  };
 
 });

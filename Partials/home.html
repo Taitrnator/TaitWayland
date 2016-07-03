@@ -1,8 +1,8 @@
 
-<!-- <nav class="top-nav">
+<nav class="top-nav">
   <ul class="responsive-menu">
     <li>
-      <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
+      <button ng-click="menuToggle()" class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
@@ -11,32 +11,55 @@
   </ul>
 </nav>
 <section class="main-menu">
+  <nav>
     <ul>
       <li>
-        <a class="WhatIDo" href="">What I Do</a>
+        <a ng-click="toSection('WhatIDo')">What I Do</a>
       </li>
       <li>
-        <a class="Work" href="">Work</a>
+        <a ng-click="toSection('Work')">Work</a>
       </li>
       <li>
-        <a class="About" href="">About</a>
+        <a ng-click="toSection('About')">About</a>
       </li>
       <li>
-        <a class="contact" href="">Contact</a>
+        <a ng-click="toSection('Contact')">Contact</a>
       </li>
     </ul>
-</section> -->
+  </nav>
+  <!-- <nav class="social-media-links">
+    <ul>
+      <li>
+        <a href="{{linedinurl}}" target="_blank">
+          <img src="images/linkedin.svg" width="60px"/>
+        </a>
+      </li>
+      <li>
+        <a href="{{githuburl}}" target="_blank">
+          <img src="images/github.svg" width="60px"/>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+</section>
 
-<header role="banner">
-  <h1 class="header-1">{{data.header[0].header1}}</h1>
-  <h3 class="header-2">{{data.header[0].header2}}</h3>
-  <h5 class="header-3">{{data.header[0].header3}}</h5>
+<div class="portrait-container">
   <canvas id="portrait">
 
   </canvas>
-</header>
-<div class="clearfix"></div>
+  <img class="portrait hidden" ng-src="/images/TaitWayland.svg" width="500" alt="portrait" />
+  <span>portrait</span>
+</div>
+
+<!-- <div class="backToTop">
+  <a href="#"><i class="fa fa-arrow-up"></i></a>
+</div> -->
 <main>
+  <header class="main-header" role="banner">
+    <h1 class="header-1">{{data.header[0].header1}}</h1>
+    <h3 class="header-2">{{data.header[0].header2}}</h3>
+    <h5 class="header-3">{{data.header[0].header3}}</h5>
+  </header>
  <article id="WhatIDo">
    <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
@@ -59,7 +82,9 @@
    <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
    <section class="content">
      <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
-          <a href="{{key.itemOffered.url}}"><img class="portfolio-image" src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" /></a>
+          <a href="{{key.itemOffered.url}}">
+            <img class="portfolio-image" ng-src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
+          </a>
      </article>
    </section>
  </article>
@@ -68,7 +93,7 @@
    <section class="content">
      <article class="aboutimg">
        <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1>
-           <img src="{{data.ldjson[0].image}}" alt="AboutMe"/>
+           <img ng-src="{{data.ldjson[0].image}}" alt="AboutMe"/>
            <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
      </article>
      <article class="aboutcontent">
@@ -81,26 +106,35 @@
  <article id="Contact">
    <header class="main-header"><h2>Contact</h2></header>
    <section class="content">
-     <article>
-       <h3>
-         Drop me a line
-       </h3>
-       <!-- Change the width and height values to suit you best -->
-      <div class="typeform-widget" data-url="https://tait4.typeform.com/to/bpM8Bc" data-text="Contact Form" style="width: auto;height:500px;"></div>
-      <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+     <article class="button-article">
+         <div class="social-media-links">
+           <ul>
+             <li>
+               <a href="{{data.linkedinurl}}" target="_blank">
+                 <img src="images/linkedin.svg" width="60px"/>
+               </a>
+             </li>
+             <li>
+               <a href="{{data.githuburl}}" target="_blank">
+                 <img src="images/github.svg" width="60px"/>
+               </a>
+             </li>
+           </ul>
+         </div>
+          <a class="button" href="https://tait4.typeform.com/to/bpM8Bc" target="_blank"><img src="images/mail.png" /><span>Drop Me a Line</span></a>
      </article>
    </section>
  </article>
+ <footer id="bottom">
+
+ </footer>
 </main>
 
-<script type="text/javascript" src="scripts/min/html2canvas-min.js">
-
-</script>
+<script async type="text/javascript" src="scripts/min/html2canvas-min.js"></script>
 <script type="text/javascript">
-  var canvas=document.getElementById("portrait"),context=canvas.getContext("2d"),img=new Image,w,h,offset,glitchInterval;img.src="./images/TaitWayland.svg",img.onload=function(){init(),window.onresize=init};var init=function(){clearInterval(glitchInterval),canvas.width=w=200,offset=0,canvas.height=h=543,glitchInterval=setInterval(function(){clear(),context.drawImage(img,0,0,img.width,img.height,offset,0,w-2*offset,h),setTimeout(glitchImg,randInt(250,1e3),500)},500)},clear=function(){context.rect(0,0,w,h),context.fillStyle="#3A3A3A",context.fill()},glitchImg=function(){for(var t=0;t<randInt(1,13);t++){var n=Math.random()*w,a=Math.random()*h,e=w-n,i=randInt(5,h/3);context.drawImage(canvas,0,a,e,i,n,a,e,i),context.drawImage(canvas,e,a,n,i,0,a,n,i)}},randInt=function(t,n){return~~(Math.random()*(n-t)+t)};
+  var canvas=document.getElementById("portrait"),context=canvas.getContext("2d"),img=new Image,w,h,offset,glitchInterval;img.src="./images/TaitWayland.svg",img.onload=function(){setTimeout(function(){init()},1e3),window.onresize=init,setTimeout(function(){closeContext()},3e3),setTimeout(function(){$(".portrait").addClass("fadeInSoft"),$("canvas").hide()},3500)};var init=function(){clearInterval(glitchInterval),canvas.width=w=200,offset=0,canvas.height=h=543,glitchInterval=setInterval(function(){clear(),context.drawImage(img,0,0,img.width,img.height,offset,0,w-2*offset,h),setTimeout(glitchImg,randInt(250,1e3),500)},500)},clear=function(){context.rect(0,0,w,h),context.fillStyle="#3A3A3A",context.fill()},closeContext=function(){clearInterval(glitchInterval),context.clearRect(0,0,w,h)},glitchImg=function(){for(var t=0;t<randInt(1,13);t++){var n=Math.random()*w,e=Math.random()*h,a=w-n,i=randInt(5,h/3);context.drawImage(canvas,0,e,a,i,n,e,a,i),context.drawImage(canvas,a,e,n,i,0,e,n,i)}},randInt=function(t,n){return~~(Math.random()*(n-t)+t)};$(window).on("scroll",function(){});
 </script>
 <script type="text/javascript">
   !function($){function t(t){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.?/\\(^)![]{}*&^%$#'\"",a=e.split("");return a[Math.floor(Math.random()*a.length)]}$.fn.shuffleLetters=function(e){var a=$.extend({step:8,fps:45,text:"",callback:function(){}},e);return this.each(function(){var e=$(this),n="";if(e.data("animated"))return!0;e.data("animated",!0),n=a.text?a.text.split(""):e.text().split("");for(var i=[],r=[],f=0;f<n.length;f++){var s=n[f];" "!==s?r.push(f):i[f]="space"}e.html(""),function o(i){var f,s=r.length,u=n.slice(0);if(i>s)return e.data("animated",!1),void a.callback(e);for(f=Math.max(i,0);s>f;f++)f<i+a.step?u[r[f]]=t([r[f]]):u[r[f]]="";e.text(u.join("")),setTimeout(function(){o(i+1)},1e3/a.fps)}(-a.step)})}}(jQuery);
 </script>
-<script type="text/javascript" src="scripts/homepage.js"></script>
 <ldjson data-json="ldjson"></ldjson>
