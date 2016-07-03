@@ -986,9 +986,6 @@ article {
       width: 250px;
       align-content: center; }
 
-.research section span img {
-  max-height: 150px; }
-
 .masker {
   overflow-x: hidden;
   margin: 0;
@@ -1018,14 +1015,6 @@ article {
   align-self: center; }
   #About .content article p {
     font-size: 1.4rem; }
-
-#branding article {
-  width: auto; }
-#branding .content {
-  background-color: #fff; }
-  #branding .content .final-image {
-    max-width: 100%;
-    width: 100%; }
 
 #Final article {
   width: auto;
