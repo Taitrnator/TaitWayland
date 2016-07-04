@@ -1,3 +1,10 @@
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -913,6 +920,14 @@ body {
 main {
   margin: 5px; }
 
+header[role="banner"] {
+  height: 200px;
+  margin-top: 15%; }
+  header[role="banner"] h1 {
+    font-size: 3rem; }
+  header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3 {
+    z-index: 5; }
+
 a {
   color: #e0d470;
   text-decoration: underline; }
@@ -1154,13 +1169,6 @@ h1, h2, h3, h4, h5, h6 {
       .social-media-links ul li a img {
         padding: 0; }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%; }
-  100% {
-    opacity: 1;
-    left: 0; } }
 p {
   padding: 15px;
   font-size: 1.4rem; }
@@ -1178,14 +1186,6 @@ p {
 
 .clearfix {
   clear: both; }
-
-.fadeIn {
-  visibility: visible !important;
-  opacity: 1 !important; }
-
-.fadeInSoft {
-  visibility: visible !important;
-  opacity: 0.6 !important; }
 
 .left {
   float: left; }
@@ -1210,26 +1210,27 @@ p {
   width: 200px; }
   .portrait-container .portrait, .portrait-container canvas {
     width: 100%;
-    opacity: 0.3;
     padding: 0px; }
+  .portrait-container canvas {
+    opacity: 0.5; }
   .portrait-container .portrait {
     right: 0;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
-    z-index: 0; }
+    z-index: 0;
+    transition: all 0.5s ease-in-out; }
   .portrait-container span {
     display: block;
     visibility: hidden;
     height: 500px; }
 
-header[role="banner"] {
-  height: 200px;
-  margin-top: 15%; }
-  header[role="banner"] h1 {
-    font-size: 3rem; }
-  header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3 {
-    z-index: 5; }
+.fadeIn {
+  visibility: visible;
+  opacity: 1; }
+
+.fadeInSoft {
+  visibility: visible !important;
+  opacity: 0.5 !important; }
 
 @media screen and (max-width: 1040px) {
   article .main-header {

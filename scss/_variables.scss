@@ -4,3 +4,15 @@ $gradienttop: rgba(60, 60, 60, 0.8);
 $gradientbottom: rgba(60, 60, 60, 0.0);
 
 $main-font: "niveau-grotesk", Helvetica, sans-serif;
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

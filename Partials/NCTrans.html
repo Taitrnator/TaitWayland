@@ -13,15 +13,44 @@
       </ul>
 </nav>
 <main>
-  <header role="banner">
+  <header  class="NCTrans" role="banner">
   <h1>{{data.title}}</h1>
   </header>
   <article class="overview">
-    <h3>{{data.brief}}</h3>
-    <h4>Created: {{data.created}}</h4>
-    <h4>Industry: {{data.industry}}</h4>
-    <h4>Duties: {{data.duties}}</h4>
-    <h4>Technologies: {{data.technology}}</h4>
+    <header class="main-header">
+      <h2>{{data.title}}</h2>
+      <p>{{data.brief}}</p>
+    </header>
+    <section>
+      <header>
+        <h3>Created</h3>
+      </header>
+      <p>{{data.created}}</p>
+    </section>
+    <section>
+      <header>
+        <h3>Industry</h3>
+      </header>
+      <p>
+        {{data.industry}}
+      </p>
+    </section>
+    <section>
+      <header>
+        <h3>Duties</h3>
+      </header>
+      <p>
+        {{data.duties}}
+      </p>
+    </section>
+    <section>
+      <header>
+        <h3>Tech</h3>
+      </header>
+      <p>
+        {{data.technology}}
+      </p>
+    </section>
   </article>
   <article>
      <header class="main-header"><h2>objective</h2></header>
@@ -31,7 +60,7 @@
          </p>
      </section>
   </article>
-  <article>
+  <article id="Challenges">
     <header class="main-header"><h2>{{data.challenge[0].title}}</h2></header>
     <section class="content">
       <img ng-src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
@@ -46,7 +75,7 @@
       </p>
     </section>
   </article>
-  <article class="research">
+  <article id="Research">
     <header class="main-header">
       <h2>{{data.research[0].title}}</h2>
     </header>
@@ -59,11 +88,17 @@
         </p>
     </section>
   </article>
-  <article id="branding">
+  <article id="Branding">
     <header class="main-header"><h2>{{data.branding[0].title}}</h2></header>
     <section class="content">
+      <article>
+        <p>
+          We were provided documentation with the museum's branding at the time of the project to work from. Colors were slightly changes to improve contrast.
+          More on the branding process can be found <a href="https://projects.invisionapp.com/boards/VE1ZXGIUY7KFW/">here.</a>
+        </p>
+      </article>
       <span ng-repeat="image in data.branding[0].images[0]">
-        <img ng-src="{{data.images}}/{{image}}" width="50%" />
+        <img ng-src="{{data.images}}/{{image}}" />
       </span>
       <article>
         <img class="final-image" ng-src="{{data.images}}/{{data.branding[0].finalimage}}" />

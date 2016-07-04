@@ -13,17 +13,46 @@
       </ul>
 </nav>
 <main id="Top">
-  <header role="banner">
+  <header role="banner" class="ShareAndTear">
   <h1>{{data.title}}</h1>
-</header>
+  </header>
 <article class="overview">
-  <h3>{{data.brief}}</h3>
-  <h4>Created: {{data.created}}</h4>
-  <h4>Industry: {{data.industry}}</h4>
-  <h4>Duties: {{data.duties}}</h4>
-  <h4>Technologies: {{data.technology}}</h4>
+  <header class="main-header">
+    <h2>{{data.title}}</h2>
+    <p>{{data.brief}}</p>
+  </header>
+  <section>
+    <header>
+      <h3>Created</h3>
+    </header>
+    <p>{{data.created}}</p>
+  </section>
+  <section>
+    <header>
+      <h3>Industry</h3>
+    </header>
+    <p>
+      {{data.industry}}
+    </p>
+  </section>
+  <section>
+    <header>
+      <h3>Duties</h3>
+    </header>
+    <p>
+      {{data.duties}}
+    </p>
+  </section>
+  <section>
+    <header>
+      <h3>Tech</h3>
+    </header>
+    <p>
+      {{data.technology}}
+    </p>
+  </section>
 </article>
-  <article>
+  <article id="Objective">
      <header class="main-header"><h2>objective</h2></header>
      <section class="content">
          <p>
@@ -31,20 +60,43 @@
          </p>
      </section>
   </article>
+  <article id="Challenges">
+    <header class="main-header"><h2>{{data.challenge[0].title}}</h2></header>
+    <section class="content">
+      <article ng-repeat="image in data.challenge[0].images[0]">
+        <img ng-src="{{data.images}}/{{image}}" />
+      </article>
+      <p ng-repeat="section in data.challenge[0].sections[0]">
+        {{section}}
+      </p>
+    </section>
+  </article>
+  <article id="Wireframes">
+    <header class="main-header"><h2>{{data.wireframing[0].title}}</h2></header>
+    <section class="content">
+      <article>
+        <span ng-repeat="image in data.wireframing[0].images[0]">
+          <img ng-src="{{data.images}}/{{image}}" alt="{{image}}" />
+        </span>
+      </article>
+      <p ng-repeat="section in data.wireframing[0].section_one[0]">
+        {{section}}
+      </p>
+    </section>
+  </article>
   <article id="Final">
     <header class="main-header"><h2>{{data.final[0].title}}</h2></header>
     <section class="content">
       <article ng-repeat="image in data.final[0].images[0]">
-        <img ng-src="{{data.images}}/{{image}}" max-width="450px" />
+        <img ng-src="{{data.images}}/{{image}}" />
       </article>
     </section>
   </article>
   <article>
     <section class="content">
-    <a href="#/"><h2>Back Home</h2></a>
+    <a href="#/"><h2>< Back Home</h2></a>
     </section>
   </article>
 </main>
-<button class="button" ng-click="gotoTop()">Go to Top</button>
 
 <ldjson data-json="data"></ldjson>

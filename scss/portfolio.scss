@@ -16,25 +16,45 @@
 // // }
 
 header[role="banner"] {
+  margin-top: 0;
   height: auto;
   text-align: center;
-  color: $charcoal;
-  background-color: #dfdfdf;
-  padding: 15px;
+  color: $maskingtape;
+  padding: 6rem;
+  h1 {
+    font-size: 5rem;
+  }
+}
+header.ShareAndTear {
+  background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg");
+}
+header.NCTrans {
+  background: url("/images/case_studies/NCTrans_Case/nctrans_banner.jpg");
 }
 article {
+  margin: 3rem auto;
+  flex-flow: row wrap;
   width: 80%;
-  .content {
-    img {
-      width: 50%;
-      height: auto;
+  .main-header {
+    width: 100%;
+    text-align: left;
+    h2 {
+      font-size: 2rem;
+      color: $maskingtape;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      border-bottom: 3px solid $maskingtape;
     }
+  }
+  .content {
+    width: 100%;
     .final-image {
       width:90%;
     }
   }
 }
-.research {
+#Research {
   .content {
     span {
       width: 230px;
@@ -47,25 +67,95 @@ article {
     }
   }
 }
-#branding {
+#Branding, #Objective, #Wireframes {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem 0;
+  header {
+    padding: 0;
+    h2 {
+      color: $charcoal;
+      margin: auto;
+      width: 80%;
+      border-bottom: 3px solid $charcoal;
+    }
+  }
   .content {
-    background-color: #fff;
+    p {
+      margin: 0;
+      color: $charcoal;
+      width: 80%;
+    }
+    a {
+      color: $charcoal;
+      &:hover {
+        color: lighten($charcoal, 20%);
+      }
+    }
+    span {
+      width: 200px;
+      padding: 10px;
+    }
     article {
       width: auto;
+      display:flex;
+      flex-flow:row wrap;
       justify-content: center;
     }
   }
 }
+
+#Final {
+  article {
+    img {
+      width: 200px;
+    }
+  }
+}
+
 article.overview {
-  flex-flow: column wrap;
+  p {
+    padding: 0;
+  }
+  section {
+    width: 22%;
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 756px) {
+  main {
+    margin: 0;
+  }
   article {
     width: 100%;
-    padding: 15px;
-    .main-header {
-      align-self: flex-end;
+  }
+  header[role="banner"] {
+    padding: 2.5rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  #Branding, #Objective, #Wireframes {
+    header {
+      padding: 10px;
+      h2 {
+        margin: 0;
+        width: auto;
+      }
+    }
+    .content {
+      p {
+        width: auto;
+      }
+    }
+  }
+  article.overview {
+    section {
+      margin: 0;
+      padding: 0 10px;
+      width: 100%;
     }
   }
 }

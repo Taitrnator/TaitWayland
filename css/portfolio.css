@@ -1,38 +1,111 @@
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
 header[role="banner"] {
+  margin-top: 0;
   height: auto;
   text-align: center;
-  color: #3A3A3A;
-  background-color: #dfdfdf;
-  padding: 15px; }
+  color: #F2EDC4;
+  padding: 6rem; }
+  header[role="banner"] h1 {
+    font-size: 5rem; }
+
+header.ShareAndTear {
+  background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg"); }
+
+header.NCTrans {
+  background: url("/images/case_studies/NCTrans_Case/nctrans_banner.jpg"); }
 
 article {
+  margin: 3rem auto;
+  flex-flow: row wrap;
   width: 80%; }
-  article .content img {
-    width: 50%;
-    height: auto; }
-  article .content .final-image {
-    width: 90%; }
+  article .main-header {
+    width: 100%;
+    text-align: left; }
+    article .main-header h2 {
+      font-size: 2rem;
+      color: #F2EDC4;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      border-bottom: 3px solid #F2EDC4; }
+  article .content {
+    width: 100%; }
+    article .content .final-image {
+      width: 90%; }
 
-.research .content span {
+#Research .content span {
   width: 230px;
   height: 230px;
   padding: 10px; }
-  .research .content span img {
+  #Research .content span img {
     width: 100%;
     padding: 5px; }
 
-#branding .content {
-  background-color: #fff; }
-  #branding .content article {
+#Branding, #Objective, #Wireframes {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem 0; }
+  #Branding header, #Objective header, #Wireframes header {
+    padding: 0; }
+    #Branding header h2, #Objective header h2, #Wireframes header h2 {
+      color: #3A3A3A;
+      margin: auto;
+      width: 80%;
+      border-bottom: 3px solid #3A3A3A; }
+  #Branding .content p, #Objective .content p, #Wireframes .content p {
+    margin: 0;
+    color: #3A3A3A;
+    width: 80%; }
+  #Branding .content a, #Objective .content a, #Wireframes .content a {
+    color: #3A3A3A; }
+    #Branding .content a:hover, #Objective .content a:hover, #Wireframes .content a:hover {
+      color: #6d6d6d; }
+  #Branding .content span, #Objective .content span, #Wireframes .content span {
+    width: 200px;
+    padding: 10px; }
+  #Branding .content article, #Objective .content article, #Wireframes .content article {
     width: auto;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center; }
 
-article.overview {
-  flex-flow: column wrap; }
+#Final article img {
+  width: 200px; }
+
+article.overview p {
+  padding: 0; }
+article.overview section {
+  width: 22%;
+  margin: 10px; }
 
 @media screen and (max-width: 756px) {
+  main {
+    margin: 0; }
+
   article {
-    width: 100%;
-    padding: 15px; }
-    article .main-header {
-      align-self: flex-end; } }
+    width: 100%; }
+
+  header[role="banner"] {
+    padding: 2.5rem; }
+    header[role="banner"] h1 {
+      font-size: 2rem; }
+
+  #Branding header, #Objective header, #Wireframes header {
+    padding: 10px; }
+    #Branding header h2, #Objective header h2, #Wireframes header h2 {
+      margin: 0;
+      width: auto; }
+  #Branding .content p, #Objective .content p, #Wireframes .content p {
+    width: auto; }
+
+  article.overview section {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%; } }
