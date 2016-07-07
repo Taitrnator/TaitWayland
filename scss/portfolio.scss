@@ -16,13 +16,18 @@
 // // }
 
 header[role="banner"] {
-  margin-top: 0;
   height: auto;
   text-align: center;
-  color: $maskingtape;
-  padding: 6rem;
+  padding: 5rem;
+  margin: auto;
   h1 {
+    width: 60%;
+    margin: auto;
+    background-color: $maskingtape;
+    color: $charcoal;
     font-size: 3rem;
+    position: relative;
+    top: 3rem;
   }
 }
 header.ShareAndTear {
@@ -49,9 +54,6 @@ article {
   }
   .content {
     width: 100%;
-    .final-image {
-      width:90%;
-    }
   }
 }
 
@@ -85,6 +87,8 @@ p {
     }
   }
   .content {
+    display:flex;
+    flex-flow:row wrap;
     p {
       margin: 0;
       color: $charcoal;
@@ -100,11 +104,24 @@ p {
       padding: 10px;
     }
     article {
+      justify-content: center;
+      -webkit-box-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
       margin: auto;
       width: auto;
-      display:flex;
-      flex-flow:row wrap;
-      justify-content: center;
+      img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+    }
+    .final-image-box {
+      display: flex;
+    }
+    .final-image {
+      width: 50%;
+      align-self: center;
     }
   }
 }
@@ -137,7 +154,9 @@ article.overview {
   header[role="banner"] {
     padding: 2.5rem;
     h1 {
+      width: 90%;
       font-size: 2rem;
+      top: 2rem;
     }
   }
   p {
@@ -158,7 +177,13 @@ article.overview {
         padding: 0.5rem;
         width: auto;
       }
+      .final-image {
+        width: 100%;
+      }
     }
+  }
+  #Research .content span {
+    height: auto;
   }
   article.overview {
     section {
