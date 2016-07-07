@@ -83,7 +83,8 @@ p {
       -ms-flex: auto;
       flex: auto;
       margin: auto;
-      width: auto; }
+      width: auto;
+      flex-flow: row wrap; }
       #Branding .content article img, #Objective .content article img, #Wireframes .content article img {
         width: 100%;
         height: auto;

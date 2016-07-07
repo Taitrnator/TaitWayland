@@ -63,7 +63,7 @@
  <article id="WhatIDo">
    <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
-     <article ng-repeat="section in data.WhatIDo[0].sections">
+     <article ng-repeat="section in data.WhatIDo[0].sections" ng-animate="'animate'">
        <header class="sub-header">
          <div class="img-container">
            <img class="section-img" ng-src="{{ section.img }}" />

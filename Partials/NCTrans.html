@@ -97,7 +97,7 @@
           More on the branding process can be found <a href="https://projects.invisionapp.com/boards/VE1ZXGIUY7KFW/">here.</a>
         </p>
       </article>
-      <span ng-repeat="image in data.branding[0].images[0]">
+      <span ng-repeat="image in data.branding[0].images[0]" ng-animate="'animate'">
         <img ng-src="{{data.images}}/{{image}}" />
       </span>
       <article class="final-image-box">

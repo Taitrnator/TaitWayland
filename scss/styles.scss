@@ -417,6 +417,17 @@ p {
   opacity: 0.5 !important;
 }
 
+.animate-enter {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+	opacity: 0;
+}
+
+.animate-enter.animate-enter-active {
+	opacity: 1;
+}
+
+
 @media screen and (max-width: 1040px) {
   main {
     margin: 1rem;
