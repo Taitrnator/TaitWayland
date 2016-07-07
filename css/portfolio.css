@@ -12,7 +12,7 @@ header[role="banner"] {
   color: #F2EDC4;
   padding: 6rem; }
   header[role="banner"] h1 {
-    font-size: 5rem; }
+    font-size: 3rem; }
 
 header.ShareAndTear {
   background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg"); }
@@ -22,11 +22,11 @@ header.NCTrans {
 
 article {
   margin: 3rem auto;
-  flex-flow: row wrap;
-  width: 80%; }
+  flex-flow: row wrap; }
   article .main-header {
     width: 100%;
-    text-align: left; }
+    text-align: left;
+    padding: 0; }
     article .main-header h2 {
       font-size: 2rem;
       color: #F2EDC4;
@@ -38,6 +38,9 @@ article {
     width: 100%; }
     article .content .final-image {
       width: 90%; }
+
+p {
+  padding: 0; }
 
 #Research .content span {
   width: 230px;
@@ -51,18 +54,16 @@ article {
   width: 100%;
   margin: auto;
   background-color: #fff;
-  padding: 2rem 0; }
+  padding: 2rem 1rem; }
   #Branding header, #Objective header, #Wireframes header {
     padding: 0; }
     #Branding header h2, #Objective header h2, #Wireframes header h2 {
       color: #3A3A3A;
       margin: auto;
-      width: 80%;
       border-bottom: 3px solid #3A3A3A; }
   #Branding .content p, #Objective .content p, #Wireframes .content p {
     margin: 0;
-    color: #3A3A3A;
-    width: 80%; }
+    color: #3A3A3A; }
   #Branding .content a, #Objective .content a, #Wireframes .content a {
     color: #3A3A3A; }
     #Branding .content a:hover, #Objective .content a:hover, #Wireframes .content a:hover {
@@ -71,6 +72,7 @@ article {
     width: 200px;
     padding: 10px; }
   #Branding .content article, #Objective .content article, #Wireframes .content article {
+    margin: auto;
     width: auto;
     display: flex;
     flex-flow: row wrap;
@@ -90,20 +92,27 @@ article.overview section {
     margin: 0; }
 
   article {
-    width: 100%; }
+    margin: 0.5rem; }
 
   header[role="banner"] {
     padding: 2.5rem; }
     header[role="banner"] h1 {
       font-size: 2rem; }
 
-  #Branding header, #Objective header, #Wireframes header {
-    padding: 10px; }
-    #Branding header h2, #Objective header h2, #Wireframes header h2 {
-      margin: 0;
+  p {
+    margin: 0.5rem;
+    padding: 0; }
+
+  #Branding, #Objective, #Wireframes {
+    padding: 0; }
+    #Branding header, #Objective header, #Wireframes header {
+      padding: 10px; }
+      #Branding header h2, #Objective header h2, #Wireframes header h2 {
+        margin: 0;
+        width: auto; }
+    #Branding .content p, #Objective .content p, #Wireframes .content p {
+      padding: 0.5rem;
       width: auto; }
-  #Branding .content p, #Objective .content p, #Wireframes .content p {
-    width: auto; }
 
   article.overview section {
     margin: 0;

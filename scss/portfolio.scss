@@ -22,7 +22,7 @@ header[role="banner"] {
   color: $maskingtape;
   padding: 6rem;
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 header.ShareAndTear {
@@ -34,10 +34,10 @@ header.NCTrans {
 article {
   margin: 3rem auto;
   flex-flow: row wrap;
-  width: 80%;
   .main-header {
     width: 100%;
     text-align: left;
+    padding: 0;
     h2 {
       font-size: 2rem;
       color: $maskingtape;
@@ -53,6 +53,10 @@ article {
       width:90%;
     }
   }
+}
+
+p {
+  padding: 0;
 }
 #Research {
   .content {
@@ -71,13 +75,12 @@ article {
   width: 100%;
   margin: auto;
   background-color: #fff;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   header {
     padding: 0;
     h2 {
       color: $charcoal;
       margin: auto;
-      width: 80%;
       border-bottom: 3px solid $charcoal;
     }
   }
@@ -85,7 +88,6 @@ article {
     p {
       margin: 0;
       color: $charcoal;
-      width: 80%;
     }
     a {
       color: $charcoal;
@@ -98,6 +100,7 @@ article {
       padding: 10px;
     }
     article {
+      margin: auto;
       width: auto;
       display:flex;
       flex-flow:row wrap;
@@ -129,7 +132,7 @@ article.overview {
     margin: 0;
   }
   article {
-    width: 100%;
+    margin: 0.5rem;
   }
   header[role="banner"] {
     padding: 2.5rem;
@@ -137,7 +140,12 @@ article.overview {
       font-size: 2rem;
     }
   }
+  p {
+    margin: 0.5rem;
+    padding: 0;
+  }
   #Branding, #Objective, #Wireframes {
+    padding: 0;
     header {
       padding: 10px;
       h2 {
@@ -147,6 +155,7 @@ article.overview {
     }
     .content {
       p {
+        padding: 0.5rem;
         width: auto;
       }
     }

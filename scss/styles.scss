@@ -8,17 +8,27 @@ body {
   margin: 0;
 }
 main {
-  margin: 5px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
   h1{
-  font-size: 3rem;
+  font-size: 4rem;
   }
-  h1, h2, h3 {
+  h1, h3, h5 {
     z-index: 5;
+    margin: 0;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+    margin: 2rem 0;
   }
 }
 
@@ -43,11 +53,11 @@ article {
   .main-header {
     align-self: flex-start;
     text-align: center;
-    padding: 15px;
+    padding: 0.6rem;
     width: 20%;
     h2 {
       margin: auto;
-      padding: 20px;
+      padding: 1rem;
       color: $charcoal;
       background-color: $maskingtape;
     }
@@ -61,14 +71,11 @@ article {
       max-width: 100%;
     }
     article {
-      margin: 1rem;
+      margin: 0.5rem;
       width: 350px;
       align-self:baseline;
       flex-flow: column wrap;
       padding: 1%;
-      .section-img {
-        max-width: 60px;
-      }
       .sub-header {
         display: flex;
         justify-content: flex-start;
@@ -77,6 +84,10 @@ article {
         border-bottom: 4px solid $maskingtape;
         .img-container {
           width: 20%;
+          img {
+            padding: 0;
+            margin: 5px;
+          }
         }
         .header-container {
           width: 80%;
@@ -88,9 +99,9 @@ article {
             padding: 5px;
           }
           h3 {
-            font-size: 20px;
+            font-size: 1.3rem;
             align-self: center;
-            margin: 5px 15px;
+            margin: 0 0.8rem;
             display: inline;
           }
         }
@@ -151,6 +162,7 @@ article {
       align-self: center;
       p {
         font-size: 1.4rem;
+        line-height: 1.1;
       }
     }
   }
@@ -406,6 +418,9 @@ p {
 }
 
 @media screen and (max-width: 1040px) {
+  main {
+    margin: 1rem;
+  }
   article {
 
     .main-header {
@@ -420,6 +435,21 @@ p {
 @media screen and (max-width: 756px) {
   header[role="banner"] {
     margin-top: 20%;
+    h1{
+    font-size: 3rem;
+    }
+    h1, h3, h5 {
+      z-index: 5;
+      margin: 0;
+      line-height: 1.2;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    h5 {
+      font-size: 0.8rem;
+      margin: 0.5rem 0;
+    }
   }
 
   .responsive-menu {
@@ -441,11 +471,6 @@ p {
         img {
           max-width: 100%;
         }
-      }
-    }
-    .sub-header {
-      .section-img {
-        height: 50px;
       }
     }
   }
