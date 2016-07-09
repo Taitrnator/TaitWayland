@@ -84,17 +84,19 @@ article {
         border-bottom: 4px solid $maskingtape;
         .img-container {
           width: 20%;
-          img {
-            padding: 0;
-            margin: 5px;
+          .img-box{
+            width: 100%;
+            .section-img {
+              max-width: 60px;
+            }
           }
         }
         .header-container {
+          display: flex;
           width: 80%;
+          align-content: baseline;
         }
         div {
-          display: flex;
-          align-content: baseline;
           img {
             padding: 5px;
           }
@@ -479,6 +481,14 @@ p {
       width: 100%;
       article {
         margin: 0.5rem auto;
+        .sub-header {
+          .img-container {
+            width: 30%;
+          }
+          .header-container {
+            width: 70%;
+          }
+        }
         img {
           max-width: 100%;
         }
