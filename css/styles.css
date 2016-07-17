@@ -960,8 +960,9 @@ article {
     article .main-header h2 {
       margin: auto;
       padding: 1rem;
-      color: #3A3A3A;
-      background-color: #F2EDC4; }
+      color: #F2EDC4;
+      border-top: 3px solid #F2EDC4;
+      border-bottom: 3px solid #F2EDC4; }
   article .content {
     display: flex;
     width: 80%;

@@ -58,8 +58,9 @@ article {
     h2 {
       margin: auto;
       padding: 1rem;
-      color: $charcoal;
-      background-color: $maskingtape;
+      color: $maskingtape;
+      border-top: 3px solid $maskingtape;
+      border-bottom: 3px solid $maskingtape;
     }
   }
   .content {
