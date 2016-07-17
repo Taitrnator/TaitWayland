@@ -45,10 +45,10 @@ article {
     padding: 0;
     h2 {
       font-size: 2rem;
+      padding: 1rem;
       color: $maskingtape;
       background-color: transparent;
       margin: 0;
-      padding: 0;
       border-bottom: 3px solid $maskingtape;
     }
   }
@@ -84,6 +84,7 @@ p {
       color: $charcoal;
       margin: auto;
       border-bottom: 3px solid $charcoal;
+      border-top: 3px solid $charcoal;
     }
   }
   .content {
