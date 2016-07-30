@@ -14,13 +14,11 @@
 </nav>
 <main>
   <header  class="NCTrans" role="banner">
+    <img class="port-background-image" src="{{data.images}}/case_studies.jpg" alt="header-background-img"/>
   <h1>{{data.title}}</h1>
+  <p>{{data.brief}}</p>
   </header>
-  <article class="overview">
-    <header class="main-header">
-      <h2>{{data.title}}</h2>
-      <p>{{data.brief}}</p>
-    </header>
+  <article id="Overview">
     <article>
       <section>
         <header>
@@ -145,3 +143,14 @@
 </main>
 
 <ldjson data-json="data"></ldjson>
+
+<script type="text-javascript">
+$(document).ready(function() {
+  $(img).forEach(function(e) {
+    e.onload(function() {
+      console.log(e + " loaded");
+      e.removeClass("not-loaded");
+    })
+  });
+});
+</script>

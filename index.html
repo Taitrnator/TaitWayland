@@ -32,5 +32,14 @@
   <script type="text/javascript" src="controllers/ShareAndTearCtrl.js"></script>
   <script type="text/javascript" src="directives/ldjson.js"></script>
 
+  <script type="text-javascript">
+  $(document).ready(function() {
+    console.log("Script");
+      $(img).onload = function(e) {
+        console.log("loaded");
+        e.removeClass("not-loaded");
+      };
+  });
+  </script>
   </body>
 </html>
