@@ -69,7 +69,6 @@ p {
     display: flex;
     flex-flow: row wrap; }
     #Branding .content p, #Objective .content p, #Wireframes .content p {
-      margin: 0;
       color: #3A3A3A; }
     #Branding .content a, #Objective .content a, #Wireframes .content a {
       color: #3A3A3A; }
@@ -96,8 +95,6 @@ p {
       width: 50%;
       align-self: center; }
 
-article.overview p {
-  padding: 0; }
 article.overview section {
   width: 22%;
   margin: 10px; }
@@ -117,8 +114,7 @@ article.overview section {
       top: 2rem; }
 
   p {
-    margin: 0.5rem;
-    padding: 0; }
+    margin: 0.5rem; }
 
   #Branding, #Objective, #Wireframes {
     padding: 0; }

@@ -7,10 +7,6 @@ body {
   font-family: $main-font;
   margin: 0;
 }
-main {
-  max-width: 1000px;
-  margin: auto;
-}
 
 header[role="banner"] {
   height: 200px;
@@ -50,6 +46,11 @@ article {
   display: -webkit-flex; /* Safari */
   display: flex;
   flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  * {
+    max-width: 1000px;
+  }
   .main-header {
     align-self: flex-start;
     text-align: center;
@@ -149,7 +150,6 @@ article {
   .content {
     p {
       font-size: 1.1rem;
-      padding: 0px;
     }
   }
 }
@@ -432,11 +432,7 @@ p {
 
 
 @media screen and (max-width: 1040px) {
-  main {
-    margin: 1rem;
-  }
   article {
-
     .main-header {
       width: 25%;
     }

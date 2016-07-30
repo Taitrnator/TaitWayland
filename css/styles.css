@@ -917,10 +917,6 @@ body {
   font-family: "niveau-grotesk", Helvetica, sans-serif;
   margin: 0; }
 
-main {
-  max-width: 1000px;
-  margin: auto; }
-
 header[role="banner"] {
   height: 200px;
   margin-top: 15%; }
@@ -951,7 +947,11 @@ article {
   display: -webkit-flex;
   /* Safari */
   display: flex;
-  flex-flow: row; }
+  flex-flow: row;
+  justify-content: center;
+  width: 100%; }
+  article * {
+    max-width: 1000px; }
   article .main-header {
     align-self: flex-start;
     text-align: center;
@@ -1030,8 +1030,7 @@ article {
   right: 200px; }
 
 #WhatIDo .content p {
-  font-size: 1.1rem;
-  padding: 0px; }
+  font-size: 1.1rem; }
 
 #About .sub-header img {
   width: 100%;
@@ -1253,9 +1252,6 @@ p {
   opacity: 1; }
 
 @media screen and (max-width: 1040px) {
-  main {
-    margin: 1rem; }
-
   article .main-header {
     width: 25%; }
   article .content {
