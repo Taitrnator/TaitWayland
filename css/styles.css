@@ -919,7 +919,8 @@ body {
 
 header[role="banner"] {
   height: 200px;
-  margin-top: 15%; }
+  margin-top: 15%;
+  padding: 1rem; }
   header[role="banner"] h1 {
     font-size: 4rem; }
   header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
@@ -1218,17 +1219,20 @@ p {
   right: 0;
   top: 5%;
   width: 200px; }
-  .portrait-container .portrait, .portrait-container canvas {
+  .portrait-container #portrait-img, .portrait-container canvas {
     width: 100%;
     padding: 0px; }
   .portrait-container canvas {
     opacity: 0.5; }
-  .portrait-container .portrait {
+  .portrait-container #portrait-img {
     right: 0;
     visibility: hidden;
     opacity: 0;
     z-index: 0;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    width: 200px;
+    top: 50px; }
   .portrait-container span {
     display: block;
     visibility: hidden;

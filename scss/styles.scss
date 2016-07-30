@@ -11,6 +11,7 @@ body {
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
+  padding: 1rem;
   h1{
   font-size: 4rem;
   }
@@ -390,19 +391,22 @@ p {
   right: 0;
   top: 5%;
   width: 200px;
-  .portrait, canvas {
+  #portrait-img, canvas {
     width:100%;
     padding: 0px;
   }
   canvas {
     opacity: 0.5;
   }
-  .portrait {
+  #portrait-img {
     right: 0;
     visibility: hidden;
     opacity: 0;
     z-index: 0;
     transition: all 0.5s ease-in-out;
+    position: fixed;
+    width: 200px;
+    top: 50px;
   }
   span {
     display: block;
