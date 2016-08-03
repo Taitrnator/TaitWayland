@@ -1,5 +1,5 @@
 {
-  "title": "North Carolina Transportation Museum",
+  "title": "NC Trans. Museum",
   "brief": "A website overhaul for a railroad museum catering to a diverse audience.",
   "created":"April 2015",
   "industry": "Museum/Nonprofit",
@@ -10,8 +10,7 @@
     "title": "Branding",
     "finalimage": "branding/nc_brand.jpg",
     "images": [{
-      "image1": "branding/blue.jpg",
-      "image2": "branding/red.jpg",
+      "image2": "branding/colors.jpg",
       "image3": "branding/logo.jpg",
       "image4": "branding/paragraph.jpg"
       }]

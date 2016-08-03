@@ -1,22 +1,48 @@
 {
   "title": "Share and Tear",
-  "brief": "an intuitive app that simplifies door ticketing, provides security, and needs no scanners.",
+  "brief": "An app that simplifies door ticketing, provides security, and needs no scanners.",
   "created":"July 2015",
   "industry": "Online Ticketing",
   "duties": "Product Design",
   "technology": "iOS",
   "objective": "TicketBiscuit recognized a large unserved market for online ticketing: high school sports. The barrier to entry was the complexity of most online ticketing services. While online ticketing is intended to be convenient for users, it creates a lot of hassle for small event organizers, especially in this particular market. We realized this demographic didn’t want to use scanners, for instance. Ultimately, if we could create a product as simple as tearing ticket stubs, we could serve this market. Share and Tear was designed from this idea. The user simply downloads tickets to our app, and literally swipes to “tear” them at the door. The door man confirms the tear. Additionally, the app needed to maintain this minimal functionality offline.",
+  "challenge": [
+    {
+      "title": "Brainstorming",
+      "images": [{
+        "image1": "brainstorm/brainstorm1.jpg",
+        "image2": "brainstorm/brainstorm2.jpg"
+        }],
+      "sections": [{
+        "section1": "The initial user research for this simply involved going to a high school football game and watching people tear tickets at the door. Theres a clear advantage in the simplicity of ticket stubs that we couldn't step on if we wanted to cater to this market.",
+        "section2": "The first user need that wasn't obvious was a feature to share tickets. If people have the tickets on their mobile device, the first advantage was making it easier for friends and families to buy and share tickets with each other. This feature ended up in version 3 of the app. (v2 was authentication)."
+        }]
+    }
+  ],
   "final": [{
-    "title": "Final Wireframes",
+    "title": "Final Wireframes (v 1.3)",
     "images": [{
-      "image1": "finals/login copy.png",
-      "image2": "finals/event list.png",
-      "image3": "finals/event list share.png",
-      "image4": "finals/ticket 2 copy.png",
-      "image5": "finals/ticket torn.png",
-      "image6": "finals/ticket 2 copy 2.png"
+      "image1": "finals/login-copy.jpg",
+      "image2": "finals/event-list.jpg",
+      "image3": "finals/event-list-share.jpg",
+      "image4": "finals/ticket-2-copy.jpg",
+      "image5": "finals/tear-warning.jpg",
+      "image6": "finals/ticket-torn.jpg"
       }]
   }],
+  "wireframing": [{
+    "title": "User Testing",
+    "section_one": [{
+      "section1": "Version 1 user test included tasking subjects to find their tickets for two seperate events from the event list, in one test, they tore all tickets, in the other test, they were asked to tear multiple individual tickets.",
+      "section2": "The initial user tests validated the overall layout. The biggest blind side was that users had no clear indication that they could scroll through tickets."
+      }],
+    "images": [{
+      "image1": "wireframes/eventlist.jpg",
+      "image2": "wireframes/ticketview.jpg",
+      "image3": "wireframes/tearticketwarning.jpg",
+      "image4": "wireframes/tornticket.jpg"
+      }]
+    }],
   "images": "images/case_studies/ShareandTear_Case"
 
 }

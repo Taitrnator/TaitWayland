@@ -17,24 +17,51 @@
 
 header[role="banner"] {
   height: auto;
-  text-align: center;
-  color: $charcoal;
-  background-color: #dfdfdf;
-  padding: 15px;
-}
-article {
-  width: 80%;
-  .content {
-    img {
-      width: 50%;
-      height: auto;
-    }
-    .final-image {
-      width:90%;
-    }
+  padding: 5rem;
+  background-position:center;
+  background-size:cover;
+  margin-top: 0;
+  h1, p{
+    padding: 0.5rem;
+    width: 60%;
+    margin: 1rem auto;
+    background-color: $maskingtapegradient;
+    color: $charcoal;
+    position: relative;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  &.ShareAndTear, &.NCTrans {
+    background-image: url("/images/case_studies/ShareAndTear_Case/case_studies.jpg");
   }
 }
-.research {
+article {
+  margin: 3rem auto;
+  flex-flow: row wrap;
+  .main-header {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    h2 {
+      font-size: 2rem;
+      padding: 1rem;
+      color: $maskingtape;
+      background-color: transparent;
+      margin: 0;
+      border-bottom: 3px solid $maskingtape;
+    }
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+p {
+  padding: 0;
+}
+#Research {
   .content {
     span {
       width: 230px;
@@ -47,25 +74,111 @@ article {
     }
   }
 }
-#branding {
+#Branding, #Objective, #Wireframes {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  header {
+    padding: 0;
+    h2 {
+      color: $charcoal;
+      margin: auto;
+      border-bottom: 3px solid $charcoal;
+      border-top: 3px solid $charcoal;
+    }
+  }
   .content {
-    background-color: #fff;
+    display:flex;
+    flex-flow:row wrap;
+    p {
+      color: $charcoal;
+    }
+    a {
+      color: $charcoal;
+      &:hover {
+        color: lighten($charcoal, 20%);
+      }
+    }
+    span {
+      width: 200px;
+      padding: 10px;
+    }
     article {
-      width: auto;
       justify-content: center;
+      -webkit-box-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      margin: auto;
+      width: auto;
+      flex-flow: row wrap;
+      img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+    }
+    .final-image-box {
+      display: flex;
+    }
+    .final-image {
+      width: 50%;
+      align-self: center;
     }
   }
 }
-article.overview {
-  flex-flow: column wrap;
+
+
+#Overview {
+  section {
+    width: 22%;
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 756px) {
+  main {
+    margin: 0;
+  }
   article {
-    width: 100%;
-    padding: 15px;
-    .main-header {
-      align-self: flex-end;
+    margin: 0.5rem;
+  }
+  header[role="banner"] {
+    padding: 2.5rem;
+    h1, p {
+      width: 90%;
+    }
+  }
+  p {
+    margin: 0.5rem;
+  }
+  #Branding, #Objective, #Wireframes {
+    padding: 0;
+    header {
+      padding: 10px;
+      h2 {
+        margin: 0;
+        width: auto;
+      }
+    }
+    .content {
+      p {
+        padding: 0.5rem;
+        width: auto;
+      }
+      .final-image {
+        width: 100%;
+      }
+    }
+  }
+  #Research .content span {
+    height: auto;
+  }
+  #Overview {
+    section {
+      margin: 0;
+      padding: 0 10px;
+      width: 100%;
     }
   }
 }
