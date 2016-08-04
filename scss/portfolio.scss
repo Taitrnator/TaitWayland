@@ -44,7 +44,7 @@ article {
     text-align: left;
     padding: 0;
     h2 {
-      font-size: 2rem;
+      font-size: $header-large - 4;
       padding: 1rem;
       color: $maskingtape;
       background-color: transparent;

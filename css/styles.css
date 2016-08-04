@@ -1060,6 +1060,8 @@ article {
     margin: auto; }
 
 .button {
+  font-size: 1.6rem;
+  font-weight: 700;
   padding: 0.8rem 1.5rem;
   color: #423d0f;
   background-color: #F2EDC4;

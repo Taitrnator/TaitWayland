@@ -196,6 +196,8 @@ article {
   }
 }
 .button {
+  font-size: $paragraph-font-size;
+  font-weight: 700;
   padding: 0.8rem 1.5rem;
   color: darken($maskingtape, 70%);
   background-color: $maskingtape;
