@@ -1,6 +1,11 @@
 @import 'variables.scss';
 @import 'hamburger.scss';
 
+
+html {
+  font-size: $rem-base;
+}
+
 body {
   background-color: $charcoal;
   color: $maskingtape;
@@ -8,23 +13,30 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: $paragraph-font-size;
+  line-height: $default-height;
+  font-weight: 300;
+}
+
+
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
   padding: 1rem;
   h1{
-  font-size: 4rem;
+  font-size: $header-large;
   }
   h1, h3, h5 {
     z-index: 5;
     margin: 0;
-    line-height: 1.2;
+    line-height: $default-height;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: $header-large - 4;
   }
   h5 {
-    font-size: 1rem;
+    font-size: $header-large - 5;
     margin: 2rem 0;
   }
 }
@@ -112,8 +124,6 @@ article {
         }
       }
       p {
-        font-size: 1.4rem;
-        text-align: left;
         a {
           text-decoration: underline;
           color: darken($maskingtape, 20%);
@@ -147,13 +157,6 @@ article {
     bottom: 10px;
     right: 200px;
   }
-#WhatIDo {
-  .content {
-    p {
-      font-size: 1.1rem;
-    }
-  }
-}
 #About {
   .sub-header {
     img {
@@ -164,10 +167,6 @@ article {
   .content {
     article {
       align-self: center;
-      p {
-        font-size: 1.4rem;
-        line-height: 1.1;
-      }
     }
   }
 }
@@ -310,6 +309,8 @@ h1, h2, h3, h4, h5, h6 {
       opacity: 0;
 
       a {
+        font-weight: 500;
+        font-size: $header-large - 3;
         text-transform: uppercase;
         display: block;
         position: relative;
@@ -344,11 +345,6 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
-}
-
-p {
-  padding: 15px;
-  font-size: 1.4rem;
 }
 
 .responsive-menu {
@@ -424,6 +420,10 @@ p {
   opacity: 0.5 !important;
 }
 
+.not-loaded {
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
 .animate-enter {
 	-webkit-transition: 1s linear all; /* Chrome */
 	transition: 1s linear all;

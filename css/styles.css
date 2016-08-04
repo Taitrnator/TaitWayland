@@ -911,24 +911,32 @@
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
+html {
+  font-size: 10px; }
+
 body {
   background-color: #3A3A3A;
   color: #F2EDC4;
   font-family: "niveau-grotesk", Helvetica, sans-serif;
   margin: 0; }
 
+p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 300; }
+
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
   padding: 1rem; }
   header[role="banner"] h1 {
-    font-size: 4rem; }
+    font-size: 6rem; }
   header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
     z-index: 5;
     margin: 0;
     line-height: 1.2; }
   header[role="banner"] h3 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   header[role="banner"] h5 {
     font-size: 1rem;
     margin: 2rem 0; }
@@ -1000,14 +1008,11 @@ article {
           align-self: center;
           margin: 0 0.8rem;
           display: inline; }
-      article .content article p {
-        font-size: 1.4rem;
-        text-align: left; }
-        article .content article p a {
-          text-decoration: underline;
-          color: #e0d470; }
-          article .content article p a:hover {
-            color: #c0b02a; }
+      article .content article p a {
+        text-decoration: underline;
+        color: #e0d470; }
+        article .content article p a:hover {
+          color: #c0b02a; }
     article .content .button-article {
       width: 250px;
       align-content: center; }
@@ -1030,17 +1035,11 @@ article {
   bottom: 10px;
   right: 200px; }
 
-#WhatIDo .content p {
-  font-size: 1.1rem; }
-
 #About .sub-header img {
   width: 100%;
   height: auto; }
 #About .content article {
   align-self: center; }
-  #About .content article p {
-    font-size: 1.4rem;
-    line-height: 1.1; }
 
 #Final article {
   width: auto;
@@ -1156,6 +1155,8 @@ h1, h2, h3, h4, h5, h6 {
       position: relative;
       opacity: 0; }
       .main-menu ul li a {
+        font-weight: 500;
+        font-size: 3rem;
         text-transform: uppercase;
         display: block;
         position: relative;
@@ -1179,10 +1180,6 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none; }
       .social-media-links ul li a img {
         padding: 0; }
-
-p {
-  padding: 15px;
-  font-size: 1.4rem; }
 
 .responsive-menu {
   position: relative;
@@ -1245,6 +1242,10 @@ p {
 .fadeInSoft {
   visibility: visible !important;
   opacity: 0.5 !important; }
+
+.not-loaded {
+  filter: blur(15px);
+  -webkit-filter: blur(15px); }
 
 .animate-enter {
   -webkit-transition: 1s linear all;
