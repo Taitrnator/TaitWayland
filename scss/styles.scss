@@ -231,8 +231,6 @@ article {
 
 //navigation
 .top-nav {
-  @extend %topleft;
-  @include gradient($gradienttop, $gradientbottom);
   z-index: 15;
   width: 100%;
   position: fixed;
@@ -244,6 +242,19 @@ article {
       list-style-type: none;
     }
   }
+}
+
+.hamburger {
+  padding: 10px;
+  background-color: $maskingtape;
+  transition: all 0.4s ease-out;
+  &:hover {
+    background-color: darken($maskingtape, 15%);
+    opacity: 1;
+  }
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: $charcoal;
 }
 
 .main-menu {
@@ -331,8 +342,6 @@ article {
   }
 }
 
-
-
 .responsive-menu {
   position: relative;
   margin: 10px;
@@ -342,28 +351,11 @@ article {
   transition: all 1s ease-in-out;
 }
 
-.antispam {
-  display:none;
-}
-
 .clearfix {
   clear: both;
 }
 .left {
   float: left;
-}
-
-.hamburger {
-  padding: 10px;
-  background-color: $maskingtape;
-  transition: all 0.4s ease-out;
-  &:hover {
-    background-color: darken($maskingtape, 15%);
-    opacity: 1;
-  }
-}
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  background-color: $charcoal;
 }
 
 .portrait-container {
