@@ -424,10 +424,6 @@ p {
   opacity: 0.5 !important;
 }
 
-.not-loaded {
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
-}
 .animate-enter {
 	-webkit-transition: 1s linear all; /* Chrome */
 	transition: 1s linear all;

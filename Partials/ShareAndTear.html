@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="css/portfolio.css" />
-
 <nav class="top-nav">
       <ul class="responsive-menu">
         <li>
@@ -16,10 +15,12 @@
 <main id="Top">
   <header role="banner" class="ShareAndTear">
   <h1>{{data.title}}</h1>
-  <p>{{data.brief}}</p>
   </header>
-<article id="Overview">
-  <article>
+<article class="overview">
+  <header class="main-header">
+    <h2>{{data.title}}</h2>
+    <p>{{data.brief}}</p>
+  </header>
   <section>
     <header>
       <h3>Created</h3>
@@ -50,7 +51,6 @@
       {{data.technology}}
     </p>
   </section>
-  </article>
 </article>
   <article id="Objective">
      <header class="main-header"><h2>objective</h2></header>

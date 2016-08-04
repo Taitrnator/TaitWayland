@@ -17,25 +17,24 @@
 
 header[role="banner"] {
   height: auto;
+  text-align: center;
   padding: 5rem;
-  background-position:center;
-  background-size:cover;
-  margin-top: 0;
-  h1, p{
-    padding: 0.5rem;
-    width: 60%;
-    margin: 1rem auto;
-    background-color: $maskingtapegradient;
-    color: $charcoal;
-    position: relative;
-    text-align: left;
-  }
+  margin: auto;
   h1 {
-    font-size: 3.5rem;
+    width: 60%;
+    margin: auto;
+    background-color: $maskingtape;
+    color: $charcoal;
+    font-size: 3rem;
+    position: relative;
+    top: 3rem;
   }
-  &.ShareAndTear, &.NCTrans {
-    background-image: url("/images/case_studies/ShareAndTear_Case/case_studies.jpg");
-  }
+}
+header.ShareAndTear {
+  background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg");
+}
+header.NCTrans {
+  background: url("/images/case_studies/NCTrans_Case/nctrans_banner.jpg");
 }
 article {
   margin: 3rem auto;
@@ -129,7 +128,7 @@ p {
 }
 
 
-#Overview {
+article.overview {
   section {
     width: 22%;
     margin: 10px;
@@ -145,8 +144,10 @@ p {
   }
   header[role="banner"] {
     padding: 2.5rem;
-    h1, p {
+    h1 {
       width: 90%;
+      font-size: 2rem;
+      top: 2rem;
     }
   }
   p {
@@ -174,7 +175,7 @@ p {
   #Research .content span {
     height: auto;
   }
-  #Overview {
+  article.overview {
     section {
       margin: 0;
       padding: 0 10px;
