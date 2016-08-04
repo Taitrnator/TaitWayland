@@ -8,13 +8,8 @@
    background: -ms-linear-gradient(top, $grad2, $grad2);
 }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+@mixin transitioner($opac: 1, $vis: visible, $height: 0%) {
+  opacity: $opac !important;
+  visibility: $vis !important;
+  height: $height !important;
 }

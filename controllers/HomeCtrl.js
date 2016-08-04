@@ -3,9 +3,15 @@ TaitWayland.controller("HomeCtrl", function($scope, $http, $document) {
     $scope.data = res.data;
     $scope.ldjson = $scope.data.ldjson;
     $(document).ready(function() {
+      $(".hamburger").toggleClass("is-active");
+      $(".responsive-menu").addClass("left");
+      $(".hamburger").on('click', function() {
+        $(this).toggleClass("is-active");
+        $(".responsive-menu").removeClass("left");
+      });
       // cool shit with text
       function coolText(e, fps) {
-           $(e).addClass("fadeIn");
+           $(e).addClass('fadeIn');
            if (fps) {
              $(e).shuffleLetters(fps);
            }
@@ -14,7 +20,7 @@ TaitWayland.controller("HomeCtrl", function($scope, $http, $document) {
        function coolMaskers(h1, h2) {
          $(window).on('scroll', function() {
            var height = $(document).scrollTop();
-           var masker1height = Math.abs($(h1).offset().top - height);
+           var masker1height = Math.abs(h1.offset().top - height);
            if (masker1height < 530) {
              coolText(h1, 25);
              setTimeout(function() { coolText(h2, 25); }, 1000);

@@ -2,6 +2,8 @@
 @import 'mixins';
 @import 'hamburger';
 
+
+//body
 html {
   font-size: $em-base;
 }
@@ -11,10 +13,26 @@ body {
   font-family: $main-font;
   margin: 0;
 }
+p {
+  @extend %default-paragraph;
+}
+a {
+  text-decoration: underline;
+  color: darken($maskingtape, 20%);
+  &:hover {
+    color: darken($maskingtape, 40%);
+  }
+}
 
+// header content
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
+  margin-left: $em-base;
+  margin-right: $em-base;
   h1{
     @extend %headerprops;
     @extend %hideelem;
@@ -30,6 +48,11 @@ header[role="banner"] {
     @extend %hideelem;
     font-size: $header-font - 5;
     margin: 2rem 0;
+  }
+  &.portfolio-header {
+      h1, h2, h5 {
+      @include transitioner();
+    }
   }
 }
 
@@ -116,17 +139,6 @@ article {
           }
         }
       }
-      p {
-        font-size: $paragraph-font;
-        text-align: left;
-        a {
-          text-decoration: underline;
-          color: darken($maskingtape, 20%);
-          &:hover {
-            color: darken($maskingtape, 40%);
-          }
-        }
-      }
     }
     .button-article {
       width: 250px;
@@ -138,12 +150,14 @@ article {
   .masker1 {
     @extend %masker;
     @extend %hideelem;
+    position: relative;
     top: 10px;
     left: 100px;
   }
   .masker2 {
     @extend %masker;
     @extend %hideelem;
+    position: relative;
     bottom: 10px;
     right: 200px;
   }
@@ -214,18 +228,6 @@ article {
   }
 }
 
-// header content
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
-
-.header-1, .header-2, .header-3, .masker1, .masker2 {
-
-}
-.header-3 {
-  transition: all 0.5s ease-out;
-}
-
 
 //navigation
 .top-nav {
@@ -254,10 +256,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  &.open {
-  opacity: .9;
-  visibility: visible;
-  height: 100%;
 
   li {
     animation: fadeInRight .5s ease forwards;
@@ -281,7 +279,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-  }
   ul {
     list-style: none;
     padding: 0;
@@ -334,9 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p {
-  @extend %default-paragraph;
-}
+
 
 .responsive-menu {
   position: relative;
@@ -386,12 +381,9 @@ p {
     opacity: 0.5;
   }
   #portrait-img {
+    @extend %hideelem;
     right: 0;
-    visibility: hidden;
-    opacity: 0;
     z-index: 0;
-    transition: all 0.5s ease-in-out;
-    position: fixed;
     width: 200px;
     top: 50px;
   }
@@ -402,30 +394,6 @@ p {
   }
 }
 
-.fadeIn {
-  visibility: visible;
-  opacity: 1;
-}
-.fadeInSoft {
-  visibility: visible !important;
-  opacity: 0.5 !important;
-}
-
-.not-loaded {
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
-}
-.animate-enter {
-	-webkit-transition: 1s linear all; /* Chrome */
-	transition: 1s linear all;
-	opacity: 0;
-}
-
-.animate-enter.animate-enter-active {
-	opacity: 1;
-}
-
-
 @media screen and (max-width: 1040px) {
   article {
     .main-header {
@@ -435,7 +403,6 @@ p {
       width: 75%;
     }
   }
-
 }
 @media screen and (max-width: 756px) {
   header[role="banner"] {
@@ -480,3 +447,5 @@ p {
     }
   }
 }
+
+@import 'utility';
