@@ -70,6 +70,8 @@ article {
     padding: 0.6rem;
     width: 20%;
     h2 {
+      font-size: $header-large - 3;
+      font-weight: 700;
       margin: auto;
       padding: 1rem;
       color: $maskingtape;
@@ -116,7 +118,7 @@ article {
             padding: 5px;
           }
           h3 {
-            font-size: 1.3rem;
+            font-size: $header-large - 4;
             align-self: center;
             margin: 0 0.8rem;
             display: inline;
@@ -144,7 +146,7 @@ article {
     margin: 0;
     color: $charcoal;
     background-color: $maskingtape;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align:center;
     padding: 0.4rem;
     position: relative;
@@ -449,19 +451,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 756px) {
   header[role="banner"] {
     margin-top: 20%;
-    h1{
-    font-size: 3rem;
-    }
     h1, h3, h5 {
       z-index: 5;
       margin: 0;
       line-height: 1.2;
     }
-    h3 {
-      font-size: 1rem;
-    }
     h5 {
-      font-size: 0.8rem;
       margin: 0.5rem 0;
     }
   }
