@@ -1,18 +1,48 @@
 $charcoal:  #3A3A3A;
 $maskingtape: #F2EDC4;
-$gradienttop: rgba(60, 60, 60, 0.8);
-$gradientbottom: rgba(60, 60, 60, 0.0);
-$maskingtapegradient: rgba(243, 230, 196, 0.8);
+$gradienttop: rgba($charcoal, 0.8);
+$gradientbottom: rgba($charcoal, 0.0);
+$maskingtapegradient: rgba($maskingtape, 0.8);
+
+
+
+$em-base: 10px;
+$paragraph-font: 1.6rem;
+$header-font: 7rem;
+$default-line-height: 1.5;
 $main-font: "niveau-grotesk", Helvetica, sans-serif;
 
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+%default-paragraph {
+  font-size: $paragraph-font;
+  line-height: $default-line-height;
+}
+
+%hideelem {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+%headerprops {
+  z-index: 5;
+  margin: auto;
+  line-height: $paragraph-font;
+}
+
+%masker {
+  overflow-x:hidden;
+  margin: 0;
+  color: $charcoal;
+  background-color: $maskingtape;
+  font-size: 1.7rem;
+  text-align:center;
+  padding: 0.4rem;
+  position: relative;
+}
+
+%topleft {
+  top: 0;
+  left: 0;
 }
