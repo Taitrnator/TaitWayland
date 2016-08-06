@@ -13,3 +13,8 @@
   visibility: $vis !important;
   height: $height !important;
 }
+
+@mixin border($color, $top: 0px, $bottom: 0px) {
+  border-top: $top solid $color;
+  border-bottom: $bottom solid $color;
+}

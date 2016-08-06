@@ -1,0 +1,21 @@
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.fadeIn {
+  @include transitioner();
+}
+.fadeInSoft {
+  @include transitioner($opac: 0.5);
+}
+
+.open {
+  @include transitioner($opac: 0.9, $height: 100%);
+}
