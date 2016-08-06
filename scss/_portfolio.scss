@@ -1,25 +1,10 @@
 @import 'variables.scss';
-//
-// // body {
-// //   background-color: #fff;
-// //   color: $charcoal;
-// //   font-family: $main-font;
-// // }
-// //
-// // article {
-// //   .main-header {
-// //     h2 {
-// //       color: $maskingtape;
-// //       background-color: $charcoal;
-// //     }
-// //   }
-// // }
 
-header[role="banner"] {
+.portfolio-header {
   height: auto;
   text-align: center;
   padding: 5rem;
-  margin: auto;
+  margin-top: 0px !important;
   h1 {
     width: 60%;
     margin: auto;
@@ -27,44 +12,66 @@ header[role="banner"] {
     color: $charcoal;
     font-size: 3rem;
     position: relative;
-    top: 3rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  h1, h3, h5 {
+    line-height: $default-line-height !important;
+  }
+  p {
+    background-color: $maskingtape;
+    color: $charcoal;
+    padding: 0.5rem;
   }
 }
-header.ShareAndTear {
-  background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg");
-}
-header.NCTrans {
-  background: url("/images/case_studies/NCTrans_Case/nctrans_banner.jpg");
-}
-article {
-  margin: 3rem auto;
-  flex-flow: row wrap;
-  .main-header {
-    width: 100%;
-    text-align: left;
-    padding: 0;
-    h2 {
-      font-size: $header-large - 3;
-      padding: 1rem;
-      color: $maskingtape;
-      background-color: transparent;
-      margin: 0;
-      border-bottom: 3px solid $maskingtape;
+.portfolio-content {
+  article {
+    justify-content: flex-start;
+    margin: 3rem auto;
+    flex-flow: row wrap;
+    .content {
+      width: 100%;
     }
   }
-  .content {
-    width: 100%;
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  header {
+    &.ShareAndTear {
+      background: url("/images/case_studies/ShareAndTear_Case/shareandtear_banner.jpg");
+    }
+    &.NCTrans {
+      background: url("/images/case_studies/NCTrans_Case/nctrans_banner.jpg");
+    }
+  }
+  .overview {
+    section {
+      width: 22%;
+      margin: 10px;
+      @media screen and (max-width: 756px) {
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 756px) {
+      margin: 0;
+      article {
+        margin: 0.5rem;
+      }
+      p {
+        margin: 0.5rem;
+      }
   }
 }
 
-p {
-  padding: 0;
-}
+
 #Research {
   .content {
     span {
       width: 230px;
-      height: 230px;
       padding: 10px;
       img {
         width: 100%;
@@ -125,35 +132,7 @@ p {
       align-self: center;
     }
   }
-}
-
-
-article.overview {
-  section {
-    width: 22%;
-    margin: 10px;
-  }
-}
-
-@media screen and (max-width: 756px) {
-  main {
-    margin: 0;
-  }
-  article {
-    margin: 0.5rem;
-  }
-  header[role="banner"] {
-    padding: 2.5rem;
-    h1 {
-      width: 90%;
-      font-size: 2rem;
-      top: 2rem;
-    }
-  }
-  p {
-    margin: 0.5rem;
-  }
-  #Branding, #Objective, #Wireframes {
+  @media screen and (max-width: 756px) {
     padding: 0;
     header {
       padding: 10px;
@@ -170,16 +149,6 @@ article.overview {
       .final-image {
         width: 100%;
       }
-    }
-  }
-  #Research .content span {
-    height: auto;
-  }
-  article.overview {
-    section {
-      margin: 0;
-      padding: 0 10px;
-      width: 100%;
     }
   }
 }
