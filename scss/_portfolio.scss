@@ -5,7 +5,8 @@
   text-align: center;
   padding: 5rem;
   margin-top: 0px !important;
-  h1 {
+  h3 {
+    @include transitioner();
     width: 60%;
     margin: auto;
     background-color: $maskingtape;
@@ -14,8 +15,6 @@
     position: relative;
     margin-left: auto !important;
     margin-right: auto !important;
-  }
-  h1, h3, h5 {
     line-height: $default-line-height !important;
   }
   p {
@@ -49,21 +48,21 @@
     section {
       width: 22%;
       margin: 10px;
-      @media screen and (max-width: 756px) {
-        margin: 0;
-        padding: 0 10px;
-        width: 100%;
-      }
     }
   }
-  @media screen and (max-width: 756px) {
+  @include query($small-screen) {
+    margin: 0;
+    article {
+      margin: 0.5rem;
+    }
+    p {
+      margin: 0.5rem;
+    }
+    .overview section {
       margin: 0;
-      article {
-        margin: 0.5rem;
-      }
-      p {
-        margin: 0.5rem;
-      }
+      padding: 0 10px;
+      width: 100%;
+    }
   }
 }
 
@@ -133,7 +132,7 @@
       align-self: center;
     }
   }
-  @media screen and (max-width: 756px) {
+  @include query($small-screen) {
     padding: 0;
     header {
       padding: 10px;

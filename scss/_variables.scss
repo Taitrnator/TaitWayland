@@ -9,11 +9,13 @@ $maskingtapegradient: rgba($maskingtape, 0.8);
 $em-base: 10px;
 $paragraph-font: 1.6rem;
 $header-font: 7rem;
-$small-line-height: 1.1;
+$small-line-height: 1;
 $default-line-height: 1.5;
 $expanded-line-height: 1.8;
 $main-font: "niveau-grotesk", Helvetica, sans-serif;
 
+$large-screen: 1040px;
+$small-screen: 756px;
 
 %default-paragraph {
   font-size: $paragraph-font;
@@ -30,13 +32,11 @@ $main-font: "niveau-grotesk", Helvetica, sans-serif;
 
 %hideelem {
   opacity: 0;
-  visibility: hidden;
   transition: all 1s ease-in-out;
 }
 
 %headerprops {
   z-index: 5;
-  line-height: $paragraph-font;
 }
 
 %masker {

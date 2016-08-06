@@ -14,10 +14,10 @@
   <nav role="navigation">
     <ul>
       <li>
-        <a id="whatIdo-link" ng-click="toSection('WhatIDo')" role="menuitem">What I Do</a>
+        <a id="work-link" ng-click="toSection('Work')" role="menuitem">Work</a>
       </li>
       <li>
-        <a id="work-link" ng-click="toSection('Work')" role="menuitem">Work</a>
+        <a id="whatIdo-link" ng-click="toSection('WhatIDo')" role="menuitem">What I Do</a>
       </li>
       <li>
         <a id="about-link" ng-click="toSection('About')" role="menuitem">About</a>
@@ -58,6 +58,16 @@
     <h3 class="header-2">{{data.header[0].header2}}</h3>
     <h5 class="header-3">{{data.header[0].header3}}</h5>
   </header>
+  <article id="Work" aria-labelledby="work-link">
+    <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
+    <section class="content">
+      <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
+           <a href="{{key.itemOffered.url}}">
+             <img class="portfolio-image" ng-src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
+           </a>
+      </article>
+    </section>
+</article>
  <article id="WhatIDo" aria-labelledby="whatIdo-link">
    <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
@@ -75,16 +85,6 @@
        <p>
          {{ section.description}}
        </p>
-     </article>
-   </section>
- </article>
- <article id="Work" aria-labelledby="work-link">
-   <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
-   <section class="content">
-     <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
-          <a href="{{key.itemOffered.url}}">
-            <img class="portfolio-image" ng-src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
-          </a>
      </article>
    </section>
  </article>
@@ -125,9 +125,6 @@
      </article>
    </section>
  </article>
- <footer id="bottom">
-
- </footer>
 </main>
 
 <script async type="text/javascript" src="scripts/min/html2canvas-min.js"></script>

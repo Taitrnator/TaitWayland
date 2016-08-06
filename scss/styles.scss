@@ -1,10 +1,6 @@
 @import 'variables';
 @import 'mixins';
 @import 'hamburger';
-
-
-
-
 //body
 html {
   font-size: $em-base;
@@ -21,44 +17,40 @@ p {
 a {
   @extend %default-a;
 }
-
 // header content
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3,h4, h5, h6 {
   text-transform: uppercase;
 }
 header[role="banner"] {
-  height: 200px;
-  margin-top: 15%;
-  h1{
+  margin-top: 18%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 250px;
+  position: relative;
+  h1 {
     @extend %headerprops;
     @extend %hideelem;
     font-size: $header-font;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    line-height: $small-line-height;
+    margin: 0rem;
   }
   h3 {
     @extend %headerprops;
     @extend %hideelem;
     font-size: $header-font - 4;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    line-height: $small-line-height;
+    margin: 0rem;
   }
   h5 {
     @extend %headerprops;
     @extend %hideelem;
     font-size: $header-font - 5;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    line-height: $small-line-height;
+    margin: 0rem;
   }
-  &.portfolio-header {
-      h1, h2, h5 {
-      @include transitioner();
-    }
-  }
-  @media screen and (max-width: 1040px) {
-    height: auto;
+  @include query($large-screen) {
     h1 {
-      font-size: $header-font - 3;
+      font-size: $header-font - 3.5;
       line-height: $small-line-height;
     }
     h3 {
@@ -66,16 +58,18 @@ header[role="banner"] {
       line-height: $small-line-height;
     }
     h5 {
-      font-size: $header-font - 6;
+      font-size: $header-font - 5.8;
       line-height: $small-line-height;
+      margin: 0.8rem 0;
     }
   }
+  @include query($small-screen) {
+    height: 120px;
+  }
 }
-
 a {
   color: darken($maskingtape, 20%);
   text-decoration: underline;
-
   &:hover {
     color: darken($maskingtape, 40%);
   }
@@ -83,11 +77,11 @@ a {
 img {
   padding: 10px;
 }
-
 article {
   margin: 10rem auto;
   z-index: 1;
-  display: -webkit-flex; /* Safari */
+  display: -webkit-flex;
+  /* Safari */
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -119,7 +113,7 @@ article {
     article {
       margin: 0.5rem;
       width: 350px;
-      align-self:baseline;
+      align-self: baseline;
       flex-flow: column wrap;
       padding: 1%;
       .sub-header {
@@ -130,7 +124,7 @@ article {
         @include border($maskingtape, $bottom: 4px);
         .img-container {
           width: 20%;
-          .img-box{
+          .img-box {
             width: 100%;
             .section-img {
               max-width: 60px;
@@ -143,22 +137,18 @@ article {
           align-content: baseline;
         }
         img {
-            padding: 5px;
+          padding: 5px;
         }
         h3 {
-            font-size: $header-font - 5;
-            align-self: center;
-            margin: 0 0.8rem;
-            display: inline;
+          font-size: $header-font - 5;
+          align-self: center;
+          margin: 0 0.8rem;
+          display: inline;
         }
       }
     }
-    .button-article {
-      width: 250px;
-      align-content: center;
-    }
   }
-  @media screen and (max-width: 1040px) {
+  @include query($large-screen) {
     .main-header {
       width: 35%;
     }
@@ -166,7 +156,7 @@ article {
       width: 75%;
     }
   }
-  @media screen and (max-width: 756px) {
+  @include query($small-screen) {
     overflow-x: hidden;
     margin: 2rem auto;
     flex-flow: row wrap;
@@ -198,33 +188,32 @@ article {
     }
   }
 }
-
 .masker1 {
-    @extend %masker;
-    @extend %hideelem;
-    position: relative;
-    top: 10px;
-    left: 100px;
-  }
-  .masker2 {
-    @extend %masker;
-    @extend %hideelem;
-    position: relative;
-    bottom: 10px;
-    right: 200px;
-  }
+  @extend %masker;
+  @extend %hideelem;
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+.masker2 {
+  @extend %masker;
+  @extend %hideelem;
+  position: relative;
+  bottom: 10px;
+  right: 200px;
+}
 #About {
   img {
-      width: 100%;
-      height:auto;
+    width: 100%;
+    height: auto;
   }
   article {
-      align-self: center;
+    align-self: center;
   }
-  @media screen and (max-width: 756px) {
-      img {
-        width: 100%;
-        height:auto;
+  @include query($small-screen) {
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -241,7 +230,8 @@ article {
   .content {
     article {
       display: flex;
-      position: relative;     /* establish nearest positioned ancestor for abs.positioning */
+      position: relative;
+      /* establish nearest positioned ancestor for abs.positioning */
       max-height: 250px;
       align-items: center;
       a {
@@ -252,9 +242,29 @@ article {
     }
   }
 }
-
-
 //buttons
+.button-article {
+  width: 250px;
+  align-content: center;
+}
+.social-media-links {
+  ul {
+    padding-left: 0;
+    display: block;
+    margin: 0.3rem;
+    text-align: center;
+    li {
+      display: inline;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
 .button {
   font-size: $paragraph-font;
   padding: 0.8rem 1.5rem;
@@ -272,17 +282,16 @@ article {
     background-color: darken($maskingtape, 20%);
   }
   &:focus {
-    outline:0;
+    outline: 0;
   }
   img {
     width: 22px;
   }
-  img, span {
+  img,
+  span {
     vertical-align: middle;
   }
 }
-
-
 //navigation
 .top-nav {
   @include gradient($gradienttop, $gradientbottom);
@@ -298,7 +307,6 @@ article {
     }
   }
 }
-
 .hamburger {
   padding: 10px;
   background-color: $maskingtape;
@@ -308,35 +316,34 @@ article {
     opacity: 1;
   }
 }
-
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
   background-color: $charcoal;
 }
-
 .main-menu {
   @extend %topleft;
   position: fixed;
   background: $charcoal;
   width: 100%;
-  height: 0%;
+  height: 0;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   li {
-    animation: fadeInRight .5s ease forwards;
-    animation-delay: .35s;
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: 0.35s;
     &:nth-of-type(2) {
-      animation-delay: .4s;
+      animation-delay: 0.4s;
     }
     &:nth-of-type(3) {
-      animation-delay: .45s;
+      animation-delay: 0.45s;
     }
     &:nth-of-type(4) {
-      animation-delay: .50s;
-      }
+      animation-delay: 0.50s;
     }
+  }
   nav {
     position: relative;
     height: 70%;
@@ -345,90 +352,68 @@ article {
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-
-    li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
       position: relative;
-      opacity: 0;
-      a {
-        font-size: $header-font - 4;
-        font-weight: 400;
-        text-transform: uppercase;
+      height: 100%;
+      li {
         display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
         position: relative;
-        color: $maskingtape;
-        text-decoration: none;
-        overflow: hidden;
-        transition: all .35s;
-        &:hover {
-          color: darken($maskingtape, 20%);
-          text-decoration: underline;
+        opacity: 0;
+        a {
+          font-size: $header-font - 4;
+          font-weight: 400;
+          text-transform: uppercase;
+          display: block;
+          position: relative;
+          color: $maskingtape;
+          text-decoration: none;
+          overflow: hidden;
+          transition: all 0.35s;
+          &:hover {
+            color: darken($maskingtape, 20%);
+            text-decoration: underline;
           }
         }
       }
     }
   }
 }
-
-.social-media-links {
-  ul {
-    padding-left: 0px;
-    display: block;
-    margin: 0.3rem;
-    text-align:center;
-    li {
-      display: inline;
-      list-style-type: none;
-      a {
-        text-decoration: none;
-        img {
-          padding: 0;
-        }
-      }
-    }
-  }
-}
-
 .responsive-menu {
   position: relative;
   margin: 10px;
   float: right;
-  padding-left: 0px;
+  padding-left: 0;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  @media screen and (max-width: 756px) {
-    padding-left: 0px;
+  @include query($small-screen) {
+    padding-left: 0;
     display: block;
   }
 }
-
 .clearfix {
   clear: both;
 }
 .left {
   float: left;
 }
-
 .portrait-container {
-  padding: 0px;
+  padding: 0;
   position: absolute;
   z-index: -1;
   right: 0;
   top: 5%;
   width: 200px;
-  #portrait-img, canvas {
-    width:100%;
-    padding: 0px;
+  #portrait-img,
+  canvas {
+    width: 100%;
+    padding: 0;
   }
   canvas {
     opacity: 0.5;

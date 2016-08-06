@@ -8,13 +8,19 @@
    background: -ms-linear-gradient(top, $grad2, $grad2);
 }
 
-@mixin transitioner($opac: 1, $vis: visible, $height: 0%) {
+@mixin transitioner($opac: 1, $vis: inherit, $height: auto) {
   opacity: $opac !important;
-  visibility: $vis !important;
+  visibility: $vis;
   height: $height !important;
 }
 
 @mixin border($color, $top: 0px, $bottom: 0px) {
   border-top: $top solid $color;
   border-bottom: $bottom solid $color;
+}
+
+@mixin query($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }
