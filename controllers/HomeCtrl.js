@@ -5,7 +5,7 @@ TaitWayland.controller("HomeCtrl", function($scope, $http, $document) {
     $(document).ready(function() {
       // cool shit with text
       function coolText(e, fps) {
-           $(e).addClass("fadeIn");
+           $(e).addClass('fadeIn');
            if (fps) {
              $(e).shuffleLetters(fps);
            }

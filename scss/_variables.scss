@@ -1,24 +1,48 @@
 $charcoal:  #3A3A3A;
 $maskingtape: #F2EDC4;
-$gradienttop: rgba(60, 60, 60, 0.8);
-$gradientbottom: rgba(60, 60, 60, 0.0);
+$gradienttop: rgba($charcoal, 0.8);
+$gradientbottom: rgba($charcoal, 0.0);
+$maskingtapegradient: rgba($maskingtape, 0.8);
 
 
-$rem-base: 10px;
-$paragraph-font-size: 1.6rem;
-$header-large: 6rem;
-$default-height: 1.2;
-$expanded-height: 1.5;
+
+$em-base: 10px;
+$paragraph-font: 1.6rem;
+$header-font: 7rem;
+$small-line-height: 1.1;
+$default-line-height: 1.5;
+$expanded-line-height: 1.8;
 $main-font: "niveau-grotesk", Helvetica, sans-serif;
 
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+%default-paragraph {
+  font-size: $paragraph-font;
+  line-height: $default-line-height;
+}
+
+%hideelem {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+
+%headerprops {
+  z-index: 5;
+  line-height: $paragraph-font;
+}
+
+%masker {
+  overflow-x:hidden;
+  margin: 0;
+  color: $charcoal;
+  background-color: $maskingtape;
+  font-size: 1.7rem;
+  text-align:center;
+  padding: 0.4rem;
+  position: relative;
+}
+
+%topleft {
+  top: 0;
+  left: 0;
 }

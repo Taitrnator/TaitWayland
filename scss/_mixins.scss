@@ -1,0 +1,20 @@
+//okay this file has more than mixins, get over yourself
+
+@mixin gradient($grad1, $grad2) {
+   background: $grad1;
+   background: -moz-linear-gradient(top, $grad1, $grad2);
+   background: -webkit-linear-gradient(top, $grad1, $grad2);
+   background: -o-linear-gradient(top,  $grad1, $grad2);
+   background: -ms-linear-gradient(top, $grad2, $grad2);
+}
+
+@mixin transitioner($opac: 1, $vis: visible, $height: 0%) {
+  opacity: $opac !important;
+  visibility: $vis !important;
+  height: $height !important;
+}
+
+@mixin border($color, $top: 0px, $bottom: 0px) {
+  border-top: $top solid $color;
+  border-bottom: $bottom solid $color;
+}

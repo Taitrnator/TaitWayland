@@ -1,43 +1,76 @@
-@import 'variables.scss';
-@import 'hamburger.scss';
+@import 'variables';
+@import 'mixins';
+@import 'hamburger';
 
 
+//body
 html {
-  font-size: $rem-base;
+  font-size: $em-base;
 }
-
 body {
   background-color: $charcoal;
   color: $maskingtape;
   font-family: $main-font;
   margin: 0;
 }
-
 p {
-  font-size: $paragraph-font-size;
-  line-height: $default-height;
-  font-weight: 300;
+  @extend %default-paragraph;
+}
+a {
+  text-decoration: underline;
+  color: darken($maskingtape, 20%);
+  &:hover {
+    color: darken($maskingtape, 40%);
+  }
 }
 
-
+// header content
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
 header[role="banner"] {
   height: 200px;
   margin-top: 15%;
-  padding: 1rem;
   h1{
-  font-size: $header-large;
-  }
-  h1, h3, h5 {
-    z-index: 5;
-    margin: 0;
-    line-height: $default-height;
+    @extend %headerprops;
+    @extend %hideelem;
+    font-size: $header-font;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   h3 {
-    font-size: $header-large - 4;
+    @extend %headerprops;
+    @extend %hideelem;
+    font-size: $header-font - 4;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   h5 {
-    font-size: $header-large - 5;
-    margin: 2rem 0;
+    @extend %headerprops;
+    @extend %hideelem;
+    font-size: $header-font - 5;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  &.portfolio-header {
+      h1, h2, h5 {
+      @include transitioner();
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    height: auto;
+    h1 {
+      font-size: $header-font - 3;
+      line-height: $small-line-height;
+    }
+    h3 {
+      font-size: $header-font - 5;
+      line-height: $small-line-height;
+    }
+    h5 {
+      font-size: $header-font - 6;
+      line-height: $small-line-height;
+    }
   }
 }
 
@@ -70,13 +103,11 @@ article {
     padding: 0.6rem;
     width: 20%;
     h2 {
-      font-size: $header-large - 3;
-      font-weight: 700;
+      font-size: $header-font - 5;
       margin: auto;
       padding: 1rem;
       color: $maskingtape;
-      border-top: 3px solid $maskingtape;
-      border-bottom: 3px solid $maskingtape;
+      @include border($maskingtape, $bottom: 4px, $top: 4px);
     }
   }
   .content {
@@ -85,7 +116,7 @@ article {
     flex-flow: row wrap;
     justify-content: center;
     img {
-      max-width: 100%;
+      max-width: 90%;
     }
     article {
       margin: 0.5rem;
@@ -98,7 +129,7 @@ article {
         justify-content: flex-start;
         color: $maskingtape;
         background-color: none;
-        border-bottom: 4px solid $maskingtape;
+        @include border($maskingtape, $bottom: 4px);
         .img-container {
           width: 20%;
           .img-box{
@@ -113,25 +144,14 @@ article {
           width: 80%;
           align-content: baseline;
         }
-        div {
-          img {
+        img {
             padding: 5px;
-          }
-          h3 {
-            font-size: $header-large - 4;
+        }
+        h3 {
+            font-size: $header-font - 5;
             align-self: center;
             margin: 0 0.8rem;
             display: inline;
-          }
-        }
-      }
-      p {
-        a {
-          text-decoration: underline;
-          color: darken($maskingtape, 20%);
-          &:hover {
-            color: darken($maskingtape, 40%);
-          }
         }
       }
     }
@@ -140,22 +160,26 @@ article {
       align-content: center;
     }
   }
-}
-  .masker {
-    overflow-x:hidden;
-    margin: 0;
-    color: $charcoal;
-    background-color: $maskingtape;
-    font-size: 2rem;
-    text-align:center;
-    padding: 0.4rem;
-    position: relative;
+  @media screen and (max-width: 756px) {
+    justify-content: flex-start;
+    .sub-header {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
+}
+
   .masker1 {
+    @extend %masker;
+    @extend %hideelem;
+    position: relative;
     top: 10px;
     left: 100px;
   }
   .masker2 {
+    @extend %masker;
+    @extend %hideelem;
+    position: relative;
     bottom: 10px;
     right: 200px;
   }
@@ -190,14 +214,17 @@ article {
       align-items: center;
       a {
         align-self: center;
+        text-align: center;
         margin: auto;
       }
     }
   }
 }
+
+
+//buttons
 .button {
-  font-size: $paragraph-font-size;
-  font-weight: 700;
+  font-size: $paragraph-font;
   padding: 0.8rem 1.5rem;
   color: darken($maskingtape, 70%);
   background-color: $maskingtape;
@@ -212,6 +239,9 @@ article {
     color: darken($maskingtape, 90%);
     background-color: darken($maskingtape, 20%);
   }
+  &:focus {
+    outline:0;
+  }
   img {
     width: 22px;
   }
@@ -220,62 +250,51 @@ article {
   }
 }
 
-button:focus {outline:0;}
 
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
-.header-1, .header-2, .header-3, .masker1, .masker2 {
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-}
-.header-3 {
-  transition: all 0.5s ease-out;
-}
-
+//navigation
 .top-nav {
+  @include gradient($gradienttop, $gradientbottom);
+  @extend %topleft;
   z-index: 15;
   width: 100%;
   position: fixed;
   text-transform: uppercase;
-  top: 0;
-  left: 0;
   height: 78px;
-  background: $gradienttop;
-  background: -moz-linear-gradient(top, $gradienttop, $gradientbottom);
-  background: -webkit-linear-gradient(top, $gradienttop, $gradientbottom);
-  background: -o-linear-gradient(top,  $gradienttop, $gradientbottom);
-  background: -ms-linear-gradient(top, $gradienttop, $gradientbottom);
-  background: linear-gradient(to bottom, $gradienttop, $gradientbottom);
   ul {
     li {
       list-style-type: none;
     }
   }
 }
+
+.hamburger {
+  padding: 10px;
+  background-color: $maskingtape;
+  transition: all 0.4s ease-out;
+  &:hover {
+    background-color: darken($maskingtape, 15%);
+    opacity: 1;
+  }
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: $charcoal;
+}
+
 .main-menu {
+  @extend %topleft;
   position: fixed;
   background: $charcoal;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 0%;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  &.open {
-  opacity: .9;
-  visibility: visible;
-  height: 100%;
 
   li {
     animation: fadeInRight .5s ease forwards;
     animation-delay: .35s;
-
     &:nth-of-type(2) {
       animation-delay: .4s;
     }
@@ -286,16 +305,14 @@ h1, h2, h3, h4, h5, h6 {
       animation-delay: .50s;
       }
     }
-  }
   nav {
     position: relative;
     height: 70%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 400;
     text-align: center;
-  }
   ul {
     list-style: none;
     padding: 0;
@@ -311,10 +328,9 @@ h1, h2, h3, h4, h5, h6 {
       min-height: 50px;
       position: relative;
       opacity: 0;
-
       a {
-        font-weight: 500;
-        font-size: $header-large - 3;
+        font-size: $header-font - 4;
+        font-weight: 400;
         text-transform: uppercase;
         display: block;
         position: relative;
@@ -322,10 +338,10 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: none;
         overflow: hidden;
         transition: all .35s;
-
         &:hover {
           color: darken($maskingtape, 20%);
           text-decoration: underline;
+          }
         }
       }
     }
@@ -360,28 +376,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 1s ease-in-out;
 }
 
-.antispam {
-  display:none;
-}
-
 .clearfix {
   clear: both;
 }
 .left {
   float: left;
-}
-
-.hamburger {
-  padding: 10px;
-  background-color: $maskingtape;
-  transition: all 0.4s ease-out;
-  &:hover {
-    background-color: darken($maskingtape, 15%);
-    opacity: 1;
-  }
-}
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  background-color: $charcoal;
 }
 
 .portrait-container {
@@ -399,12 +398,9 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5;
   }
   #portrait-img {
+    @extend %hideelem;
     right: 0;
-    visibility: hidden;
-    opacity: 0;
     z-index: 0;
-    transition: all 0.5s ease-in-out;
-    position: fixed;
     width: 200px;
     top: 50px;
   }
@@ -415,30 +411,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.fadeIn {
-  visibility: visible;
-  opacity: 1;
-}
-.fadeInSoft {
-  visibility: visible !important;
-  opacity: 0.5 !important;
-}
-
-.not-loaded {
-  filter: blur(15px);
-  -webkit-filter: blur(15px);
-}
-.animate-enter {
-	-webkit-transition: 1s linear all; /* Chrome */
-	transition: 1s linear all;
-	opacity: 0;
-}
-
-.animate-enter.animate-enter-active {
-	opacity: 1;
-}
-
-
 @media screen and (max-width: 1040px) {
   article {
     .main-header {
@@ -448,21 +420,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 75%;
     }
   }
-
 }
 @media screen and (max-width: 756px) {
-  header[role="banner"] {
-    margin-top: 20%;
-    h1, h3, h5 {
-      z-index: 5;
-      margin: 0;
-      line-height: 1.2;
-    }
-    h5 {
-      margin: 0.5rem 0;
-    }
-  }
-
   .responsive-menu {
     padding-left: 0px;
     display: block;
@@ -478,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
     .content {
       width: 100%;
       article {
-        margin: 0.5rem auto;
+        margin: 0.5rem;
         .sub-header {
           .img-container {
             width: 30%;
@@ -488,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
         img {
-          max-width: 100%;
+          max-width: 90%;
         }
       }
     }
@@ -499,6 +458,8 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         height:auto;
       }
-    }
+    } 
   }
 }
+
+@import 'utility';

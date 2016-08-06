@@ -8,14 +8,8 @@ img.onload = function() {
 	window.onresize = init;
 	setTimeout(function() { closeContext(); }, 3000);
 	setTimeout(function() {
-		var el = document.getElementById("portrait-img");
-		if (el.classList) {
-			el.classList.add('fadeInSoft');
-		}
-		else {
-			el.className += ' ' + 'fadeInSoft';
-		}
-
+		var el = $("#portrait-img");
+		el.addClass('fadeInSoft');
 		canvas.parentNode.removeChild(canvas);
 	}, 3500);
 };
