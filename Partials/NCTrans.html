@@ -61,7 +61,9 @@
   <article id="Challenges">
     <header class="main-header"><h2>{{data.challenge[0].title}}</h2></header>
     <section class="content">
-      <img ng-src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
+      <span>
+        <img ng-src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
+      </span>
       <p>
         {{data.challenge[0].section1}}
         <br />
@@ -106,12 +108,12 @@
   <article>
     <header class="main-header"><h2>{{data.wireframing[0].title}}</h2></header>
     <section class="content">
+      <article ng-repeat="image in data.wireframing[0].images[0]">
+        <img ng-src="{{data.images}}/{{image}}" alt="{{image}}" />
+      </article>
       <p>
         {{data.wireframing[0].section1}}
       </p>
-      <span ng-repeat="image in data.wireframing[0].images[0]">
-        <img ng-src="{{data.images}}/{{image}}" alt="{{image}}" />
-      </span>
     </section>
   </article>
   <article>

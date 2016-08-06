@@ -20,6 +20,7 @@ $small-screen: 756px;
 %default-paragraph {
   font-size: $paragraph-font;
   line-height: $default-line-height;
+  max-width: 500px;
 }
 
 %default-a {

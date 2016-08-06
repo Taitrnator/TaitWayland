@@ -70,10 +70,8 @@
   <article id="Wireframes">
     <header class="main-header"><h2>{{data.wireframing[0].title}}</h2></header>
     <section class="content">
-      <article>
-        <span ng-repeat="image in data.wireframing[0].images[0]" ng-animate="'animate'">
+      <article ng-repeat="image in data.wireframing[0].images[0]" ng-animate="'animate'">
           <img ng-src="{{data.images}}/{{image}}" alt="{{image}}" />
-        </span>
       </article>
       <p ng-repeat="section in data.wireframing[0].section_one[0]" ng-animate="'animate'">
         {{section}}

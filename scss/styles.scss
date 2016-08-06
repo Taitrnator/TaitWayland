@@ -94,6 +94,7 @@ article {
     text-align: center;
     padding: 0.6rem;
     width: 20%;
+    box-sizing: border-box;
     h2 {
       font-size: $header-font - 5;
       margin: auto;
