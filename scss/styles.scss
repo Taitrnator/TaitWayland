@@ -158,16 +158,48 @@ article {
       align-content: center;
     }
   }
+  @media screen and (max-width: 1040px) {
+    .main-header {
+      width: 35%;
+    }
+    .content {
+      width: 75%;
+    }
+  }
   @media screen and (max-width: 756px) {
+    overflow-x: hidden;
+    margin: 2rem auto;
+    flex-flow: row wrap;
     justify-content: flex-start;
+    .main-header {
+      width: 80%;
+      padding: 5px;
+    }
     .sub-header {
       margin-left: 5px;
       margin-right: 5px;
     }
+    .content {
+      width: 100%;
+      article {
+        margin: 0.5rem;
+        .sub-header {
+          .img-container {
+            width: 30%;
+          }
+          .header-container {
+            width: 70%;
+          }
+        }
+        img {
+          max-width: 90%;
+        }
+      }
+    }
   }
 }
 
-  .masker1 {
+.masker1 {
     @extend %masker;
     @extend %hideelem;
     position: relative;
@@ -182,15 +214,17 @@ article {
     right: 200px;
   }
 #About {
-  .sub-header {
-    img {
+  img {
       width: 100%;
       height:auto;
-    }
   }
-  .content {
-    article {
+  article {
       align-self: center;
+  }
+  @media screen and (max-width: 756px) {
+      img {
+        width: 100%;
+        height:auto;
     }
   }
 }
@@ -372,6 +406,10 @@ article {
   padding-left: 0px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  @media screen and (max-width: 756px) {
+    padding-left: 0px;
+    display: block;
+  }
 }
 
 .clearfix {
@@ -406,57 +444,6 @@ article {
     display: block;
     visibility: hidden;
     height: 500px;
-  }
-}
-
-@media screen and (max-width: 1040px) {
-  article {
-    .main-header {
-      width: 25%;
-    }
-    .content {
-      width: 75%;
-    }
-  }
-}
-@media screen and (max-width: 756px) {
-  .responsive-menu {
-    padding-left: 0px;
-    display: block;
-  }
-  article {
-    overflow-x: hidden;
-    margin: 2rem auto;
-    flex-flow: row wrap;
-    .main-header {
-      width: 80%;
-      padding: 5px;
-    }
-    .content {
-      width: 100%;
-      article {
-        margin: 0.5rem;
-        .sub-header {
-          .img-container {
-            width: 30%;
-          }
-          .header-container {
-            width: 70%;
-          }
-        }
-        img {
-          max-width: 90%;
-        }
-      }
-    }
-  }
-  #About {
-    .sub-header {
-      img {
-        width: 100%;
-        height:auto;
-      }
-    }
   }
 }
 

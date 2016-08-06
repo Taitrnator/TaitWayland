@@ -1053,12 +1053,33 @@ article {
     article .content .button-article {
       width: 250px;
       align-content: center; }
+  @media screen and (max-width: 1040px) {
+    article .main-header {
+      width: 35%; }
+    article .content {
+      width: 75%; } }
   @media screen and (max-width: 756px) {
     article {
+      overflow-x: hidden;
+      margin: 2rem auto;
+      flex-flow: row wrap;
       justify-content: flex-start; }
+      article .main-header {
+        width: 80%;
+        padding: 5px; }
       article .sub-header {
         margin-left: 5px;
-        margin-right: 5px; } }
+        margin-right: 5px; }
+      article .content {
+        width: 100%; }
+        article .content article {
+          margin: 0.5rem; }
+          article .content article .sub-header .img-container {
+            width: 30%; }
+          article .content article .sub-header .header-container {
+            width: 70%; }
+          article .content article img {
+            max-width: 90%; } }
 
 .masker1 {
   position: relative;
@@ -1070,11 +1091,15 @@ article {
   bottom: 10px;
   right: 200px; }
 
-#About .sub-header img {
+#About img {
   width: 100%;
   height: auto; }
-#About .content article {
+#About article {
   align-self: center; }
+@media screen and (max-width: 756px) {
+  #About img {
+    width: 100%;
+    height: auto; } }
 
 #Final article {
   width: auto;
@@ -1214,6 +1239,10 @@ article {
   padding-left: 0px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
+  @media screen and (max-width: 756px) {
+    .responsive-menu {
+      padding-left: 0px;
+      display: block; } }
 
 .clearfix {
   clear: both; }
@@ -1243,37 +1272,6 @@ article {
     visibility: hidden;
     height: 500px; }
 
-@media screen and (max-width: 1040px) {
-  article .main-header {
-    width: 25%; }
-  article .content {
-    width: 75%; } }
-@media screen and (max-width: 756px) {
-  .responsive-menu {
-    padding-left: 0px;
-    display: block; }
-
-  article {
-    overflow-x: hidden;
-    margin: 2rem auto;
-    flex-flow: row wrap; }
-    article .main-header {
-      width: 80%;
-      padding: 5px; }
-    article .content {
-      width: 100%; }
-      article .content article {
-        margin: 0.5rem; }
-        article .content article .sub-header .img-container {
-          width: 30%; }
-        article .content article .sub-header .header-container {
-          width: 70%; }
-        article .content article img {
-          max-width: 90%; }
-
-  #About .sub-header img {
-    width: 100%;
-    height: auto; } }
 @keyframes fadeInRight {
   0% {
     opacity: 0;
