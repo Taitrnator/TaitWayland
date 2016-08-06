@@ -2,6 +2,12 @@ p {
   font-size: 1.6rem;
   line-height: 1.5; }
 
+a {
+  text-decoration: underline;
+  color: #e0d470; }
+  a:hover {
+    color: #c0b02a; }
+
 header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .masker1, .masker2, .portrait-container #portrait-img {
   opacity: 0;
   visibility: hidden;
@@ -939,12 +945,6 @@ body {
   color: #F2EDC4;
   font-family: "niveau-grotesk", Helvetica, sans-serif;
   margin: 0; }
-
-a {
-  text-decoration: underline;
-  color: #e0d470; }
-  a:hover {
-    color: #c0b02a; }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }

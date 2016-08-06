@@ -20,6 +20,14 @@ $main-font: "niveau-grotesk", Helvetica, sans-serif;
   line-height: $default-line-height;
 }
 
+%default-a {
+  text-decoration: underline;
+  color: darken($maskingtape, 20%);
+  &:hover {
+    color: darken($maskingtape, 40%);
+  }
+}
+
 %hideelem {
   opacity: 0;
   visibility: hidden;

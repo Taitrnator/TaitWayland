@@ -17,11 +17,7 @@ p {
   @extend %default-paragraph;
 }
 a {
-  text-decoration: underline;
-  color: darken($maskingtape, 20%);
-  &:hover {
-    color: darken($maskingtape, 40%);
-  }
+  @extend %default-a;
 }
 
 // header content
@@ -458,7 +454,7 @@ article {
         width: 100%;
         height:auto;
       }
-    } 
+    }
   }
 }
 
