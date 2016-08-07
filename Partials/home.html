@@ -27,20 +27,6 @@
       </li>
     </ul>
   </nav>
-  <!-- <nav class="social-media-links">
-    <ul>
-      <li>
-        <a href="{{linedinurl}}" target="_blank">
-          <img src="images/linkedin.svg" width="60px"/>
-        </a>
-      </li>
-      <li>
-        <a href="{{githuburl}}" target="_blank">
-          <img src="images/github.svg" width="60px"/>
-        </a>
-      </li>
-    </ul>
-  </nav> -->
 </section>
 
 <div class="portrait-container">
@@ -49,9 +35,6 @@
   <span>portrait</span>
 </div>
 
-<!-- <div class="backToTop">
-  <a href="#"><i class="fa fa-arrow-up"></i></a>
-</div> -->
 <main>
   <header class="main-header" role="banner">
     <h1 class="header-1">{{data.header[0].header1}}</h1>
@@ -93,8 +76,8 @@
    <section class="content">
      <article class="aboutimg">
        <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1>
-           <img ng-src="{{data.ldjson[0].image}}" alt="AboutMe"/>
-           <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
+           <img class="about-img" ng-src="{{data.ldjson[0].image}}" alt="AboutMe"/>
+       <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1>
      </article>
      <article class="aboutcontent">
        <p>
@@ -132,4 +115,4 @@
 <script type="text/javascript">
   !function($){function t(t){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,.?/\\(^)![]{}*&^%$#'\"",a=e.split("");return a[Math.floor(Math.random()*a.length)]}$.fn.shuffleLetters=function(e){var a=$.extend({step:8,fps:45,text:"",callback:function(){}},e);return this.each(function(){var e=$(this),n="";if(e.data("animated"))return!0;e.data("animated",!0),n=a.text?a.text.split(""):e.text().split("");for(var i=[],r=[],f=0;f<n.length;f++){var s=n[f];" "!==s?r.push(f):i[f]="space"}e.html(""),function o(i){var f,s=r.length,u=n.slice(0);if(i>s)return e.data("animated",!1),void a.callback(e);for(f=Math.max(i,0);s>f;f++)f<i+a.step?u[r[f]]=t([r[f]]):u[r[f]]="";e.text(u.join("")),setTimeout(function(){o(i+1)},1e3/a.fps)}(-a.step)})}}(jQuery);
 </script>
-<ldjson data-json="ldjson"></ldjson>
+<ldjson type="application/ld+json" data-json="ldjson"></ldjson>

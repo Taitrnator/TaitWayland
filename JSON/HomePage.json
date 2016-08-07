@@ -27,7 +27,7 @@
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/case_studies/NCTrans_Case/nc_preview.png",
+            "image" : "images/case_studies/NCTrans_Case/nc_brand.png",
             "name": "North Carolina Transportation Museum",
             "url" : "#NCTrans"
           }
