@@ -3,7 +3,7 @@
   "brief": "An app that simplifies door ticketing, provides security, and needs no scanners.",
   "created":"July 2015",
   "industry": "Online Ticketing",
-  "duties": "Product Design",
+  "duties": "Product Design: User Research, Wireframing, Prototyping, User Testing.",
   "technology": "iOS",
   "objective": "TicketBiscuit recognized a large unserved market for online ticketing: high school sports. The barrier to entry was the complexity of most online ticketing services. While online ticketing is intended to be convenient for users, it creates a lot of hassle for small event organizers, especially in this particular market. We realized this demographic didn’t want to use scanners, for instance. Ultimately, if we could create a product as simple as tearing ticket stubs, we could serve this market. Share and Tear was designed from this idea. The user simply downloads tickets to our app, and literally swipes to “tear” them at the door. The door man confirms the tear. Additionally, the app needed to maintain this minimal functionality offline.",
   "challenge": [

@@ -1324,7 +1324,6 @@ header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
   left: 0; }
 
 .portfolio-content article {
-  justify-content: flex-start;
   margin: 3rem auto;
   flex-flow: row wrap;
   justify-content: flex-start; }
