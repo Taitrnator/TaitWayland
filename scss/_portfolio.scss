@@ -6,6 +6,13 @@
     justify-content: flex-start;
     margin: 3rem auto;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    article {
+      align-self: flex-start;
+    }
+    img {
+      width: 350px;
+    }
   }
   p {
     margin-left: 10px;
@@ -116,15 +123,12 @@
       padding: 10px;
     }
     article {
-      justify-content: center;
       -webkit-box-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      margin: auto;
-      width: auto;
       flex-flow: row wrap;
+      justify-content: center;
       img {
-        width: 100%;
         height: auto;
         padding: 0;
       }

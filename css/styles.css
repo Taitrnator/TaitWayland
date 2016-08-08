@@ -1013,7 +1013,7 @@ article {
       max-width: 90%; }
     article .content article {
       margin: 0.5rem;
-      width: 350px;
+      width: 400px;
       align-self: baseline;
       flex-flow: column wrap;
       padding: 1%; }
@@ -1326,7 +1326,12 @@ header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
 .portfolio-content article {
   justify-content: flex-start;
   margin: 3rem auto;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+  .portfolio-content article article {
+    align-self: flex-start; }
+  .portfolio-content article img {
+    width: 350px; }
 .portfolio-content p {
   margin-left: 10px;
   margin-right: 10px; }
@@ -1414,15 +1419,12 @@ header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
       width: 200px;
       padding: 10px; }
     #Branding .content article, #Objective .content article, #Wireframes .content article {
-      justify-content: center;
       -webkit-box-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      margin: auto;
-      width: auto;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+      justify-content: center; }
       #Branding .content article img, #Objective .content article img, #Wireframes .content article img {
-        width: 100%;
         height: auto;
         padding: 0; }
     #Branding .content .final-image-box, #Objective .content .final-image-box, #Wireframes .content .final-image-box {

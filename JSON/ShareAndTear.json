@@ -44,8 +44,7 @@
     "images": [{
       "image1": "wireframes/eventlist.jpg",
       "image2": "wireframes/ticketview.jpg",
-      "image3": "wireframes/tearticketwarning.jpg",
-      "image4": "wireframes/tornticket.jpg"
+      "image3": "wireframes/tornticket.jpg"
       }]
     }],
   "images": "images/case_studies/ShareandTear_Case"
