@@ -18,7 +18,7 @@
     "@type": "Person",
     "affiliation": "Code for Birmingham",
     "brand": "TaitWayland.com",
-    "description": "i’m a ui designer and developer living in birmingham, alabama.",
+    "description": "I'm a ui designer and developer living in Birmingham, Alabama.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Work",
@@ -54,32 +54,32 @@
     "sections": [
       {
         "title": "User Research",
-        "description": "Start with solid understanding of users and their needs. Wireframe. Prototype. Validate with user tests. Iterate and improve. Rinse and repeat.",
+        "description": "I give users the respect they deserve by listening. I conduct user interviews, and I make personas. I fight on the hill of user needs.",
         "img": "images/rapidprototyping.png"
       },
       {
-        "title": "Mobile Design",
-        "description": "Design with Sketch. Prototype with Invision. Paying respect to Android and iOS design documentation.",
-        "img": "images/appdesign.png"
-      },
-      {
-        "title": "Responsive Design",
-        "description": "Responsive sites, typically mobile-first.",
-        "img": "images/responsivedesign.png"
-      },
-      {
-        "title": "Front End Development",
-        "description": "HTML, CSS, SASS, Javascript, Jquery, AngularJS, ASPNET",
-        "img": "images/frontenddevelopment.png"
-      },
-      {
         "title": "Process",
-        "description": "Follow atomic design principles, semantic markup, object-oriented css patterns, and respect style guides. Scalability all-the-way.",
+        "description": "I follow the conventional iterative flow: discover, decide, make, and validate. I conduct user research, I then wireframe and prototype. I validate with user tests.",
         "img": "images/graphicdesign.png"
       },
       {
+        "title": "Responsive Design",
+        "description": "Mobile first, almost always. Relative sizing. Every time you hardcode a 'px' value, Domo kills a kitten.",
+        "img": "images/responsivedesign.png"
+      },
+      {
+        "title": "App Design",
+        "description": "I respect iOS and Material Design guidelines. Furthermore, a new screen isn't always the most elegant solution. Utilize 3D touch, notifications, fingerprints, VUIs, wearables, and GPS when and wherever possible.",
+        "img": "images/appdesign.png"
+      },
+      {
+        "title": "Front End Development",
+        "description": "Designers should write code. I know the basics and I'm always looking to grow. HTML5, SASS, Javascript, Jquery, AngularJS, and some ASPNET. (I made site this with <3 and Angular 1)",
+        "img": "images/frontenddevelopment.png"
+      },
+      {
         "title": "UX Specialties",
-        "description": "E-Commerce Design. Marketing Design. Accessibility Design",
+        "description": "My first priority is accessiblity. My second is scalability. I follow atomic design principles and reduce things to their simplest forms. I'm an advocate of semantic markup, and structured SASS. I value style guides.",
         "img": "images/uxspecialties.png"
       }
     ]

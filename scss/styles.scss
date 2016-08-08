@@ -189,20 +189,20 @@ article {
     }
   }
 }
-.masker1 {
-  @extend %masker;
-  @extend %hideelem;
-  position: relative;
-  top: 10px;
-  left: 100px;
-}
-.masker2 {
-  @extend %masker;
-  @extend %hideelem;
-  position: relative;
-  bottom: 10px;
-  right: 200px;
-}
+// .masker1 {
+//   @extend %masker;
+//   @extend %hideelem;
+//   position: relative;
+//   top: 10px;
+//   left: 100px;
+// }
+// .masker2 {
+//   @extend %masker;
+//   @extend %hideelem;
+//   position: relative;
+//   bottom: 10px;
+//   right: 200px;
+// }
 #About {
   img {
     width: 100%;

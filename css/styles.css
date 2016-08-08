@@ -9,22 +9,12 @@ a {
   a:hover {
     color: #c0b02a; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .masker1, .masker2, .portrait-container #portrait-img {
+header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
   opacity: 0;
   transition: all 1s ease-in-out; }
 
 header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
   z-index: 5; }
-
-.masker1, .masker2 {
-  overflow-x: hidden;
-  margin: 0;
-  color: #3A3A3A;
-  background-color: #F2EDC4;
-  font-size: 1.7rem;
-  text-align: center;
-  padding: 0.4rem;
-  position: relative; }
 
 .top-nav, .main-menu {
   top: 0;
@@ -1079,16 +1069,6 @@ article {
           article .content article img {
             max-width: 90%; } }
 
-.masker1 {
-  position: relative;
-  top: 10px;
-  left: 100px; }
-
-.masker2 {
-  position: relative;
-  bottom: 10px;
-  right: 200px; }
-
 #About img {
   width: 100%;
   height: auto; }
@@ -1332,22 +1312,12 @@ a {
   a:hover {
     color: #c0b02a; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .masker1, .masker2, .portrait-container #portrait-img {
+header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
   opacity: 0;
   transition: all 1s ease-in-out; }
 
 header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
   z-index: 5; }
-
-.masker1, .masker2 {
-  overflow-x: hidden;
-  margin: 0;
-  color: #3A3A3A;
-  background-color: #F2EDC4;
-  font-size: 1.7rem;
-  text-align: center;
-  padding: 0.4rem;
-  position: relative; }
 
 .top-nav, .main-menu {
   top: 0;

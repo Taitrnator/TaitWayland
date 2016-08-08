@@ -14,27 +14,32 @@
         "image2": "brainstorm/brainstorm2.jpg"
         }],
       "sections": [{
-        "section1": "The initial user research for this simply involved going to a high school football game and watching people tear tickets at the door. Theres a clear advantage in the simplicity of ticket stubs that we couldn't step on if we wanted to cater to this market.",
-        "section2": "The first user need that wasn't obvious was a feature to share tickets. If people have the tickets on their mobile device, the first advantage was making it easier for friends and families to buy and share tickets with each other. This feature ended up in version 3 of the app. (v2 was authentication)."
+        "section1": "Contextual observations were conducted at high school football games. Gate volunteers were observed tearing tickets at the door. There was a clear advantage in the simplicity of ticket stubs. This observation was critical. There was extra emphasis on designing the app to be simple and unobstructive",
+        "section2": "Research pointed out that the guy at the gate tends to tear the tickets, we could speed up the process of getting people through the line by putting that task in the ticket-buyers hand.",
+        "section3" : "Interviews with users introduced a common needs of different groups. Students and parents alike wanted to share tickets. It wasn't obvious until it was frequently mentioned. If the tickets are digital they can, and should, be shareable.",
+        "section1": "Personas were made for athletic directors, coaches, parents, students, and, gate volunteers. We focused on the latter three. Students and parents wanted a share feature. Ticket volunteers wanted an ticket stack that was easy to read and sort through, and they wanted users to tear their own tickets."
         }]
     }
   ],
   "final": [{
     "title": "Final Wireframes (v 1.3)",
     "images": [{
-      "image1": "finals/login-copy.jpg",
-      "image2": "finals/event-list.jpg",
-      "image3": "finals/event-list-share.jpg",
-      "image4": "finals/ticket-2-copy.jpg",
-      "image5": "finals/tear-warning.jpg",
-      "image6": "finals/ticket-torn.jpg"
+      "image1": "finals/eventlist-upcoming.png",
+      "image2": "finals/EventList-shared.png",
+      "image3": "finals/ticketview.png",
+      "image4": "finals/tear-confirmation.png",
+      "image5": "finals/ticket-torn.png",
+      "image6": "finals/ticket-options.png",
+      "image7": "finals/share-form.png",
+      "image8": "finals/share-confirm.png"
       }]
   }],
   "wireframing": [{
     "title": "User Testing",
     "section_one": [{
-      "section1": "Version 1 user test included tasking subjects to find their tickets for two seperate events from the event list, in one test, they tore all tickets, in the other test, they were asked to tear multiple individual tickets.",
-      "section2": "The initial user tests validated the overall layout. The biggest blind side was that users had no clear indication that they could scroll through tickets."
+      "section1": "Our MVP included an event list, and a ticket view. The ticket view allowed users to tear one ticket, or tear all.",
+      "section2": "Version 1 user test included tasking subjects to find their tickets for two seperate events from the event list, in one test, they tore all tickets, in the other test, they were asked to tear multiple individual tickets.",
+      "section3": "The initial user tests validated the overall layout. The biggest blind side was that users had no clear indication that they could tear their tickets. They also didn't realize that they could scroll through tickets."
       }],
     "images": [{
       "image1": "wireframes/eventlist.jpg",
