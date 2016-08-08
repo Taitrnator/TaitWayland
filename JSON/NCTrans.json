@@ -63,10 +63,9 @@
     "title": "Wireframing",
     "section1": "The conventional wisdom of mobile-first was employed here. Particuarly due to the challenge of delivering all of this content in a user-friendly way. The client was very particular about what they wanted on the first page, but arranging it in a friendly way was challenging.",
     "images": [{
-      "image1": "wireframes/mobile1.png",
-      "image2": "wireframes/mobile2.png",
-      "image3": "wireframes/desktop1.png",
-      "image4": "wireframes/desktop2.png"
+      "image1": "wireframes/mobile2.png",
+      "image2": "wireframes/desktop1.png",
+      "image3": "wireframes/desktop2.png"
       }]
     }]
 

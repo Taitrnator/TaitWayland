@@ -53,26 +53,35 @@
   <article>
      <header class="main-header"><h2>objective</h2></header>
      <section class="content">
+       <article>
          <p>
            {{data.objective}}
          </p>
+       </article>
+         <article>
+           <img src="{{data.images}}/finals/visit.png"/>
+         </article>
      </section>
   </article>
   <article id="Challenges">
     <header class="main-header"><h2>{{data.challenge[0].title}}</h2></header>
     <section class="content">
-      <span>
-        <img ng-src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
-      </span>
-      <p>
-        {{data.challenge[0].section1}}
-        <br />
-        {{data.challenge[0].section2}}
-        <br />
-        {{data.challenge[0].section3}}
-        <br />
-        {{data.challenge[0].section4}}
-      </p>
+      <article>
+        <span>
+          <img ng-src="{{data.images}}/{{data.challenge[0].image1}}" alt="client meeting" />
+        </span>
+      </article>
+      <article>
+        <p>
+          {{data.challenge[0].section1}}
+          <br />
+          {{data.challenge[0].section2}}
+          <br />
+          {{data.challenge[0].section3}}
+          <br />
+          {{data.challenge[0].section4}}
+        </p>
+      </article>
     </section>
   </article>
   <article id="Research">
@@ -80,12 +89,16 @@
       <h2>{{data.research[0].title}}</h2>
     </header>
     <section class="content">
-      <span><img ng-src="{{data.images}}/{{data.inspiration[0].image1}}" alt="inspiration1" /></span>
-      <span><img ng-src="{{data.images}}/{{data.inspiration[0].image2}}" alt="inspiration2" /></span>
-      <span><img ng-src="{{data.images}}/{{data.inspiration[0].image3}}" alt="inspiration3" /></span>
+      <article>
+        <span><img ng-src="{{data.images}}/{{data.inspiration[0].image1}}" alt="inspiration1" /></span>
+        <span><img ng-src="{{data.images}}/{{data.inspiration[0].image2}}" alt="inspiration2" /></span>
+        <span><img ng-src="{{data.images}}/{{data.inspiration[0].image3}}" alt="inspiration3" /></span>
+      </article>
+      <article>
         <p>
           {{data.research[0].section1}}<a href="{{data.research[0].VulcanUrl}}">{{data.research[0].VulcanPark}}</a> {{data.research[0].section2}}
         </p>
+      </article>
     </section>
   </article>
   <article id="Branding">
@@ -97,23 +110,25 @@
           More on the branding process can be found <a href="https://projects.invisionapp.com/boards/VE1ZXGIUY7KFW/">here.</a>
         </p>
       </article>
-      <span ng-repeat="image in data.branding[0].images[0]" ng-animate="'animate'">
-        <img ng-src="{{data.images}}/{{image}}" />
-      </span>
-      <article class="final-image-box">
-        <img class="final-image" ng-src="{{data.images}}/{{data.branding[0].finalimage}}" />
-      </article>
+        <span ng-repeat="image in data.branding[0].images[0]" ng-animate="'animate'">
+          <img ng-src="{{data.images}}/{{image}}" />
+        </span>
+        <article class="final-image-box">
+          <img class="final-image" ng-src="{{data.images}}/{{data.branding[0].finalimage}}" />
+        </article>
     </section>
   </article>
   <article>
     <header class="main-header"><h2>{{data.wireframing[0].title}}</h2></header>
     <section class="content">
+      <article>
+        <p>
+          {{data.wireframing[0].section1}}
+        </p>
+      </article>
       <article ng-repeat="image in data.wireframing[0].images[0]">
         <img ng-src="{{data.images}}/{{image}}" alt="{{image}}" />
       </article>
-      <p>
-        {{data.wireframing[0].section1}}
-      </p>
     </section>
   </article>
   <article>
@@ -134,12 +149,10 @@
       </article>
     </section>
   </article>
-  <article>
-    <header class="main-header"></header>
-    <section class="content">
-    <a href="#/"><h2>< Back Home</h2></a>
-    </section>
-  </article>
 </main>
 
+
 <ldjson type="application/ld+json" data-json="data"></ldjson>
+<script async>
+  ga('send', 'screenview', {screenName: 'NCTrans'});
+</script>

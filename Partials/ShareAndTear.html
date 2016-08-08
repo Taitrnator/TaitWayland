@@ -51,9 +51,14 @@
 <article>
      <header class="main-header"><h2>objective</h2></header>
      <section class="content">
-         <p>
-           {{data.objective}}
-         </p>
+         <article>
+           <p>
+             {{data.objective}}
+           </p>
+         </article>
+         <article>
+           <img ng-src="{{data.images}}/finals/ticketview.png" />
+         </article>
      </section>
   </article>
   <article id="Challenges">
@@ -90,11 +95,6 @@
       <article ng-repeat="image in data.final[0].images[0]" ng-animate="'animate'">
         <img ng-src="{{data.images}}/{{image}}" />
       </article>
-    </section>
-  </article>
-  <article>
-    <section class="content">
-    <a href="#/"><h2>< Back Home</h2></a>
     </section>
   </article>
 </main>
