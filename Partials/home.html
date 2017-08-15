@@ -16,12 +16,12 @@
       <li>
         <a id="work-link" ng-click="toSection('Work')" role="menuitem">Work</a>
       </li>
-      <li>
+      <!-- <li>
         <a id="whatIdo-link" ng-click="toSection('WhatIDo')" role="menuitem">What I Do</a>
       </li>
       <li>
         <a id="about-link" ng-click="toSection('About')" role="menuitem">About</a>
-      </li>
+      </li> -->
       <li>
         <a id="contact-link" ng-click="toSection('Contact')" role="menuitem">Contact</a>
       </li>
@@ -51,7 +51,7 @@
       </article>
     </section>
 </article>
- <article id="WhatIDo" aria-labelledby="whatIdo-link">
+ <!-- <article id="WhatIDo" aria-labelledby="whatIdo-link">
    <header class="main-header"><h2>{{ data.WhatIDo[0].name }}</h2></header>
    <section class="content">
      <article ng-repeat="section in data.WhatIDo[0].sections" ng-animate="'animate'">
@@ -70,22 +70,7 @@
        </p>
      </article>
    </section>
- </article>
- <article id="About" aria-labelledby="about-link">
-   <header class="main-header"><h2>{{data.About}}</h2></header>
-   <section class="content">
-     <article class="aboutimg">
-       <!-- <h1 class="masker masker1">? &#9632;\! B&#9632;S &amp; &#9632;T </h1> -->
-           <img class="about-img" ng-src="{{data.ldjson[0].image}}" alt="AboutMe"/>
-       <!-- <h1 class="masker masker2"> !% &#9632;&#9632;\&amp;! TA  &#9632;L*T </h1> -->
-     </article>
-     <article class="aboutcontent">
-       <p>
-         {{data.AboutSection[0].Section1}} <a href="{{data.AboutSection[0].CodeforBhamUrl}}" target="_blank">{{data.AboutSection[0].CodeForBham}}</a>. I also occassionally <a href="{{data.AboutSection[0].PracticalDreamUrl}}" target="_blank">draw stuff</a>.
-       </p>
-     </article>
-   </section>
- </article>
+ </article> -->
  <article id="Contact" aria-labelledby="contact-link">
    <header class="main-header"><h2>Contact</h2></header>
    <section class="content">
@@ -104,7 +89,7 @@
              </li>
            </ul>
          </div>
-          <a class="button" href="https://tait4.typeform.com/to/bpM8Bc" target="_blank"><img src="images/mail.png" /><span>Drop Me a Line</span></a>
+          <a class="button" href="https://tait4.typeform.com/to/bpM8Bc" target="_blank" role="button" aria-label="contact me"><img src="images/mail.png" /><span></span></a>
      </article>
    </section>
  </article>
