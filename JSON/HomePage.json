@@ -7,18 +7,20 @@
     "Section1": " Hello I'm Tait Wayland. I've been doing UI design and development for about 3 years. I'm a product designer at TicketBiscuit. I formerly captained a Code for America brigade,"
   }],
   "header": [{
-    "header1": "my name is tait",
-    "header2": "i’m a ui designer and developer living in birmingham, alabama.",
-    "header3": "i like masking tape."
+    "header1": "My name is Tait",
+    "header2": "I’m a UX Designer living in Pittsburgh",
+    "header3": "I like masking tape."
   }],
+  "cloudFrontUrl": "http://d2tm8fju7waczk.cloudfront.net",
   "githuburl": "//github.com/taitrnator",
   "linkedinurl": "//www.linkedin.com/in/tait-wayland-346511a1",
+  "resumeurl": "https://www.standardresume.co/TaitWayland",
   "ldjson": [{
     "@context": "http://schema.org",
     "@type": "Person",
     "affiliation": "Code for Birmingham",
     "brand": "TaitWayland.com",
-    "description": "I'm a ui designer and developer living in Birmingham, Alabama.",
+    "description": "I’m a UX Designer living in Pittsburgh",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Work",
@@ -27,9 +29,10 @@
             "@type": "Offer",
             "itemOffered": {
             "@type": "CreativeWork",
-            "image" : "images/case_studies/ShareandTear_Case/shareandtear_preview.png",
+            "image" : "/images/ShareAndTear_Preview.png",
             "name": "Share and Tear",
-            "url" : "#ShareAndTear"
+            "description": "An app that simplifies door ticketing, provides security, and needs no scanners.",
+            "url" : "https://medium.com/@taitrnator/case-study-share-and-tear-2ff46a9aaeca"
           }
         }
       ]

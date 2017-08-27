@@ -18,9 +18,6 @@ a {
   @extend %default-a;
 }
 // header content
-h1, h2, h3,h4, h5, h6 {
-  text-transform: uppercase;
-}
 header[role="banner"] {
   margin-top: 18%;
   margin-left: 1rem;
@@ -31,6 +28,13 @@ header[role="banner"] {
     @extend %headerprops;
     @extend %hideelem;
     font-size: $header-font;
+    line-height: $small-line-height;
+    margin: 0rem;
+  }
+  h2 {
+    @extend %headerprops;
+    @extend %hideelem;
+    font-size: $header-font - 2;
     line-height: $small-line-height;
     margin: 0rem;
   }
@@ -52,6 +56,9 @@ header[role="banner"] {
     h1 {
       font-size: $header-font - 3.5;
       line-height: $small-line-height;
+    }
+    h2 {
+      font-size: $header-font - 4;
     }
     h3 {
       font-size: $header-font - 5;
@@ -300,11 +307,23 @@ article {
   z-index: 15;
   width: 100%;
   position: fixed;
-  text-transform: uppercase;
   height: 78px;
   ul {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
     li {
       list-style-type: none;
+      padding: 0rem 1rem;
+      a {
+        color: $maskingtape;
+        font-weight: 600;
+        font-size: 2rem;
+        text-decoration: none;
+        &:hover {
+          color: darken($maskingtape, 20%);
+        }
+      }
     }
   }
 }
