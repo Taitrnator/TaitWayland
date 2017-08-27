@@ -2,32 +2,23 @@
 <nav class="top-nav">
   <ul class="responsive-menu">
     <li>
-      <button ng-click="menuToggle()" class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+      <a href="{{data.resumeurl}}">Resume</a>
+    </li>
+    <li>
+      <a href="{{data.linkedinurl}}">
+        <img src="images/linkedin.svg" width="60px"/>
+      </a>
+    </li>
+    <li>
+      <a href="{{data.githuburl}}" target="_blank">
+        <img src="images/github.svg" width="60px"/>
+      </a>
+    </li>
+    <li>
+      <a class="button" href="https://tait4.typeform.com/to/bpM8Bc" target="_blank" role="button" aria-label="contact me"><img src="images/mail.png" /><span></span></a>
     </li>
   </ul>
 </nav>
-<section class="main-menu">
-  <nav role="navigation">
-    <ul>
-      <li>
-        <a id="work-link" ng-click="toSection('Work')" role="menuitem">Work</a>
-      </li>
-      <!-- <li>
-        <a id="whatIdo-link" ng-click="toSection('WhatIDo')" role="menuitem">What I Do</a>
-      </li>
-      <li>
-        <a id="about-link" ng-click="toSection('About')" role="menuitem">About</a>
-      </li> -->
-      <li>
-        <a id="contact-link" ng-click="toSection('Contact')" role="menuitem">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</section>
 
 <div class="portrait-container">
   <canvas id="portrait"></canvas>
@@ -38,16 +29,17 @@
 <main>
   <header class="main-header" role="banner">
     <h1 class="header-1">{{data.header[0].header1}}</h1>
-    <h3 class="header-2">{{data.header[0].header2}}</h3>
-    <h5 class="header-3">{{data.header[0].header3}}</h5>
+    <h2 class="header-2">{{data.header[0].header2}}</h2>
+    <h3 class="header-3 outlined">{{data.header[0].header3}}</h3>
   </header>
   <article id="Work" aria-labelledby="work-link">
-    <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header>
+    <!-- <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header> -->
     <section class="content">
       <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
            <a href="{{key.itemOffered.url}}">
-             <img class="portfolio-image" ng-src="{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
+             <img class="portfolio-image" ng-src="{{data.cloudFrontUrl}}{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
            </a>
+           <!-- <a class="portfolio-description" href="#">{{key.itemOffered.description}}</a> -->
       </article>
     </section>
 </article>
@@ -71,28 +63,18 @@
      </article>
    </section>
  </article> -->
- <article id="Contact" aria-labelledby="contact-link">
+ <!-- <article id="Contact" aria-labelledby="contact-link">
    <header class="main-header"><h2>Contact</h2></header>
    <section class="content">
      <article class="button-article">
          <div class="social-media-links">
            <ul>
-             <li>
-               <a href="{{data.linkedinurl}}" target="_blank">
-                 <img src="images/linkedin.svg" width="60px"/>
-               </a>
-             </li>
-             <li>
-               <a href="{{data.githuburl}}" target="_blank">
-                 <img src="images/github.svg" width="60px"/>
-               </a>
-             </li>
            </ul>
          </div>
           <a class="button" href="https://tait4.typeform.com/to/bpM8Bc" target="_blank" role="button" aria-label="contact me"><img src="images/mail.png" /><span></span></a>
      </article>
    </section>
- </article>
+ </article> -->
 </main>
 
 <script async type="text/javascript" src="scripts/min/html2canvas-min.js"></script>

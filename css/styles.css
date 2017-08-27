@@ -9,11 +9,11 @@ a {
   a:hover {
     color: #c0b02a; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
+header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
   opacity: 0;
   transition: all 1s ease-in-out; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
+header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3, header[role="banner"] h5 {
   z-index: 5; }
 
 .top-nav, .main-menu {
@@ -935,9 +935,6 @@ body {
   font-family: "niveau-grotesk", Helvetica, sans-serif;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase; }
-
 header[role="banner"] {
   margin-top: 18%;
   margin-left: 1rem;
@@ -946,6 +943,10 @@ header[role="banner"] {
   position: relative; }
   header[role="banner"] h1 {
     font-size: 7rem;
+    line-height: 1;
+    margin: 0rem; }
+  header[role="banner"] h2 {
+    font-size: 5rem;
     line-height: 1;
     margin: 0rem; }
   header[role="banner"] h3 {
@@ -960,6 +961,8 @@ header[role="banner"] {
     header[role="banner"] h1 {
       font-size: 3.5rem;
       line-height: 1; }
+    header[role="banner"] h2 {
+      font-size: 3rem; }
     header[role="banner"] h3 {
       font-size: 2rem;
       line-height: 1; }
@@ -1145,10 +1148,21 @@ article {
   z-index: 15;
   width: 100%;
   position: fixed;
-  text-transform: uppercase;
   height: 78px; }
-  .top-nav ul li {
-    list-style-type: none; }
+  .top-nav ul {
+    display: flex;
+    align-content: flex-end;
+    align-items: center; }
+    .top-nav ul li {
+      list-style-type: none;
+      padding: 0rem 1rem; }
+      .top-nav ul li a {
+        color: #F2EDC4;
+        font-weight: 600;
+        font-size: 2rem;
+        text-decoration: none; }
+        .top-nav ul li a:hover {
+          color: #e0d470; }
 
 .hamburger {
   padding: 10px;
@@ -1312,11 +1326,11 @@ a {
   a:hover {
     color: #c0b02a; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
+header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3, header[role="banner"] h5, .portrait-container #portrait-img {
   opacity: 0;
   transition: all 1s ease-in-out; }
 
-header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
+header[role="banner"] h1, header[role="banner"] h2, header[role="banner"] h3, header[role="banner"] h5 {
   z-index: 5; }
 
 .top-nav, .main-menu {
@@ -1444,3 +1458,5 @@ header[role="banner"] h1, header[role="banner"] h3, header[role="banner"] h5 {
         width: auto; }
       #Branding .content .final-image, #Objective .content .final-image, #Wireframes .content .final-image {
         width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

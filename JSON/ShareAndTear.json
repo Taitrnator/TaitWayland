@@ -8,16 +8,16 @@
   "objective": "TicketBiscuit recognized a large unserved market for online ticketing: high school sports. The barrier to entry was the complexity of most online ticketing services. While online ticketing is intended to be convenient for users, it creates a lot of hassle for small event organizers, especially in this particular market. We realized this demographic didn’t want to use scanners, for instance. Ultimately, if we could create a product as simple as tearing ticket stubs, we could serve this market. Share and Tear was designed from this idea. The user simply downloads tickets to our app, and literally swipes to “tear” them at the door. The door man confirms the tear. Additionally, the app needed to maintain this minimal functionality offline.",
   "challenge": [
     {
-      "title": "Brainstorming",
+      "title": "Research",
       "images": [{
         "image1": "brainstorm/brainstorm1.jpg",
         "image2": "brainstorm/brainstorm2.jpg"
         }],
       "sections": [{
-        "section1": "Contextual observations were conducted at high school football games. Gate volunteers were observed tearing tickets at the door. There was a clear advantage in the simplicity of ticket stubs. This observation was critical. There was extra emphasis on designing the app to be simple and unobstructive",
-        "section2": "Research pointed out that the guy at the gate tends to tear the tickets, we could speed up the process of getting people through the line by putting that task in the ticket-buyers hand.",
-        "section3" : "Interviews with users introduced a common needs of different groups. Students and parents alike wanted to share tickets. It wasn't obvious until it was frequently mentioned. If the tickets are digital they can, and should, be shareable.",
-        "section1": "Personas were made for athletic directors, coaches, parents, students, and, gate volunteers. We focused on the latter three. Students and parents wanted a share feature. Ticket volunteers wanted an ticket stack that was easy to read and sort through, and they wanted users to tear their own tickets."
+        "section1": "I conducted contextual observations at a high school football game. I paid particular attention to the gate volunteers tearing tickets. This helped our team confirm an important requirement: maintain the simplicity of ticket stubs.",
+        "section2": "We introduced one additional requirement based on these observations: put the power of tearing and validating the ticket into the hands of the customer, not the gatekeeper.",
+        "section3" : "I conducted some contextual interviews at this football game also, which would help us flesh out our personas later. Students and parents alike wanted to share tickets. It wasn't obvious until conducting the interviews. If the tickets are digital they can, and should, be shareable.",
+        "section4": "Personas were made for athletic directors, coaches, parents, students, and, gate volunteers. The Share and Tear product focused on the latter three, as athletic directors and coaches have similar needs to the clients we were already serving in other markets. Students and parents wanted a share feature. Ticket volunteers wanted an ticket stack that was easy to read and sort through. Putting the power of tearing tickets in the user hands could satisfy all three personas as it would speed up the process of getting into the event."
         }]
     }
   ],
@@ -35,7 +35,7 @@
       }]
   }],
   "wireframing": [{
-    "title": "User Testing",
+    "title": "Usability Testing",
     "section_one": [{
       "section1": "Our MVP included an event list, and a ticket view. The ticket view allowed users to tear one ticket, or tear all.",
       "section2": "Version 1 user test included tasking subjects to find their tickets for two seperate events from the event list, in one test, they tore all tickets, in the other test, they were asked to tear multiple individual tickets.",
