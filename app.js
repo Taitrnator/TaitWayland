@@ -12,10 +12,10 @@ $routeProvider
   controllerAs: 'HomeCtrl'
 })
 // Pages
-.when('/NCTrans', {
-  templateUrl: 'Partials/NCTrans.html',
-  controller: 'NCTransCtrl',
-  controllerAs: 'NCTransCtrl'
+.when('/Portfolio/:ID', {
+  templateUrl: 'Partials/Portfolio.html',
+  controller: 'PortfolioCtrl',
+  controllerAs: 'PortfolioCtrl'
 })
 .when('/ShareAndTear', {
   templateUrl: "Partials/ShareAndTear.html",
