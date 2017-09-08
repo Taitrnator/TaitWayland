@@ -267,7 +267,7 @@ article {
       a {
         text-decoration: none;
         img {
-          padding: 0;
+          padding: 0px;
         }
       }
     }
@@ -322,6 +322,9 @@ article {
         text-decoration: none;
         &:hover {
           color: darken($maskingtape, 20%);
+        }
+        img {
+          padding: 0px;
         }
       }
     }

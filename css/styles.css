@@ -1114,7 +1114,7 @@ article {
     .social-media-links ul li a {
       text-decoration: none; }
       .social-media-links ul li a img {
-        padding: 0; }
+        padding: 0px; }
 
 .button {
   font-size: 1.6rem;
@@ -1163,6 +1163,8 @@ article {
         text-decoration: none; }
         .top-nav ul li a:hover {
           color: #e0d470; }
+        .top-nav ul li a img {
+          padding: 0px; }
 
 .hamburger {
   padding: 10px;
