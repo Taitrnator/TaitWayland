@@ -36,7 +36,7 @@
     <!-- <header class="main-header"><h2>{{ldjson[0].hasOfferCatalog.name}}</h2></header> -->
     <section class="content">
       <article ng-repeat="key in ldjson[0].hasOfferCatalog.itemListElement">
-           <a href="{{key.itemOffered.url}}">
+           <a href="#Portfolio/{{key.itemOffered.url}}">
              <img class="portfolio-image" ng-src="{{data.cloudFrontUrl}}{{key.itemOffered.image}}" alt="{{key.itemOffered.name}} image" />
            </a>
            <!-- <a class="portfolio-description" href="#">{{key.itemOffered.description}}</a> -->
